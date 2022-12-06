@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Lexend:wght@500;700&family=Roboto&family=Roboto+Slab&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap);
 /* RESET CSS */
 
 html, body, div, span, applet, object, iframe,
@@ -28,7 +28,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    font-family: "Roboto Slab", sans-serif;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
     font-size: 14px;
 }
 ol, ul {

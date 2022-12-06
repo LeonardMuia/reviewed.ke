@@ -19460,7 +19460,7 @@ var _hoisted_1 = {
   "class": "py-3 mb-4 border-bottom"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container d-flex flex-wrap justify-content-center\"><a href=\"/\" class=\"d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none\"><svg class=\"bi me-2\" width=\"40\" height=\"32\"><use xlink:href=\"#bootstrap\"></use></svg><span class=\"fs-4 h2 text-primary\">Reviewed.ke</span></a><form class=\"col-12 col-lg-auto mb-3 mb-lg-0\"><input type=\"search\" class=\"form-control\" placeholder=\"Search...\" aria-label=\"Search\"></form></div>", 1);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container d-flex flex-wrap justify-content-center\"><a href=\"/\" class=\"d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none\"><span class=\"fs-4 h2 text-primary\">Reviewed.ke</span></a><form class=\"col-12 col-lg-auto mb-3 mb-lg-0\"><input type=\"search\" class=\"form-control\" placeholder=\"Search...\" aria-label=\"Search\"></form></div>", 1);
 
 var _hoisted_3 = [_hoisted_2];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
