@@ -10,6 +10,7 @@
         <link rel="icon" type="image/png" href="/images/home/icon.png">
         
         <!-- Styles -->
+        <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
         <!-- Scripts -->
@@ -18,6 +19,9 @@
         <!-- Start of Async Drift Code -->
         
         @routes
+        <script src="js/jquery.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.js"></script>
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
     <body>
