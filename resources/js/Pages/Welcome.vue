@@ -1,6 +1,6 @@
 <template>
 
-    <Head title="Find companies you can trust"></Head>
+    <Head title="Home"></Head>
 
     
 </template>

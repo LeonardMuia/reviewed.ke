@@ -13,16 +13,15 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
-        <!-- Scripts -->
-        <script src="https://unicons.iconscout.com/release/v2.1.9/script/monochrome/bundle.js"></script>
-
-        <!-- Start of Async Drift Code -->
-        
         @routes
+
+        <!-- Scripts -->
         <script src="js/jquery.js"></script>
+        <script src="js/iconscout.js"></script>
         <script src="js/popper.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="{{ mix('js/app.js') }}" defer></script>
+
     </head>
     <body>
         @inertia
