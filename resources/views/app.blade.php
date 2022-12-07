@@ -7,9 +7,10 @@
         <title inertia>{{ config('app.name', '') }}</title>
 
         <!-- Fonts -->
-        <link rel="icon" type="image/png" href="/images/home/icon.png">
+        <link rel="icon" type="image/png" href="images/favicon.svg">
         
         <!-- Styles -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
