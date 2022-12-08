@@ -19543,7 +19543,8 @@ __webpack_require__.r(__webpack_exports__);
       settings: {
         itemsToShow: 1,
         snapAlign: 'center',
-        autoplay: 3000
+        autoplay: 3000,
+        wrapAround: true
       },
       // breakpoints are mobile first
       // any settings not specified will fallback to the carousel settings
@@ -19555,7 +19556,7 @@ __webpack_require__.r(__webpack_exports__);
         },
         // 1024 and up
         1024: {
-          itemsToShow: 8,
+          itemsToShow: 7,
           snapAlign: 'start'
         }
       }
@@ -19703,7 +19704,7 @@ var _hoisted_2 = {
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "col-5"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  "class": "img-fluid rounded-5",
+  "class": "img-fluid rounded-5 shadow-lg",
   src: "/images/spice-candles.webp",
   alt: "Spice Candles"
 })], -1
@@ -20098,6 +20099,8 @@ var _hoisted_3 = /*#__PURE__*/_withScopeId(function () {
     "class": "col-lg-12 col-md-12 col-sm-12 text-center"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "h3"
+  }, "Trusted by Kenyan Leading Brands"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "mt-1 mb-1"
   }, "Trusted by Kenyan Leading Brands")], -1
   /* HOISTED */
   );
@@ -20248,7 +20251,7 @@ var _hoisted_3 = {
   "class": "section"
 };
 var _hoisted_4 = {
-  "class": "section py-5 bg-light"
+  "class": "section py-5 bg-blue-light"
 };
 
 var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", {

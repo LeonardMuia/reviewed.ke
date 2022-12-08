@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-5">
-                <img class="img-fluid rounded-5" src="/images/spice-candles.webp" alt="Spice Candles">
+                <img class="img-fluid rounded-5 shadow-lg" src="/images/spice-candles.webp" alt="Spice Candles">
             </div>
             <div class="col-1"></div>
             <div class="col-6 p-3 p-lg-5 pt-lg-3">

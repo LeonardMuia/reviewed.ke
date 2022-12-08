@@ -3,6 +3,7 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 text-center">
                 <div class="h3">Trusted by Kenyan Leading Brands</div>
+                <div class="mt-1 mb-1">Trusted by Kenyan Leading Brands</div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 mt-4">
                 <carousel :settings="settings" :breakpoints="breakpoints">
@@ -35,7 +36,8 @@ export default {
       settings: {
         itemsToShow: 1,
         snapAlign: 'center',
-        autoplay: 3000
+        autoplay: 3000,
+        wrapAround: true
       },
       // breakpoints are mobile first
       // any settings not specified will fallback to the carousel settings
@@ -47,7 +49,7 @@ export default {
         },
         // 1024 and up
         1024: {
-          itemsToShow: 8,
+          itemsToShow: 7,
           snapAlign: 'start',
         },
       },

@@ -17,7 +17,7 @@
             <Trusted :brands="brands"></Trusted>
         </section>
 
-        <section class="section py-5 bg-light">
+        <section class="section py-5 bg-blue-light">
             <CaseStudy></CaseStudy>
         </section>
 
