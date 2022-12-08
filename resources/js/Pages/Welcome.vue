@@ -18,7 +18,7 @@
         </section>
 
         <section class="section py-5 bg-light">
-            
+            <CaseStudy></CaseStudy>
         </section>
 
         <section class="section py-4">
@@ -43,22 +43,24 @@
     import Trusted from "../Components/Trusted.vue";
     import SocialProof from '../Components/SocialProof.vue';
     import Footer from '../Components/Footer.vue';
+    import CaseStudy from '../Components/CaseStudy.vue';
 
     export default {
         props: {
            
         },  
         components: {
-            Head,
-            Link,
-            Nav,
-            Header,
-            Hero,
-            Categories,
-            Trusted,
-            Footer,
-            SocialProof
-        }
+    Head,
+    Link,
+    Nav,
+    Header,
+    Hero,
+    Categories,
+    Trusted,
+    Footer,
+    SocialProof,
+    CaseStudy
+}
     }
 
 </script>
