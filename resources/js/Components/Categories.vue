@@ -28,7 +28,7 @@
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 mt-2 mb-2">
                 <div class="category-card card p-4 rounded-lg-2 text-center">
-                    <span>Travel</span>
+                    <span>Legal</span>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 mt-2 mb-2">
@@ -38,37 +38,37 @@
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 mt-2 mb-2">
                 <div class="category-card card p-4 rounded-lg-2 text-center">
-                    <span>Fitness & Nutrition</span>
+                    <span>Real Estate & Realtors</span>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 mt-2 mb-2">
                 <div class="category-card card p-4 rounded-lg-2 text-center">
-                    <span>Clothing Store</span>
+                    <span>Fashion & Clothing</span>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 mt-2 mb-2">
                 <div class="category-card card p-4 rounded-lg-2 text-center">
-                    <span>Jewelry Store</span>
+                    <span>Beauty & Well-being</span>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 mt-2 mb-2">
                 <div class="category-card card p-4 rounded-lg-2 text-center">
-                    <span>Cosmetic Store</span>
+                    <span>Energy & Power</span>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 mt-2 mb-2">
                 <div class="category-card card p-4 rounded-lg-2 text-center">
-                    <span>Shoe Store</span>
+                    <span>Hospitality & Entertainment</span>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 mt-2 mb-2">
                 <div class="category-card card p-4 rounded-lg-2 text-center">
-                    <span>Travel Agency</span>
+                    <span>Travel & Transport</span>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 mt-2 mb-2">
                 <div class="category-card card p-4 rounded-lg-2 text-center">
-                    <span>Furniture Store</span>
+                    <span>Furniture & Decor</span>
                 </div>
             </div>
         </div>
