@@ -151,11 +151,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .category-card {
 	cursor: pointer;
-	background-color: #f8f9fa!important;
+	background-color: ;
 }
 
 .category-card:hover {
 	background-color: #c4d3f8;
     color: #0b2051;
-	transition: .5s ease;
+	transition: 1s ease;
+}
+
+.section {
+	margin: 40px 0 !important;
 }

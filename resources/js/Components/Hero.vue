@@ -1,5 +1,5 @@
 <template>
-    <div class="container my-5 rounded-5 bg-light">
+    <div class="container my-5 rounded-5 bg-light shadow-lg">
       <div class="row p-5 pb-0 pe-lg-0 pt-lg-5 justify-contents-center">
         <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
           <h1 class="display-6 fw-bold lh-1 mb-4">Read reviews. Write reviews.<br/>Find companies you can <span class="text-primary">trust.</span></h1>

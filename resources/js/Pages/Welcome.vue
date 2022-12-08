@@ -5,19 +5,19 @@
     <Header></Header>
     <main>
         <Hero></Hero>
-        <section class="section mb-5">
+        <section class="section">
             <Categories></Categories>
         </section>
 
-        <section class="section">
+        <section class="section bg-light">
             <Trusted></Trusted>
         </section>
 
-        <section class="section mt-4 mb-4">
+        <!-- <section class="section">
             <div class="container">
                 <img class="img-fluid rounded-5 shadow-sm" src="images/reviews.png" alt="">
             </div>
-        </section>
+        </section> -->
     </main>
 
     <Footer></Footer>
