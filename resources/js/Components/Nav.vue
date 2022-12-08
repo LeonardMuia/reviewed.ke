@@ -8,8 +8,8 @@
         <li class="nav-item"><Link href="/support" class="nav-link link-dark px-2">Support</Link></li>
       </ul>
       <ul class="nav">
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Login</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Sign up</a></li>
+        <li class="nav-item"><a href="/login" class="nav-link link-dark px-2">Login</a></li>
+        <li class="nav-item"><a href="/register" class="nav-link link-dark px-2">Sign up</a></li>
       </ul>
     </div>
   </nav>

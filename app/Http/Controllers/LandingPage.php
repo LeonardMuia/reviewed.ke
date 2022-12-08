@@ -31,4 +31,39 @@ class LandingPage extends Controller
         );
     }
 
+    public function categories()
+    {
+        return Inertia::render('Categories');
+    }
+
+    public function create()
+    {
+        return Inertia::render('PostReview');
+    }
+
+
+    public function spiceCandles()
+    {
+        return Inertia::render('SpiceCandles');
+    }
+
+
+    public function onboarding()
+    {
+        return Inertia::render('Onboarding');
+    }
+
+
+    // Add a review post request
+    public function add(Request $request)
+    {
+        return Inertia::render('Onboarding');
+    }
+
+    // Add a company post request
+    public function addCompany(Request $request)
+    {
+        return Inertia::render('Onboarding');
+    }
+
 }

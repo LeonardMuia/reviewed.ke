@@ -21,7 +21,7 @@
             <CaseStudy></CaseStudy>
         </section>
 
-        <section class="section py-4">
+        <section class="section py-5">
             <div class="container">
                 <img class="img-fluid rounded-5 shadow-sm" src="images/reviews.png" alt="">
             </div>

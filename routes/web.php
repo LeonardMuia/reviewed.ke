@@ -12,6 +12,18 @@ use Inertia\Inertia;
 */
 
 Route::get('/', [LandingPage::class,'index']);
+Route::get('/categories', [LandingPage::class,'categories']);
+Route::get('/pricing', [LandingPage::class,'pricing']);
+Route::get('/faq', [LandingPage::class,'faq']);
+Route::get('/support', [LandingPage::class,'support']);
+Route::get('/post-review', [LandingPage::class,'create']);
+Route::get('/for-business', [LandingPage::class, 'onboarding']);
+Route::get('/case-study/spice-candles', [LandingPage::class, 'spiceCandles']);
+
+
+
+Route::post('/for-business', [LandingPage::class, 'addCompany']);
+Route::post('/post-review', [LandingPage::class,'add']);
 
 /*
 |--------------------------------------------------------------------------
