@@ -155,6 +155,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-size: 14px;
 }
 
+.nav-item > .nav-link:hover {
+	color: #f16029;
+	transition: .3s ease-in-out;
+}
+
+.nav-item > .active {
+	color: #f16029;
+}
+
 
 /* BANNER */
 
