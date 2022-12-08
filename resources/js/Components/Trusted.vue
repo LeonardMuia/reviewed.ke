@@ -6,8 +6,8 @@
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 mt-4">
                 <carousel :settings="settings" :breakpoints="breakpoints">
-                    <slide v-for="slide in 10" :key="slide">
-                      {{slide}}
+                    <slide v-for="slide in brands" :key="slide">
+                      <img :src="slide.logo_path" class="border img-fluid brand-image">
                     </slide>
                 </carousel>
             </div>
@@ -21,6 +21,9 @@ import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 
 export default {
+    props: [
+      'brands'
+    ],
     components: {
         Carousel,
         Slide,
@@ -39,12 +42,12 @@ export default {
       breakpoints: {
         // 700px and up
         700: {
-          itemsToShow: 3.5,
+          itemsToShow: 1,
           snapAlign: 'center',
         },
         // 1024 and up
         1024: {
-          itemsToShow: 5,
+          itemsToShow: 8,
           snapAlign: 'start',
         },
       },
@@ -53,25 +56,8 @@ export default {
 </script>
 
 <style scoped>
-.carousel__item {
-  min-height: 200px;
-  width: 100%;
-  background-color: var(--vc-clr-primary);
-  color: var(--vc-clr-white);
-  font-size: 20px;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.carousel__slide {
-  padding: 10px;
-}
-
-.carousel__prev,
-.carousel__next {
-  box-sizing: content-box;
-  border: 5px solid white;
+.brand-image {
+  width: 120px;
+  height: 120px;
 }
 </style>

@@ -14,7 +14,7 @@
         </section>
 
         <section class="section">
-            <Trusted></Trusted>
+            <Trusted :brands="brands"></Trusted>
         </section>
 
         <section class="section py-5 bg-light">
@@ -47,7 +47,10 @@ import CaseStudy from '../Components/CaseStudy.vue';
 export default {
     props: {
        categories: {
-            type : Object
+         type : Object
+       },
+       brands: {
+         type: Object
        }
     },  
     components: {

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 use App\Models\Category;
+use App\Models\Brand;
 
 class LandingPage extends Controller
 {
@@ -23,10 +24,12 @@ class LandingPage extends Controller
     public function index()
     {
         $categories = Category::where('is_active', 1)->select('id','name')->get();
+        $brands = Brand::where('is_active', 1)->get();
 
         return Inertia::render('Welcome', 
             [
-                'categories' => $categories
+                'categories' => $categories,
+                'brands' => $brands
             ]
         );
     }
