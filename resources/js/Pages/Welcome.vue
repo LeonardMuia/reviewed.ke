@@ -5,19 +5,27 @@
     <Header></Header>
     <main>
         <Hero></Hero>
-        <section class="section">
+        <section class="section py-5">
             <Categories></Categories>
         </section>
 
-        <section class="section bg-light">
+        <section class="section py-5 bg-light">
+            <SocialProof></SocialProof>
+        </section>
+
+        <section class="section">
             <Trusted></Trusted>
         </section>
 
-        <!-- <section class="section">
+        <section class="section py-5 bg-light">
+        </section>
+
+        <section class="section py-4">
             <div class="container">
                 <img class="img-fluid rounded-5 shadow-sm" src="images/reviews.png" alt="">
             </div>
-        </section> -->
+        </section>
+
     </main>
 
     <Footer></Footer>
@@ -32,6 +40,7 @@
     import Hero from "../Components/Hero.vue";
     import Categories from "../Components/Categories.vue";
     import Trusted from "../Components/Trusted.vue";
+    import SocialProof from '../Components/SocialProof.vue';
     import Footer from '../Components/Footer.vue';
 
     export default {
@@ -46,8 +55,9 @@
             Hero,
             Categories,
             Trusted,
-            Footer
-      }
+            Footer,
+            SocialProof
+        }
     }
 
 </script>

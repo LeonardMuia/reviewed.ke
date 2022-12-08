@@ -28,7 +28,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1.2;
+	line-height: 1.4;
     font-family: "Lexend", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -61,6 +61,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	background-color: #f16029 !important;
 }
 
+.bg-blue-light {
+	background-color: #ebf4ff !important;
+}
+
 .text-primary {
     color: #f16029 !important;
 }
@@ -78,6 +82,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     line-height: 100%;
     font-weight: 500;
     text-align: center;
+}
+
+.text-dark {
+	color: #0b2051 !important; 
 }
 
 .btn-header:hover {
@@ -141,6 +149,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 
+/* NAV */
+
+.nav-item > .nav-link {
+	font-size: 14px;
+}
+
+
 /* BANNER */
 
 .banner-img {
@@ -151,15 +166,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .category-card {
 	cursor: pointer;
-	background-color: ;
+	background-color: #f8f9fa!important;
 }
 
 .category-card:hover {
-	background-color: #c4d3f8;
-    color: #0b2051;
-	transition: 1s ease;
-}
-
-.section {
-	margin: 40px 0 !important;
+	color:#f16029;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	transition: .4s ease-in-out;
 }

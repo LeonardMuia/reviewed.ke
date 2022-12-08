@@ -2,12 +2,12 @@
     <div class="container py-5">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                <div class="h2">Trusted by Kenyan Leading Brands</div>
+                <div class="h3">Trusted by Kenyan Leading Brands</div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 mt-4">
                 <carousel :settings="settings" :breakpoints="breakpoints">
                     <slide v-for="slide in 10" :key="slide">
-                    {{ slide }}
+                      {{slide}}
                     </slide>
                 </carousel>
             </div>
