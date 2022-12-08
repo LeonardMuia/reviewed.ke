@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Inertia\Inertia;
+use App\Models\Category;
 
 class LandingPage extends Controller
 {
@@ -21,7 +22,13 @@ class LandingPage extends Controller
     */
     public function index()
     {
-        return Inertia::render('Welcome');
+        $categories = Category::where('is_active', 1)->select('id','name')->get();
+
+        return Inertia::render('Welcome', 
+            [
+                'categories' => $categories
+            ]
+        );
     }
 
 }

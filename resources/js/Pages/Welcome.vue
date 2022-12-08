@@ -6,7 +6,7 @@
     <main>
         <Hero></Hero>
         <section class="section py-5">
-            <Categories></Categories>
+            <Categories :categories = "categories"></Categories>
         </section>
 
         <section class="section py-5 bg-light">
@@ -35,32 +35,35 @@
 
 <script>
 
-    import { Head,Link } from '@inertiajs/inertia-vue3';
-    import Nav from '../Components/Nav.vue';
-    import Header from '../Components/Header.vue';
-    import Hero from "../Components/Hero.vue";
-    import Categories from "../Components/Categories.vue";
-    import Trusted from "../Components/Trusted.vue";
-    import SocialProof from '../Components/SocialProof.vue';
-    import Footer from '../Components/Footer.vue';
-    import CaseStudy from '../Components/CaseStudy.vue';
-
-    export default {
-        props: {
-           
-        },  
-        components: {
-    Head,
-    Link,
-    Nav,
-    Header,
-    Hero,
-    Categories,
-    Trusted,
-    Footer,
-    SocialProof,
-    CaseStudy
-}
+import { Head,Link } from '@inertiajs/inertia-vue3';
+import Nav from '../Components/Nav.vue';
+import Header from '../Components/Header.vue';
+import Hero from "../Components/Hero.vue";
+import Categories from "../Components/Categories.vue";
+import Trusted from "../Components/Trusted.vue";
+import SocialProof from '../Components/SocialProof.vue';
+import Footer from '../Components/Footer.vue';
+import CaseStudy from '../Components/CaseStudy.vue';
+export default {
+    props: {
+       categories: {
+            type : Object
+       }
+    },  
+    components: {
+        Head,
+        Link,
+        Nav,
+        Header,
+        Hero,
+        Categories,
+        Trusted,
+        Footer,
+        SocialProof,
+        CaseStudy
+    },
+    mounted() {
     }
+}
 
 </script>
