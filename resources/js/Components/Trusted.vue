@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 text-center">
                 <div class="h3">Trusted by Kenyan Leading Brands</div>
-                <div class="mt-1 mb-1">Trusted by Kenyan Leading Brands</div>
+                <small class="mt-1 mb-1">Join other brands that are using Reviewed.ke to increase their trust and conversion.</small>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 mt-4">
                 <carousel :settings="settings" :breakpoints="breakpoints">

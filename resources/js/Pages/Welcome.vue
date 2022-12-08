@@ -1,8 +1,11 @@
 <template>
 
     <Head title="Home"></Head>
-    <Nav></Nav>
+    
+    <Nav :home="true"></Nav>
+    
     <Header></Header>
+    
     <main>
         <Hero></Hero>
         <section class="section py-5">
@@ -65,8 +68,6 @@ export default {
         SocialProof,
         CaseStudy
     },
-    mounted() {
-    }
 }
 
 </script>

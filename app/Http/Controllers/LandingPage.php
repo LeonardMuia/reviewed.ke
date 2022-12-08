@@ -56,6 +56,20 @@ class LandingPage extends Controller
         return Inertia::render('Onboarding');
     }
 
+    public function pricing()
+    {
+        return Inertia::render('Pricing');
+    }
+
+    public function faq()
+    {
+        return Inertia::render('Faq');
+    }
+
+    public function support()
+    {
+        return Inertia::render('Support');
+    }
 
     // Add a review post request
     public function add(Request $request)
