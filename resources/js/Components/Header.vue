@@ -5,7 +5,7 @@
             <span class="h4 text-primary">Reviewed.ke</span>
           </a>
           <div class="col-12 col-lg-auto mb-3 mb-lg-0">
-            <a class="btn btn-header shadow" href="/post-review">Post a Review</a>
+            <a class="btn btn-header shadow" href="/for-business">For Businesses</a>
           </div>
         </div>
     </header>
