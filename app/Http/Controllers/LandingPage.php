@@ -51,9 +51,19 @@ class LandingPage extends Controller
     }
 
 
-    public function onboarding()
+    public function forBusiness()
     {
-        return Inertia::render('Onboarding');
+        $brands = Brand::where('is_active', 1)->get();
+
+        return Inertia::render('ForBusiness', 
+        [
+            'brands' => $brands
+        ]);
+    }
+
+    public function onBoarding()
+    {
+        return Inertia::render('OnBoarding');
     }
 
     public function pricing()

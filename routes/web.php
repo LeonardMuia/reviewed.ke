@@ -17,7 +17,8 @@ Route::get('/pricing', [LandingPage::class,'pricing']);
 Route::get('/faqs', [LandingPage::class,'faq']);
 Route::get('/support', [LandingPage::class,'support']);
 Route::get('/post-review', [LandingPage::class,'create']);
-Route::get('/for-business', [LandingPage::class, 'onboarding']);
+Route::get('/for-business', [LandingPage::class, 'forBusiness']);
+Route::get('/onboarding', [LandingPage::class, 'onBoarding']);
 Route::get('/case-study/spice-candles', [LandingPage::class, 'spiceCandles']);
 
 
