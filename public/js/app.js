@@ -20912,12 +20912,88 @@ var _withScopeId = function _withScopeId(n) {
 var _hoisted_1 = {
   "class": "section"
 };
+var _hoisted_2 = {
+  "class": ""
+};
+var _hoisted_3 = {
+  "class": "text-center mb-4"
+};
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"\" data-v-a2ac2cea><div class=\"text-center\" data-v-a2ac2cea></div><div class=\"card border shadow rounded-5\" data-v-a2ac2cea><div class=\"card-body\" data-v-a2ac2cea><form class=\"form-signin\" data-v-a2ac2cea><h1 class=\"h4 mb-4\" data-v-a2ac2cea>Login to Business Account</h1><label for=\"inputEmail\" class=\"sr-only\" data-v-a2ac2cea>Business Account Email</label><input type=\"email\" class=\"form-control\" placeholder=\"Work Email\" required autofocus data-v-a2ac2cea><label for=\"inputPassword\" class=\"sr-only\" data-v-a2ac2cea>Password</label><input type=\"password\" id=\"inputPassword\" class=\"form-control\" placeholder=\"Password\" required data-v-a2ac2cea><button class=\"mt-4 btn btn-lg btn-dark col-12\" type=\"submit\" data-v-a2ac2cea>Sign in</button></form></div></div></div><p class=\"mt-5 mb-3 text-muted fixed-bottom text-center\" data-v-a2ac2cea>© 2022 Reviewed.ke | All Rights Reserved</p>", 2);
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Reviewed.ke");
 
-var _hoisted_4 = [_hoisted_2];
+var _hoisted_5 = {
+  "class": "card border rounded-5"
+};
+var _hoisted_6 = {
+  "class": "card-body"
+};
+var _hoisted_7 = {
+  "class": "form-signin"
+};
+
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<h1 class=\"h4 mb-2\" data-v-a2ac2cea>Login to Business Account</h1><label for=\"inputEmail\" class=\"sr-only\" data-v-a2ac2cea>Business Account Email</label><input type=\"email\" class=\"form-control\" placeholder=\"Work Email\" required autofocus data-v-a2ac2cea><label for=\"inputPassword\" class=\"sr-only\" data-v-a2ac2cea>Password</label><input type=\"password\" id=\"inputPassword\" class=\"form-control\" placeholder=\"Password\" required data-v-a2ac2cea>", 5);
+
+var _hoisted_13 = {
+  "class": "row mt-3"
+};
+var _hoisted_14 = {
+  "class": "col-6"
+};
+
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Forgot Password?");
+
+var _hoisted_16 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "col-6 text-end"
+  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "text-sm text-primary show-password"
+  }, "Show Password")], -1
+  /* HOISTED */
+  );
+});
+
+var _hoisted_17 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    "class": "mt-4 btn btn-lg btn-dark col-12",
+    type: "submit",
+    disabled: ""
+  }, "Log In", -1
+  /* HOISTED */
+  );
+});
+
+var _hoisted_18 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "mt-5 mb-3 text-muted fixed-bottom text-center"
+  }, "© 2022 Reviewed.ke | All Rights Reserved", -1
+  /* HOISTED */
+  );
+});
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("section", _hoisted_1, _hoisted_4);
+  var _component_Link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Link");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("section", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+    href: "/",
+    "class": "h2 text-dark text-decoration-none"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_4];
+    }),
+    _: 1
+    /* STABLE */
+
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", _hoisted_7, [_hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+    href: "/forgot-password",
+    "class": "text-sm text-dark text-decoration-none"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_15];
+    }),
+    _: 1
+    /* STABLE */
+
+  })]), _hoisted_16]), _hoisted_17])])])]), _hoisted_18]);
 }
 
 /***/ }),
@@ -25415,7 +25491,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.section[data-v-a2ac2cea] {\n    height:100vh !important;\n    display: flex;\n    -ms-flex-align: center;\n    -ms-flex-pack: center;\n    align-items: center;\n    justify-content: center;\n    padding-top: 40px;\n    padding-bottom: 40px;\n    background-color: #f5f5f5;\n}\n.card[data-v-a2ac2cea] {\n    width: 600px !important;\n}\ninput[data-v-a2ac2cea], label[data-v-a2ac2cea] {\n    margin-top: 8px;\n}\n.form-signin[data-v-a2ac2cea] {\n  width: 100%;\n  padding: 15px;\n  margin: 0 auto;\n}\n.form-signin .checkbox[data-v-a2ac2cea] {\n  font-weight: 400;\n}\n.form-signin .form-control[data-v-a2ac2cea] {\n  position: relative;\n  box-sizing: border-box;\n  height: auto;\n  padding: 10px;\n  font-size: 16px;\n}\n.form-signin .form-control[data-v-a2ac2cea]:focus {\n  z-index: 2;\n}\n.form-signin input[type=\"email\"][data-v-a2ac2cea] {\n  margin-bottom: -1px;\n}\n.form-signin input[type=\"password\"][data-v-a2ac2cea] {\n  margin-bottom: 10px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.section[data-v-a2ac2cea] {\n    height:100vh !important;\n    display: flex;\n    -ms-flex-align: center;\n    -ms-flex-pack: center;\n    align-items: center;\n    justify-content: center;\n    padding-top: 40px;\n    padding-bottom: 40px;\n    background-color: #f5f5f5;\n}\n.card[data-v-a2ac2cea] {\n    width: 600px !important;\n}\nlabel[data-v-a2ac2cea] {\n    margin-top: 22px;\n}\ninput[data-v-a2ac2cea] {\n    margin-top: 8px;\n}\n.form-signin[data-v-a2ac2cea] {\n  width: 100%;\n  padding: 15px;\n  margin: 0 auto;\n}\n.form-signin .checkbox[data-v-a2ac2cea] {\n  font-weight: 400;\n}\n.form-signin .form-control[data-v-a2ac2cea] {\n  position: relative;\n  box-sizing: border-box;\n  height: auto;\n  padding: 10px;\n  font-size: 16px;\n}\n.form-signin .form-control[data-v-a2ac2cea]:focus {\n  z-index: 2;\n}\n.form-signin input[type=\"email\"][data-v-a2ac2cea] {\n  margin-bottom: -1px;\n}\n.form-signin input[type=\"password\"][data-v-a2ac2cea] {\n  margin-bottom: 10px;\n}\n.show-password[data-v-a2ac2cea] {\n    cursor: pointer;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

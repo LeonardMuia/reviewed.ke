@@ -1,19 +1,26 @@
 <template>
     <section class="section">
         <div class="">
-            <div class="text-center">
-                
+            <div class="text-center mb-4">
+                <Link href="/" class="h2 text-dark text-decoration-none">Reviewed.ke</Link>
             </div>
-            <div class="card border shadow rounded-5">
+            <div class="card border rounded-5">
                 <div class="card-body">
                     <form class="form-signin">
-                        <h1 class="h4 mb-4">Login to Business Account</h1>
+                        <h1 class="h4 mb-2">Login to Business Account</h1>
                         <label for="inputEmail" class="sr-only">Business Account Email</label>
                         <input type="email" class="form-control" placeholder="Work Email" required autofocus>
                         <label for="inputPassword" class="sr-only">Password</label>
                         <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                        
-                        <button class="mt-4 btn btn-lg btn-dark col-12" type="submit">Sign in</button>
+                        <div class="row mt-3">
+                            <div class="col-6">
+                                <Link href="/forgot-password" class="text-sm text-dark text-decoration-none">Forgot Password?</Link>
+                            </div>
+                            <div class="col-6 text-end">
+                                <div class="text-sm text-primary show-password">Show Password</div>
+                            </div>
+                        </div>
+                        <button class="mt-4 btn btn-lg btn-dark col-12" type="submit" disabled>Log In</button>
                     </form>
                 </div>
             </div>
@@ -56,7 +63,11 @@ export default {
     width: 600px !important;
 }
 
-input, label {
+label {
+    margin-top: 22px;
+}
+
+input {
     margin-top: 8px;
 }
 
@@ -83,5 +94,8 @@ input, label {
 }
 .form-signin input[type="password"] {
   margin-bottom: 10px;
+}
+.show-password {
+    cursor: pointer;
 }
 </style>
