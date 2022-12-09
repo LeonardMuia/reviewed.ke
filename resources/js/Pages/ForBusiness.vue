@@ -14,6 +14,10 @@
 
         <Milestones></Milestones>
 
+        <section class="section py-5">
+            <CaseStudy></CaseStudy>
+        </section>
+
     </main>
 
     <Footer></Footer>
@@ -27,6 +31,7 @@ import Header from '../Components/Header.vue';
 import HeroBusiness from "../Components/HeroBusiness.vue";
 import Trusted from '../Components/Trusted.vue';
 import Milestones from '../Components/Milestones.vue';
+import CaseStudy from '../Components/CaseStudy.vue';
 import Footer from '../Components/Footer.vue';
 
 export default {
@@ -43,6 +48,7 @@ export default {
         HeroBusiness,
         Trusted,
         Milestones,
+        CaseStudy,
         Footer
     },
 }

@@ -19542,7 +19542,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
+/* harmony import */ var vue_countup_v3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-countup-v3 */ "./node_modules/vue-countup-v3/dist/vue-countup-v3.es.js");
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {
+    CountUp: vue_countup_v3__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  data: function data() {
+    return {
+      reviews: 24,
+      duration: 8,
+      reviewOptions: {
+        suffix: 'K'
+      },
+      growthRate: 68,
+      growthOptions: {
+        suffix: '%'
+      },
+      impact: 92,
+      impactOptions: {
+        suffix: '%'
+      },
+      brands: 165,
+      brandOptions: {
+        suffix: '+'
+      }
+    };
+  }
+});
 
 /***/ }),
 
@@ -19777,7 +19804,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Components_HeroBusiness_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Components/HeroBusiness.vue */ "./resources/js/Components/HeroBusiness.vue");
 /* harmony import */ var _Components_Trusted_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Components/Trusted.vue */ "./resources/js/Components/Trusted.vue");
 /* harmony import */ var _Components_Milestones_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Components/Milestones.vue */ "./resources/js/Components/Milestones.vue");
-/* harmony import */ var _Components_Footer_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Components/Footer.vue */ "./resources/js/Components/Footer.vue");
+/* harmony import */ var _Components_CaseStudy_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Components/CaseStudy.vue */ "./resources/js/Components/CaseStudy.vue");
+/* harmony import */ var _Components_Footer_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../Components/Footer.vue */ "./resources/js/Components/Footer.vue");
+
 
 
 
@@ -19799,7 +19828,8 @@ __webpack_require__.r(__webpack_exports__);
     HeroBusiness: _Components_HeroBusiness_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
     Trusted: _Components_Trusted_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
     Milestones: _Components_Milestones_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
-    Footer: _Components_Footer_vue__WEBPACK_IMPORTED_MODULE_6__["default"]
+    CaseStudy: _Components_CaseStudy_vue__WEBPACK_IMPORTED_MODULE_6__["default"],
+    Footer: _Components_Footer_vue__WEBPACK_IMPORTED_MODULE_7__["default"]
   }
 });
 
@@ -20263,7 +20293,7 @@ var _hoisted_1 = {
   "class": "py-3 border-bottom"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container d-flex flex-wrap align-items-center\"><a href=\"/\" class=\"mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none\"><span class=\"h4 text-primary\">Reviewed.ke</span></a><div class=\"col-12 col-lg-auto mb-3 mb-lg-0\"><a class=\"btn btn-header shadow\" href=\"/for-business\">For Businesses</a></div></div>", 1);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container d-flex flex-wrap align-items-center\"><a href=\"/\" class=\"mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none\"><span class=\"h4\">Reviewed.ke</span></a><div class=\"col-12 col-lg-auto mb-3 mb-lg-0\"><a class=\"btn btn-header shadow\" href=\"/for-business\">For Businesses</a></div></div>", 1);
 
 var _hoisted_3 = [_hoisted_2];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -20340,22 +20370,103 @@ __webpack_require__.r(__webpack_exports__);
 var _hoisted_1 = {
   "class": "section bg-light py-5"
 };
-
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_2 = {
   "class": "container"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+};
+
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "row"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "col-12 text-center"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "h2"
-}, "Why consumers rely on Reviewed.ke")])])], -1
+}, "Why consumers rely on Reviewed.ke")])], -1
 /* HOISTED */
 );
 
-var _hoisted_3 = [_hoisted_2];
+var _hoisted_4 = {
+  "class": "row mt-4"
+};
+var _hoisted_5 = {
+  "class": "col-lg-3 col-md-12 col-sm-12 text-center"
+};
+var _hoisted_6 = {
+  "class": "h1"
+};
+
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "text-sm"
+}, "reviews in total collected on our platform on behalf of Kenyan brands", -1
+/* HOISTED */
+);
+
+var _hoisted_8 = {
+  "class": "col-lg-3 col-md-12 col-sm-12 text-center"
+};
+var _hoisted_9 = {
+  "class": "h1"
+};
+
+var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "text-sm"
+}, "of consumers agree that Reviewed.ke helps them make purchase decisions", -1
+/* HOISTED */
+);
+
+var _hoisted_11 = {
+  "class": "col-lg-3 col-md-12 col-sm-12 text-center"
+};
+var _hoisted_12 = {
+  "class": "h1"
+};
+
+var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "text-sm"
+}, "brands using Reviewed.ke to win consumer trust and provide social proof", -1
+/* HOISTED */
+);
+
+var _hoisted_14 = {
+  "class": "col-lg-3 col-md-12 col-sm-12 text-center"
+};
+var _hoisted_15 = {
+  "class": "h1"
+};
+
+var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "text-sm"
+}, "avarage growth of review generation from Reviewed.ke", -1
+/* HOISTED */
+);
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("section", _hoisted_1, _hoisted_3);
+  var _component_CountUp = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("CountUp");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("section", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_CountUp, {
+    "end-val": $data.reviews,
+    duration: $data.duration,
+    options: $data.reviewOptions
+  }, null, 8
+  /* PROPS */
+  , ["end-val", "duration", "options"])]), _hoisted_7]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_CountUp, {
+    "end-val": $data.impact,
+    duration: $data.duration,
+    options: $data.impactOptions
+  }, null, 8
+  /* PROPS */
+  , ["end-val", "duration", "options"])]), _hoisted_10]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_CountUp, {
+    "end-val": $data.brands,
+    duration: $data.duration,
+    options: $data.brandOptions
+  }, null, 8
+  /* PROPS */
+  , ["end-val", "duration", "options"])]), _hoisted_13]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_CountUp, {
+    "end-val": $data.growthRate,
+    duration: $data.duration,
+    options: $data.growthOptions
+  }, null, 8
+  /* PROPS */
+  , ["end-val", "duration", "options"])]), _hoisted_16])])])]);
 }
 
 /***/ }),
@@ -20637,7 +20748,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [_hoisted_4, _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
     "class": "btn btn-header shadow",
-    href: "/for-business"
+    href: "/onboarding"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_7];
@@ -20843,6 +20954,9 @@ __webpack_require__.r(__webpack_exports__);
 var _hoisted_1 = {
   "class": "section"
 };
+var _hoisted_2 = {
+  "class": "section py-5"
+};
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
 
@@ -20856,6 +20970,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   var _component_Milestones = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Milestones");
 
+  var _component_CaseStudy = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("CaseStudy");
+
   var _component_Footer = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Footer");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, {
@@ -20864,7 +20980,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     brands: $props.brands
   }, null, 8
   /* PROPS */
-  , ["brands"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Milestones)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
+  , ["brands"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Milestones), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_CaseStudy)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
   /* STABLE_FRAGMENT */
   );
 }
@@ -66092,6 +66208,233 @@ module.exports = function (list, options) {
     lastIdentifiers = newLastIdentifiers;
   };
 };
+
+/***/ }),
+
+/***/ "./node_modules/vue-countup-v3/dist/vue-countup-v3.es.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/vue-countup-v3/dist/vue-countup-v3.es.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ _sfc_main)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+var __defProp = Object.defineProperty;
+var __defProps = Object.defineProperties;
+var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
+var __getOwnPropSymbols = Object.getOwnPropertySymbols;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (__hasOwnProp.call(b, prop))
+      __defNormalProp(a, prop, b[prop]);
+  if (__getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(b)) {
+      if (__propIsEnum.call(b, prop))
+        __defNormalProp(a, prop, b[prop]);
+    }
+  return a;
+};
+var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
+
+var __assign = globalThis && globalThis.__assign || function() {
+  return (__assign = Object.assign || function(t) {
+    for (var i, a = 1, n = arguments.length; a < n; a++)
+      for (var s in i = arguments[a])
+        Object.prototype.hasOwnProperty.call(i, s) && (t[s] = i[s]);
+    return t;
+  }).apply(this, arguments);
+}, CountUp = function() {
+  function t(t2, i, a) {
+    var n = this;
+    this.endVal = i, this.options = a, this.version = "2.1.0", this.defaults = { startVal: 0, decimalPlaces: 0, duration: 2, useEasing: true, useGrouping: true, smartEasingThreshold: 999, smartEasingAmount: 333, separator: ",", decimal: ".", prefix: "", suffix: "", enableScrollSpy: false, scrollSpyDelay: 200 }, this.finalEndVal = null, this.useEasing = true, this.countDown = false, this.error = "", this.startVal = 0, this.paused = true, this.count = function(t3) {
+      n.startTime || (n.startTime = t3);
+      var i2 = t3 - n.startTime;
+      n.remaining = n.duration - i2, n.useEasing ? n.countDown ? n.frameVal = n.startVal - n.easingFn(i2, 0, n.startVal - n.endVal, n.duration) : n.frameVal = n.easingFn(i2, n.startVal, n.endVal - n.startVal, n.duration) : n.countDown ? n.frameVal = n.startVal - (n.startVal - n.endVal) * (i2 / n.duration) : n.frameVal = n.startVal + (n.endVal - n.startVal) * (i2 / n.duration), n.countDown ? n.frameVal = n.frameVal < n.endVal ? n.endVal : n.frameVal : n.frameVal = n.frameVal > n.endVal ? n.endVal : n.frameVal, n.frameVal = Number(n.frameVal.toFixed(n.options.decimalPlaces)), n.printValue(n.frameVal), i2 < n.duration ? n.rAF = requestAnimationFrame(n.count) : n.finalEndVal !== null ? n.update(n.finalEndVal) : n.callback && n.callback();
+    }, this.formatNumber = function(t3) {
+      var i2, a2, s, e, r = t3 < 0 ? "-" : "";
+      i2 = Math.abs(t3).toFixed(n.options.decimalPlaces);
+      var o = (i2 += "").split(".");
+      if (a2 = o[0], s = o.length > 1 ? n.options.decimal + o[1] : "", n.options.useGrouping) {
+        e = "";
+        for (var l = 0, h = a2.length; l < h; ++l)
+          l !== 0 && l % 3 == 0 && (e = n.options.separator + e), e = a2[h - l - 1] + e;
+        a2 = e;
+      }
+      return n.options.numerals && n.options.numerals.length && (a2 = a2.replace(/[0-9]/g, function(t4) {
+        return n.options.numerals[+t4];
+      }), s = s.replace(/[0-9]/g, function(t4) {
+        return n.options.numerals[+t4];
+      })), r + n.options.prefix + a2 + s + n.options.suffix;
+    }, this.easeOutExpo = function(t3, i2, a2, n2) {
+      return a2 * (1 - Math.pow(2, -10 * t3 / n2)) * 1024 / 1023 + i2;
+    }, this.options = __assign(__assign({}, this.defaults), a), this.formattingFn = this.options.formattingFn ? this.options.formattingFn : this.formatNumber, this.easingFn = this.options.easingFn ? this.options.easingFn : this.easeOutExpo, this.startVal = this.validateValue(this.options.startVal), this.frameVal = this.startVal, this.endVal = this.validateValue(i), this.options.decimalPlaces = Math.max(this.options.decimalPlaces), this.resetDuration(), this.options.separator = String(this.options.separator), this.useEasing = this.options.useEasing, this.options.separator === "" && (this.options.useGrouping = false), this.el = typeof t2 == "string" ? document.getElementById(t2) : t2, this.el ? this.printValue(this.startVal) : this.error = "[CountUp] target is null or undefined", window !== void 0 && this.options.enableScrollSpy && (this.error ? console.error(this.error, t2) : (window.onScrollFns = window.onScrollFns || [], window.onScrollFns.push(function() {
+      return n.handleScroll(n);
+    }), window.onscroll = function() {
+      window.onScrollFns.forEach(function(t3) {
+        return t3();
+      });
+    }, this.handleScroll(this)));
+  }
+  return t.prototype.handleScroll = function(t2) {
+    if (t2 && window) {
+      var i = window.innerHeight + window.scrollY, a = t2.el.offsetTop + t2.el.offsetHeight;
+      a < i && a > window.scrollY && t2.paused ? (t2.paused = false, setTimeout(function() {
+        return t2.start();
+      }, t2.options.scrollSpyDelay)) : window.scrollY > a && !t2.paused && t2.reset();
+    }
+  }, t.prototype.determineDirectionAndSmartEasing = function() {
+    var t2 = this.finalEndVal ? this.finalEndVal : this.endVal;
+    this.countDown = this.startVal > t2;
+    var i = t2 - this.startVal;
+    if (Math.abs(i) > this.options.smartEasingThreshold) {
+      this.finalEndVal = t2;
+      var a = this.countDown ? 1 : -1;
+      this.endVal = t2 + a * this.options.smartEasingAmount, this.duration = this.duration / 2;
+    } else
+      this.endVal = t2, this.finalEndVal = null;
+    this.finalEndVal ? this.useEasing = false : this.useEasing = this.options.useEasing;
+  }, t.prototype.start = function(t2) {
+    this.error || (this.callback = t2, this.duration > 0 ? (this.determineDirectionAndSmartEasing(), this.paused = false, this.rAF = requestAnimationFrame(this.count)) : this.printValue(this.endVal));
+  }, t.prototype.pauseResume = function() {
+    this.paused ? (this.startTime = null, this.duration = this.remaining, this.startVal = this.frameVal, this.determineDirectionAndSmartEasing(), this.rAF = requestAnimationFrame(this.count)) : cancelAnimationFrame(this.rAF), this.paused = !this.paused;
+  }, t.prototype.reset = function() {
+    cancelAnimationFrame(this.rAF), this.paused = true, this.resetDuration(), this.startVal = this.validateValue(this.options.startVal), this.frameVal = this.startVal, this.printValue(this.startVal);
+  }, t.prototype.update = function(t2) {
+    cancelAnimationFrame(this.rAF), this.startTime = null, this.endVal = this.validateValue(t2), this.endVal !== this.frameVal && (this.startVal = this.frameVal, this.finalEndVal || this.resetDuration(), this.finalEndVal = null, this.determineDirectionAndSmartEasing(), this.rAF = requestAnimationFrame(this.count));
+  }, t.prototype.printValue = function(t2) {
+    var i = this.formattingFn(t2);
+    this.el.tagName === "INPUT" ? this.el.value = i : this.el.tagName === "text" || this.el.tagName === "tspan" ? this.el.textContent = i : this.el.innerHTML = i;
+  }, t.prototype.ensureNumber = function(t2) {
+    return typeof t2 == "number" && !isNaN(t2);
+  }, t.prototype.validateValue = function(t2) {
+    var i = Number(t2);
+    return this.ensureNumber(i) ? i : (this.error = "[CountUp] invalid start or end value: " + t2, null);
+  }, t.prototype.resetDuration = function() {
+    this.startTime = null, this.duration = 1e3 * Number(this.options.duration), this.remaining = this.duration;
+  }, t;
+}();
+const _hoisted_1 = { class: "countup-wrap" };
+const __default__ = {
+  name: "CountUp"
+};
+const _sfc_main = /* @__PURE__ */ (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)(__spreadProps(__spreadValues({}, __default__), {
+  props: {
+    endVal: null,
+    startVal: { default: 0 },
+    duration: { default: 2.5 },
+    autoplay: { type: Boolean, default: true },
+    loop: { type: [Boolean, Number, String], default: false },
+    delay: { default: 0 },
+    options: { default: void 0 }
+  },
+  emits: ["init", "finished"],
+  setup(__props, { expose, emit: emits }) {
+    const props = __props;
+    let elRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+    let countUp = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+    const initCountUp = () => {
+      if (!elRef.value)
+        return;
+      const startVal = Number(props.startVal);
+      const endVal = Number(props.endVal);
+      const duration = Number(props.duration);
+      countUp.value = new CountUp(elRef.value, endVal, __spreadValues({
+        startVal,
+        duration
+      }, props.options));
+      if (countUp.value.error) {
+        console.error(countUp.value.error);
+        return;
+      }
+      emits("init", countUp.value);
+    };
+    const startAnim = (cb) => {
+      var _a;
+      (_a = countUp.value) == null ? void 0 : _a.start(cb);
+    };
+    (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(() => props.endVal, (value) => {
+      var _a;
+      if (props.autoplay) {
+        (_a = countUp.value) == null ? void 0 : _a.update(value);
+      }
+    });
+    const finished = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(false);
+    let loopCount = 0;
+    const loopAnim = () => {
+      loopCount++;
+      startAnim(() => {
+        const isTruely = typeof props.loop === "boolean" && props.loop;
+        if (isTruely || props.loop > loopCount) {
+          delay(() => {
+            var _a;
+            (_a = countUp.value) == null ? void 0 : _a.reset();
+            loopAnim();
+          }, props.delay);
+        } else {
+          finished.value = true;
+        }
+      });
+    };
+    (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(finished, (flag) => {
+      if (flag) {
+        emits("finished");
+      }
+    });
+    (0,vue__WEBPACK_IMPORTED_MODULE_0__.onMounted)(() => {
+      initCountUp();
+      if (props.autoplay) {
+        loopAnim();
+      }
+    });
+    (0,vue__WEBPACK_IMPORTED_MODULE_0__.onUnmounted)(() => {
+      var _a;
+      cancelAnimationFrame(dalayRafId);
+      (_a = countUp.value) == null ? void 0 : _a.reset();
+    });
+    let dalayRafId;
+    const delay = (cb, seconds = 1) => {
+      let startTime;
+      function count(timestamp) {
+        if (!startTime)
+          startTime = timestamp;
+        const diff = timestamp - startTime;
+        if (diff < seconds * 1e3) {
+          dalayRafId = requestAnimationFrame(count);
+        } else {
+          cb();
+        }
+      }
+      dalayRafId = requestAnimationFrame(count);
+    };
+    const restart = () => {
+      initCountUp();
+      startAnim();
+    };
+    expose({
+      init: initCountUp,
+      restart
+    });
+    return (_ctx, _cache) => {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "prefix"),
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+          ref_key: "elRef",
+          ref: elRef
+        }, null, 512),
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "suffix")
+      ]);
+    };
+  }
+}));
+
+
 
 /***/ }),
 

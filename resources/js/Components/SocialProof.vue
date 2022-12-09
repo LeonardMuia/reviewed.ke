@@ -7,7 +7,7 @@
                     Consumers are smart, and with the level of competition in every marketplace, they have plenty of choice when deciding where to invest their time and money. The most important aspect of social proof is to inspire trust; we know that nine out of ten people are checking out reviews, so getting positive feedback is a good way to start building a trust in your brand or product.
                 </div>
                 <div class="mt-4">
-                    <Link class="btn btn-header shadow" href="/for-business">Start Collecting Reviews</Link>
+                    <Link class="btn btn-header shadow" href="/onboarding">Start Collecting Reviews</Link>
                 </div>
             </div>
             <div class="col-5">
