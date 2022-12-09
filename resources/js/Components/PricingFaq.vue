@@ -29,10 +29,10 @@
                 </div>
                 <div class="accordion faq-accordian" id="faqAccordion">
                     <div class="card border-0 wow fadeInUp">
-                        <div class="card-header" id="headingOne">
-                            <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">Can I use User Generated Content collected(UGC) on my site?<span class="uil uil-chevron-up"></span></h6>
+                        <div class="card-header" id="headingTwo">
+                            <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Can I use User Generated Content collected(UGC) on my site?<span class="uil uil-chevron-up"></span></h6>
                         </div>
-                        <div class="collapse" id="collapseTwo" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                        <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#faqAccordion">
                             <div class="card-body">
                                 <p>All user-generated content collected through Reviewed.ke can be used across your site and in marketing campaigns. To support it, you can download Reviewed.ke logos and marketing materials from our Brand Guidelines.</p>
                             </div>
@@ -42,7 +42,7 @@
                 <div class="accordion faq-accordian" id="faqAccordion">
                     <div class="card border-0 wow fadeInUp">
                         <div class="card-header" id="headingThree">
-                            <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">What happens if I cancel my account?<span class="lni-chevron-up"></span></h6>
+                            <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">What happens if I cancel my account?<span class="lni-chevron-up"></span></h6>
                         </div>
                         <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#faqAccordion">
                             <div class="card-body">
@@ -55,11 +55,23 @@
                 <div class="accordion faq-accordian" id="faqAccordion">
                     <div class="card border-0 wow fadeInUp">
                         <div class="card-header" id="headingFour">
-                            <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">How do I pay for my subscription?<span class="lni-chevron-up"></span></h6>
+                            <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">How do I pay for my subscription?<span class="lni-chevron-up"></span></h6>
                         </div>
                         <div class="collapse" id="collapseFour" aria-labelledby="headingFour" data-parent="#faqAccordion">
                             <div class="card-body">
                                 <p>We accept all major credit cards and you can enter or update your payment details on your account page at any time. For enterprise accounts, we're also able to offer a bank transfer option. .</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion faq-accordian" id="faqAccordion">
+                    <div class="card border-0 wow fadeInUp">
+                        <div class="card-header" id="headingFive">
+                            <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Can I switch between plans?<span class="lni-chevron-up"></span></h6>
+                        </div>
+                        <div class="collapse" id="collapseFive" aria-labelledby="headingFive" data-parent="#faqAccordion">
+                            <div class="card-body">
+                                <p>Yes. You can switch from one plan to another depending on your preference. Contact our billing team to help you with your smooth transition from one plan to another..</p>
                             </div>
                         </div>
                     </div>
@@ -113,7 +125,7 @@ export default {
 .faq-accordian .card .card-header h6 {
     cursor: pointer;
     padding: 1.25rem 2rem;
-    color: #f16029;
+    color: #ff8c00;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
