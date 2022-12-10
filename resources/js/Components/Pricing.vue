@@ -57,9 +57,9 @@
                 </div>
 
                 <div class="col-lg-3 col-md-12 mb-4">
-                  <div class="card card1 h-100 shadow bg-blue-light">
+                  <div class="card card1 h-100 shadow">
                     <div class="card-body p-4">
-                      <h5 class="card-title h5"><img class="img-fluid px-1" width="18" height="18" src="images/fire-w15.svg" alt="popular">Scale Plan</h5>
+                      <h5 class="card-title h5">Scale Plan<img class="img-fluid px-1" width="22" height="22" src="images/fire-w15.svg" alt="popular"></h5>
                       <small class='text-muted text-sm'>For scaling businesses who want to their maximize performance with a high volume of reviews</small>
                       <br><br>
                       <span class="h2 text-primary">Ksh. 3,500</span>/month

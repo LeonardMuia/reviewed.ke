@@ -12,7 +12,7 @@
                     International expansion is not easy, so when a brand gets it right it's worth taking note of their approach. That's the focus of our latest case study, as we chat to Kenyan based Spice Candles about growth in East Africa, and how an existing relationship with <span class="font-weight-bold text-primary">Reviewed.ke</span> supported the move.
                 </div>
                 <div class="mt-4">
-                    <Link class="btn btn-header shadow" href="/case-study/spice-candles">View Case Study</Link>
+                    <Link class="btn btn-header shadow" href="/spice-candles">View Case Study</Link>
                 </div>
             </div>
         </div>

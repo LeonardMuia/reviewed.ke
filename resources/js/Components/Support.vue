@@ -20,7 +20,7 @@
                 <div class="col-5">
                     <div class="card shadow-lg bg-white">
                         <div class="card-head bg-light">
-                            <div class="h5 text-center py-4">Contact Form</div>
+                            <div class="h5 text-center py-3">Contact Form</div>
                         </div>
                         <div class="card-body px-4">
                             <div class="row">
