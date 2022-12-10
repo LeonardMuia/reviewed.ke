@@ -7,12 +7,8 @@
             <p class="mb-4">We're a digital platform that brings businesses and consumers together to foster trust and inspire collaboration. We're free to use, open to everybody, and built on transparency.</p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
               <form class="row g-3">
-                <div class="col-auto">
-                  <label for="category" class="visually-hidden">Company or category</label>
-                  <input type="text" class="form-control rounded-6 px-4 py-2" id="category" placeholder="Company or category">
-                </div>
-                <div class="col-auto">
-                  <button type="submit" class="btn-search rounded-6">Search</button>
+                <div class="col-12">
+                  <input type="text" class="form-control rounded-6 px-4 py-2" id="category" placeholder="Enter Company's Name">
                 </div>
               </form>
             </div>

@@ -12,7 +12,7 @@
                     International expansion is not easy, so when a brand gets it right it's worth taking note of their approach. That's the focus of our latest case study, as we chat to Kenyan based Bella Beauty about growth in East Africa, and how an existing relationship with <span class="font-weight-bold text-primary">Reviewed.ke</span> supported the move.
                 </div>
                 <div class="mt-4">
-                    <Link class="btn btn-header shadow" href="/bella-beauty">View Case Study</Link>
+                    <a class="btn btn-header shadow" href="/bella-beauty">View Case Study</a>
                 </div>
             </div>
         </div>

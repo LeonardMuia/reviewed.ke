@@ -22418,52 +22418,12 @@ __webpack_require__.r(__webpack_exports__);
 var _hoisted_1 = {
   "class": "container"
 };
-var _hoisted_2 = {
-  "class": "row align-items-center"
-};
 
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "col-5"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  "class": "img-fluid rounded-5 shadow-lg",
-  src: "/images/bella.jpg",
-  alt: "Bella Beauty"
-})], -1
-/* HOISTED */
-);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"row align-items-center\"><div class=\"col-5\"><img class=\"img-fluid rounded-5 shadow-lg\" src=\"/images/bella.jpg\" alt=\"Bella Beauty\"></div><div class=\"col-1\"></div><div class=\"col-6 p-3 p-lg-5 pt-lg-3\"><p class=\"text-primary mb-2\">- Case Study</p><div class=\"h2 display-6\">How reviews allowed for an easier <span class=\"text-primary\">expansion</span> for Bella Beauty.</div><div class=\"text-dark\"> International expansion is not easy, so when a brand gets it right it&#39;s worth taking note of their approach. That&#39;s the focus of our latest case study, as we chat to Kenyan based Bella Beauty about growth in East Africa, and how an existing relationship with <span class=\"font-weight-bold text-primary\">Reviewed.ke</span> supported the move. </div><div class=\"mt-4\"><a class=\"btn btn-header shadow\" href=\"/bella-beauty\">View Case Study</a></div></div></div>", 1);
 
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "col-1"
-}, null, -1
-/* HOISTED */
-);
-
-var _hoisted_5 = {
-  "class": "col-6 p-3 p-lg-5 pt-lg-3"
-};
-
-var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<p class=\"text-primary mb-2\">- Case Study</p><div class=\"h2 display-6\">How reviews allowed for an easier <span class=\"text-primary\">expansion</span> for Bella Beauty.</div><div class=\"text-dark\"> International expansion is not easy, so when a brand gets it right it&#39;s worth taking note of their approach. That&#39;s the focus of our latest case study, as we chat to Kenyan based Bella Beauty about growth in East Africa, and how an existing relationship with <span class=\"font-weight-bold text-primary\">Reviewed.ke</span> supported the move. </div>", 3);
-
-var _hoisted_9 = {
-  "class": "mt-4"
-};
-
-var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("View Case Study");
-
+var _hoisted_3 = [_hoisted_2];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  var _component_Link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Link");
-
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [_hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
-    "class": "btn btn-header shadow",
-    href: "/bella-beauty"
-  }, {
-    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_10];
-    }),
-    _: 1
-    /* STABLE */
-
-  })])])])]);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, _hoisted_3);
 }
 
 /***/ }),
@@ -22767,7 +22727,7 @@ var _hoisted_1 = {
   "class": "section bg-blue-light"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\"><div class=\"row p-5 pb-0 pe-lg-0 pt-lg-5 justify-contents-center\"><div class=\"col-lg-6 p-3 p-lg-5 pt-lg-3\"><h1 class=\"display-5 fw-bold lh-1 mb-4\">Read &amp; Write reviews.<br>Find companies you can <span class=\"text-primary\">trust.</span></h1><p class=\"mb-4\">We&#39;re a digital platform that brings businesses and consumers together to foster trust and inspire collaboration. We&#39;re free to use, open to everybody, and built on transparency.</p><div class=\"d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3\"><form class=\"row g-3\"><div class=\"col-auto\"><label for=\"category\" class=\"visually-hidden\">Company or category</label><input type=\"text\" class=\"form-control rounded-6 px-4 py-2\" id=\"category\" placeholder=\"Company or category\"></div><div class=\"col-auto\"><button type=\"submit\" class=\"btn-search rounded-6\">Search</button></div></form></div></div><div class=\"col-lg-5\"><img src=\"images/banner.png\" class=\"d-block mx-lg-auto img-fluid rounded-5 shadow-lg\" alt=\"Banner\"></div></div></div>", 1);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\"><div class=\"row p-5 pb-0 pe-lg-0 pt-lg-5 justify-contents-center\"><div class=\"col-lg-6 p-3 p-lg-5 pt-lg-3\"><h1 class=\"display-5 fw-bold lh-1 mb-4\">Read &amp; Write reviews.<br>Find companies you can <span class=\"text-primary\">trust.</span></h1><p class=\"mb-4\">We&#39;re a digital platform that brings businesses and consumers together to foster trust and inspire collaboration. We&#39;re free to use, open to everybody, and built on transparency.</p><div class=\"d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3\"><form class=\"row g-3\"><div class=\"col-12\"><input type=\"text\" class=\"form-control rounded-6 px-4 py-2\" id=\"category\" placeholder=\"Enter Company&#39;s Name\"></div></form></div></div><div class=\"col-lg-5\"><img src=\"images/banner.png\" class=\"d-block mx-lg-auto img-fluid rounded-5 shadow-lg\" alt=\"Banner\"></div></div></div>", 1);
 
 var _hoisted_3 = [_hoisted_2];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -23434,14 +23394,6 @@ var _hoisted_11 = {
 };
 
 var _hoisted_12 = /*#__PURE__*/_withScopeId(function () {
-  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-    "class": "lni-emoji-sad"
-  }, null, -1
-  /* HOISTED */
-  );
-});
-
-var _hoisted_13 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
     "class": "mb-0 px-2"
   }, "Can't find your answers?", -1
@@ -23449,16 +23401,17 @@ var _hoisted_13 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Contact us");
+var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Contact us");
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Link");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" FAQ Area"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [_hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Support Button"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [_hoisted_12, _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" FAQ Area"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [_hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Support Button"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [_hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+    "class": "text-primary",
     href: "/support"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_14];
+      return [_hoisted_13];
     }),
     _: 1
     /* STABLE */
@@ -23556,7 +23509,7 @@ var _hoisted_1 = {
   "class": "section py-5 bg-light"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\"><div class=\"row mb-4\"><div class=\"col-12 text-center\"><div class=\"h1\">Welcome! How can we help you?</div><p>Need help using our service? Seek help from out team.</p></div></div><div class=\"row mt-5 px-5 align-items-center\"><div class=\"col-6\"><div class=\"h4\">Contact Support</div><p class=\"col-8\">Have questions about our solutions, products, or licenses? Contact our Customer Support or find your answers online.</p><div class=\"mt-1\"><a href=\"tel:+254700000000\" class=\"d-block h6 text-decoration-none mt-4 col-5\"><i class=\"uil uil-phone\"></i> Phone: +254 700 000 000</a><a href=\"mailto:help@reviewed.ke\" class=\"d-block h6 text-decoration-none mt-4 col-5\"><i class=\"uil uil-envelope\"></i> Email: help@reviewed.ke</a><a href=\"#\" class=\"d-block h6 mt-4 text-decoration-none col-9\"><i class=\"uil uil-map-marker\"></i> 3rd Floor, Odyssey Building, Westlands, Nairobi.</a></div></div><div class=\"col-5\"><div class=\"card shadow-lg bg-white\"><div class=\"card-head bg-light\"><div class=\"h5 text-center py-3\">Contact Form</div></div><div class=\"card-body px-4\"><div class=\"row\"><div class=\"col-6\"><input type=\"text\" placeholder=\"first name\" class=\"form-control\"></div><div class=\"col-6\"><input type=\"text\" placeholder=\"Surname\" class=\"form-control\"></div><div class=\"col-12 mt-3\"><input id=\"phone\" type=\"text\" placeholder=\"Phone Number\" class=\"form-control\"></div><div class=\"col-12 mt-3\"><input type=\"text\" placeholder=\"Email\" class=\"form-control\"></div><div class=\"col-12 mt-3\"><textarea class=\"form-control\" placeholder=\"message\" rows=\"5\"></textarea></div><div class=\"col-12 mt-3\"><button type=\"submit\" class=\"btn btn-outline-dark btn-lg col-12\">Submit</button></div></div></div></div></div></div></div>", 1);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\"><div class=\"row mb-4\"><div class=\"col-12 text-center\"><div class=\"h1\">Welcome! How can we help you?</div><p>Need help using our service? Seek help from out team.</p></div></div><div class=\"row mt-5 px-5 align-items-center\"><div class=\"col-6\"><div class=\"h4\">Contact Support</div><p class=\"col-8\">Have questions about our solutions, products, or licenses? Contact our Customer Support or find your answers online.</p><p class=\"col-8 mt-3\">You can also visit our offices or reach out using one of our contact details.</p><div class=\"mt-4\"><a href=\"tel:+254700000000\" class=\"d-block h6 text-decoration-none mt-3 col-5 text-dark\"><i class=\"uil uil-phone\"></i> Phone: +254 700 000 000</a><a href=\"mailto:help@reviewed.ke\" class=\"d-block h6 text-decoration-none mt-3 col-5 text-dark\"><i class=\"uil uil-envelope\"></i> Email: help@reviewed.ke</a><a href=\"#\" class=\"d-block h6 mt-3 text-decoration-none col-9 text-dark\"><i class=\"uil uil-map-marker\"></i> 3rd Floor, Odyssey Building, Westlands, Nairobi.</a></div></div><div class=\"col-5\"><div class=\"card shadow-lg bg-white\"><div class=\"card-head bg-light\"><div class=\"h5 text-center py-3\">Contact Form</div></div><div class=\"card-body px-4\"><div class=\"row\"><div class=\"col-6\"><input type=\"text\" placeholder=\"first name\" class=\"form-control\"></div><div class=\"col-6\"><input type=\"text\" placeholder=\"Surname\" class=\"form-control\"></div><div class=\"col-12 mt-3\"><input id=\"phone\" type=\"text\" placeholder=\"Phone Number\" class=\"form-control\"></div><div class=\"col-12 mt-3\"><input type=\"text\" placeholder=\"Email\" class=\"form-control\"></div><div class=\"col-12 mt-3\"><textarea class=\"form-control\" placeholder=\"message\" rows=\"5\"></textarea></div><div class=\"col-12 mt-3\"><button type=\"submit\" class=\"btn btn-outline-dark btn-lg col-12\" disabled>Submit</button></div></div></div></div></div></div></div>", 1);
 
 var _hoisted_3 = [_hoisted_2];
 function render(_ctx, _cache, $props, $setup, $data, $options) {

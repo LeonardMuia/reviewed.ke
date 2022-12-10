@@ -11,10 +11,11 @@
                 <div class="col-6">
                     <div class="h4">Contact Support</div>
                     <p class="col-8">Have questions about our solutions, products, or licenses? Contact our Customer Support or find your answers online.</p>
-                    <div class="mt-1">
-                       <a href="tel:+254700000000" class="d-block h6 text-decoration-none mt-4 col-5"> <i class="uil uil-phone"></i> Phone: +254 700 000 000</a>
-                       <a href="mailto:help@reviewed.ke" class="d-block h6 text-decoration-none mt-4 col-5"><i class="uil uil-envelope"></i> Email: help@reviewed.ke</a>
-                       <a href="#" class="d-block h6 mt-4 text-decoration-none col-9"><i class="uil uil-map-marker"></i> 3rd Floor, Odyssey Building, Westlands, Nairobi.</a>
+                    <p class="col-8 mt-3">You can also visit our offices or reach out using one of our contact details.</p>
+                    <div class="mt-4">
+                       <a href="tel:+254700000000" class="d-block h6 text-decoration-none mt-3 col-5 text-dark"> <i class="uil uil-phone"></i> Phone: +254 700 000 000</a>
+                       <a href="mailto:help@reviewed.ke" class="d-block h6 text-decoration-none mt-3 col-5 text-dark"><i class="uil uil-envelope"></i> Email: help@reviewed.ke</a>
+                       <a href="#" class="d-block h6 mt-3 text-decoration-none col-9 text-dark"><i class="uil uil-map-marker"></i> 3rd Floor, Odyssey Building, Westlands, Nairobi.</a>
                     </div>
                 </div>
                 <div class="col-5">
@@ -40,7 +41,7 @@
                                     <textarea class="form-control" placeholder="message" rows="5"></textarea>
                                 </div>
                                 <div class="col-12 mt-3">
-                                    <button type="submit" class="btn btn-outline-dark btn-lg col-12">Submit</button>
+                                    <button type="submit" class="btn btn-outline-dark btn-lg col-12" disabled>Submit</button>
                                 </div>
                             </div>
                         </div>
