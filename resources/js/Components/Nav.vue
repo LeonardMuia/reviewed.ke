@@ -3,6 +3,7 @@
     <div class="container d-flex flex-wrap">
       <ul class="nav me-auto">
         <li class="nav-item"><Link href="/" class="nav-link link-dark px-2" :class="{'active': home}">Home</Link></li>
+        <li class="nav-item"><Link href="/categories" class="nav-link link-dark px-2" :class="{'active': categories}" >Categories</Link></li>
         <li class="nav-item"><Link href="/pricing" class="nav-link link-dark px-2" :class="{'active': pricing}" >Pricing</Link></li>
         <li class="nav-item"><Link href="/faqs" class="nav-link link-dark px-2"  :class="{'active': faq}" >FAQs</Link></li>
         <li class="nav-item"><Link href="/support" class="nav-link link-dark px-2" :class="{'active': support}" >Support</Link></li>
@@ -24,7 +25,8 @@ export default {
     'home',
     'pricing',
     'faq',
-    'support'
+    'support',
+    'categories'
   ],
   components: {
     Link

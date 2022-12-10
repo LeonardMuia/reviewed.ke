@@ -16,7 +16,6 @@
                     <span>{{ category.name }}</span>
                 </Link>
             </div>
-            
         </div>
     </div>
 </template>

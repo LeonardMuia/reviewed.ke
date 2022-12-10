@@ -1,7 +1,7 @@
 <template>
     <Head title="Categories"></Head>
 
-    <Nav></Nav>
+    <Nav :categories="true"></Nav>
 
     <Header></Header>
 
@@ -21,6 +21,11 @@ import Footer from '../Components/Footer.vue';
 import CategoriesHero from '../Components/CategoriesHero.vue';
 
 export default {
+    props: {
+       categories: {
+         type : Object
+       }
+    },  
     components: {
     Head,
     Link,
