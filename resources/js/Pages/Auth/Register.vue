@@ -1,26 +1,22 @@
 <template>
+    <Head title="Login"></Head>
     <section class="section">
         <div class="">
-            <div class="text-center">
-                
+            <div class="text-center mb-3">
+                <Link href="/" class="h2 text-dark text-decoration-none">Reviewed.ke</Link>
             </div>
-            <div class="card border shadow rounded-5">
+            <div class="card border rounded-5">
                 <div class="card-body">
                     <form class="form-signin">
-                        <h1 class="h4 mb-4">Login to Business Account</h1>
-                        <label for="inputEmail" class="sr-only">Business Account Email</label>
-                        <input type="email" class="form-control" placeholder="Work Email" required autofocus>
-                        <label for="inputPassword" class="sr-only">Password</label>
+                        <h1 class="h4 mb-4">Create a Free Business Account</h1>
+                        <input type="text" class="form-control" placeholder="Company Name" required autofocus>
+                        <input type="text" class="form-control" placeholder="First Name" required>
+                        <input type="text" class="form-control" placeholder="Last Name" required>
+                        <input type="text" class="form-control" placeholder="Job Title" required>
+                        <input type="email" class="form-control" placeholder="Work Email" required>
+                        <input type="text" class="form-control" placeholder="Phone Number" required>
                         <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                        <div class="row mt-3">
-                            <div class="col-6">
-                                <p class="text-sm">Forgot Password?</p>
-                            </div>
-                            <div class="col-6 text-end">
-                                <p class="text-sm text-primary">Show Password</p>
-                            </div>
-                        </div>
-                        <input type="submit" class="mt-4 btn btn-lg btn-dark col-12" value="Log In" disabled>
+                        <button class="mt-3 btn btn-lg btn-dark col-12" type="submit" disabled>Create free account</button>
                     </form>
                 </div>
             </div>
@@ -31,10 +27,11 @@
 
 <script>
 
-import { Link } from '@inertiajs/inertia-vue3';
+import { Head, Link } from '@inertiajs/inertia-vue3';
 
 export default {
     components: {
+        Head,
         Link
     }
 }
@@ -54,21 +51,15 @@ export default {
     align-items: center;
     -webkit-box-pack: center;
     justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
     background-color: #f5f5f5; 
 }
 
 .card {
-    width: 600px !important;
-}
-
-label {
-    margin-top: 22px;
+    width: 500px !important;
 }
 
 input {
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 .form-signin {
@@ -94,5 +85,8 @@ input {
 }
 .form-signin input[type="password"] {
   margin-bottom: 10px;
+}
+.show-password {
+    cursor: pointer;
 }
 </style>

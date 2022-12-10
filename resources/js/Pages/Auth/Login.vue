@@ -1,4 +1,5 @@
 <template>
+    <Head title="Create an Account"></Head>
     <section class="section">
         <div class="">
             <div class="text-center mb-4">
@@ -14,13 +15,14 @@
                         <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
                         <div class="row mt-3">
                             <div class="col-6">
-                                <Link href="/forgot-password" class="text-sm text-dark text-decoration-none">Forgot Password?</Link>
+                                <a href="/forgot-password" class="text-sm text-decoration-none">Forgot Password?</a>
                             </div>
                             <div class="col-6 text-end">
-                                <div class="text-sm text-primary show-password">Show Password</div>
+                                <div class="text-sm text-black show-password">Show Password</div>
                             </div>
                         </div>
                         <button class="mt-4 btn btn-lg btn-dark col-12" type="submit" disabled>Log In</button>
+                        <div class="text-sm mt-3">Don't have a Reviewed.ke account? <a href="/register" class="text-decoration-none">Sign up for free now.</a></div>
                     </form>
                 </div>
             </div>
@@ -31,10 +33,11 @@
 
 <script>
 
-import { Link } from '@inertiajs/inertia-vue3';
+import { Head, Link } from '@inertiajs/inertia-vue3';
 
 export default {
     components: {
+        Head,
         Link
     }
 }
@@ -54,8 +57,6 @@ export default {
     align-items: center;
     -webkit-box-pack: center;
     justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
     background-color: #f5f5f5; 
 }
 

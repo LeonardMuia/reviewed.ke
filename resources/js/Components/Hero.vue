@@ -18,7 +18,7 @@
             </div>
           </div>
           <div class="col-lg-5">
-              <img src="images/banner.png" class="d-block mx-lg-auto img-fluid rounded-5 shadow-lg" alt="Banner" loading="lazy">
+              <img src="images/banner.png" class="d-block mx-lg-auto img-fluid rounded-5 shadow-lg" alt="Banner">
           </div>
         </div>
       </div>
