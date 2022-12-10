@@ -7,6 +7,7 @@
 
     <main>
         <CategoriesHero></CategoriesHero>
+        <AllCategories></AllCategories>
     </main>
 
     <Footer></Footer>
@@ -19,6 +20,7 @@ import Nav from '../Components/Nav.vue';
 import Header from '../Components/Header.vue';
 import Footer from '../Components/Footer.vue';
 import CategoriesHero from '../Components/CategoriesHero.vue';
+import AllCategories from '../Components/AllCategories.vue';
 
 export default {
     props: {
@@ -32,7 +34,8 @@ export default {
     Nav,
     Header,
     Footer,
-    CategoriesHero
+    CategoriesHero,
+    AllCategories
 },
 }
 </script>

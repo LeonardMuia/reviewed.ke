@@ -1,9 +1,10 @@
 <template>
     <section class="section bg-light">
       <div class="container">
-        <div class="row p-5 pb-0 pe-lg-0 pt-lg-5 justify-contents-center">
-          <div class="col-lg-12 p-3 p-lg-5 pt-lg-3 text-center">
+        <div class="row p-5 justify-contents-center">
+          <div class="col-lg-12 p-3 text-center">
             <h1 class="display-6 fw-bold lh-1 mb-4">What are you looking for?</h1>
+            <p>Explore companies by category</p>
           </div>
         </div>
       </div>

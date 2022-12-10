@@ -4,6 +4,13 @@
     <Header></Header>
     <main>
         <Faq></Faq>
+
+        <section class="section py-5">
+            <div class="container">
+                <img class="img-fluid rounded-5 shadow-sm" src="images/reviews.png" alt="">
+            </div>
+        </section>
+        
     </main>
 
     <Footer></Footer>
