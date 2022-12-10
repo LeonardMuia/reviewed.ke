@@ -2,8 +2,10 @@
     <Head title="Create an Account"></Head>
     <section class="section">
         <div class="">
-            <div class="text-center mb-4">
-                <Link href="/" class="h2 text-dark text-decoration-none">Reviewed.ke</Link>
+            <div class="text-center mb-3">
+                <Link href="/" class="h3 text-dark text-decoration-none">
+                    <img src="/images/favicon.svg" class="img-fluid" width="24" alt="logo"> Reviewed.ke
+                </Link>
             </div>
             <div class="card border rounded-5">
                 <div class="card-body">

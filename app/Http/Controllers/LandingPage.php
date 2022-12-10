@@ -45,9 +45,9 @@ class LandingPage extends Controller
     }
 
 
-    public function spiceCandles()
+    public function bellaBeauty()
     {
-        return Inertia::render('SpiceCandles');
+        return Inertia::render('BellaBeauty');
     }
 
 

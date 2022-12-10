@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+        <link rel="stylesheet" href="plugin/build/css/main.css">
 
         @routes
 
@@ -21,6 +22,8 @@
         <script src="js/iconscout.js"></script>
         <script src="js/popper.js"></script>
         <script src="js/bootstrap.js"></script>
+        <script src="plugin/build/js/main.js"></script>
+        <script src="plugin/build/js/utils.js"></script>
         <script src="{{ mix('js/app.js') }}" defer></script>
 
     </head>

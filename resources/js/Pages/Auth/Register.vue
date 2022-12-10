@@ -1,20 +1,31 @@
 <template>
-    <Head title="Login"></Head>
+    <Head title="Create an Account"></Head>
     <section class="section">
         <div class="">
             <div class="text-center mb-3">
-                <Link href="/" class="h2 text-dark text-decoration-none">Reviewed.ke</Link>
+                <Link href="/" class="h3 text-dark text-decoration-none">
+                    <img src="/images/favicon.svg" class="img-fluid" width="24" alt="logo"> Reviewed.ke
+                </Link>
             </div>
             <div class="card border rounded-5">
                 <div class="card-body">
                     <form class="form-signin">
-                        <h1 class="h4 mb-4">Create a Free Business Account</h1>
+                        <h1 class="h5 mb-4">Create a Business Account</h1>
                         <input type="text" class="form-control" placeholder="Company Name" required autofocus>
-                        <input type="text" class="form-control" placeholder="First Name" required>
-                        <input type="text" class="form-control" placeholder="Last Name" required>
+                        <input type="text" class="form-control" placeholder="Name of contact person" required>
                         <input type="text" class="form-control" placeholder="Job Title" required>
                         <input type="email" class="form-control" placeholder="Work Email" required>
-                        <input type="text" class="form-control" placeholder="Phone Number" required>
+                        <div class="mt-3">
+                            <input id="phone" type="text" class="form-control" required>
+                        </div>
+                        <select class="form-control">
+                            <option value="" disabled selected>Select your plan</option>
+                            <option value="free">Free Plan (Ksh.0 for life)</option>
+                            <option value="standard">Standard Plan (Ksh.1,200/month)</option>
+                            <option value="growth">Growth Plan (Ksh.2,800/month)</option>
+                            <option value="scale">Scale Plan (Ksh.3,500/month)</option>
+                            <option value="enterprise">Enterprise Plan (To be determined)</option>
+                        </select>
                         <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
                         <button class="mt-3 btn btn-lg btn-dark col-12" type="submit" disabled>Create free account</button>
                     </form>
@@ -28,11 +39,23 @@
 <script>
 
 import { Head, Link } from '@inertiajs/inertia-vue3';
+import intlTelInput from 'intl-tel-input';  
 
 export default {
     components: {
         Head,
-        Link
+        Link,
+        intlTelInput
+    },
+    mounted() {
+        const input = document.querySelector('#phone');
+        intlTelInput(input, {
+            initialCountry: "ke",
+            onlyCountries: ["ke"],
+            separateDialCode: true,
+            autoPlaceholder: "aggressive",
+            utilsScript:"/js/utils.js"
+        });
     }
 }
 
@@ -58,7 +81,7 @@ export default {
     width: 500px !important;
 }
 
-input {
+.form-control {
     margin-top: 10px;
 }
 
@@ -77,9 +100,7 @@ input {
   padding: 10px;
   font-size: 16px;
 }
-.form-signin .form-control:focus {
-  z-index: 2;
-}
+
 .form-signin input[type="email"] {
   margin-bottom: -1px;
 }

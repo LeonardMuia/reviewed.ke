@@ -19,7 +19,7 @@ Route::get('/support', [LandingPage::class,'support']);
 Route::get('/post-review', [LandingPage::class,'create']);
 Route::get('/for-business', [LandingPage::class, 'forBusiness']);
 Route::get('/onboarding', [LandingPage::class, 'onBoarding']);
-Route::get('/spice-candles', [LandingPage::class, 'spiceCandles']);
+Route::get('/bella-beauty', [LandingPage::class, 'bellaBeauty']);
 
 
 
