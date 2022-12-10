@@ -9,8 +9,8 @@
         <li class="nav-item"><Link href="/support" class="nav-link link-dark px-2" :class="{'active': support}" >Support</Link></li>
       </ul>
       <ul class="nav">
-        <li class="nav-item"><a href="/login" class="nav-link link-dark px-2">Login</a></li>
-        <li class="nav-item"><a href="/register" class="nav-link link-dark px-2">Create an Account</a></li>
+        <li class="nav-item"><Link href="/login" class="nav-link link-dark px-2">Login</Link></li>
+        <li class="nav-item"><Link href="/register" class="nav-link link-dark px-2">Create an Account</Link></li>
       </ul>
     </div>
   </nav>

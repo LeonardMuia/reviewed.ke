@@ -97,7 +97,7 @@
                 <div class="col-2"></div>
                 <div class="col-8 lead">
                     <i class="uil uil-arrow-left"></i>
-                    <Link class="text-dark" href="/">Back to home</Link>
+                    <a class="text-dark" href="/">Back to home</a>
                 </div>
                 <div class="col-2"></div>
             </div>

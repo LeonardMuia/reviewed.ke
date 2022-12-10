@@ -22442,7 +22442,7 @@ var _hoisted_5 = {
   "class": "col-6 p-3 p-lg-5 pt-lg-3"
 };
 
-var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<p class=\"text-primary mb-2\">Case Study</p><div class=\"h2 display-6\">How reviews allowed for an easier <span class=\"text-primary\">expansion</span> for Bella Beauty.</div><div class=\"text-dark\"> International expansion is not easy, so when a brand gets it right it&#39;s worth taking note of their approach. That&#39;s the focus of our latest case study, as we chat to Kenyan based Bella Beauty about growth in East Africa, and how an existing relationship with <span class=\"font-weight-bold text-primary\">Reviewed.ke</span> supported the move. </div>", 3);
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<p class=\"text-primary mb-2\">- Case Study</p><div class=\"h2 display-6\">How reviews allowed for an easier <span class=\"text-primary\">expansion</span> for Bella Beauty.</div><div class=\"text-dark\"> International expansion is not easy, so when a brand gets it right it&#39;s worth taking note of their approach. That&#39;s the focus of our latest case study, as we chat to Kenyan based Bella Beauty about growth in East Africa, and how an existing relationship with <span class=\"font-weight-bold text-primary\">Reviewed.ke</span> supported the move. </div>", 3);
 
 var _hoisted_9 = {
   "class": "mt-4"
@@ -22971,7 +22971,20 @@ var _hoisted_12 = {
 
 var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Support");
 
-var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<ul class=\"nav\"><li class=\"nav-item\"><a href=\"/login\" class=\"nav-link link-dark px-2\">Login</a></li><li class=\"nav-item\"><a href=\"/register\" class=\"nav-link link-dark px-2\">Create an Account</a></li></ul>", 1);
+var _hoisted_14 = {
+  "class": "nav"
+};
+var _hoisted_15 = {
+  "class": "nav-item"
+};
+
+var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Login");
+
+var _hoisted_17 = {
+  "class": "nav-item"
+};
+
+var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Create an Account");
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Link");
@@ -23046,7 +23059,27 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   }, 8
   /* PROPS */
-  , ["class"])])]), _hoisted_14])]);
+  , ["class"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+    href: "/login",
+    "class": "nav-link link-dark px-2"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_16];
+    }),
+    _: 1
+    /* STABLE */
+
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+    href: "/register",
+    "class": "nav-link link-dark px-2"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_18];
+    }),
+    _: 1
+    /* STABLE */
+
+  })])])])]);
 }
 
 /***/ }),
@@ -23783,47 +23816,7 @@ var _withScopeId = function _withScopeId(n) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-33bcc47e"), n = n(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)(), n;
 };
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-blue-light rounded-5\" data-v-33bcc47e><div class=\"col-md-8 p-lg-5 mx-auto my-2\" data-v-33bcc47e><span class=\"badge badge-primary mb-2\" data-v-33bcc47e>Case Study</span><div class=\"h1 display-6\" data-v-33bcc47e>How reviews allowed for an easier <span class=\"text-primary\" data-v-33bcc47e>expansion</span> for Bella Beauty.</div></div><div class=\"product-device shadow-sm d-none d-md-block\" data-v-33bcc47e></div><div class=\"product-device product-device-2 shadow-sm d-none d-md-block\" data-v-33bcc47e></div></div>", 1);
-
-var _hoisted_2 = {
-  "class": "container"
-};
-
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"row p-4\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><p class=\"col-8\" data-v-33bcc47e>As a little bit of background, Bella Beauty has been in business since 2012. Working out of Nairobi, it&#39;s a small team of women passionate about what they do - inspiring confidence in other women with their inclusive range of functional, yet comfortable, outfits and dresses. </p><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row px-4 py-2\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><p class=\"col-8\" data-v-33bcc47e>Quality products, personal service, and a focus on sustainability helped the brand become a household name on home turf, and now the team has carried that same ethos overseas with a new warehouse and dedicated website for the Kenyan market.</p><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row px-4 py-2\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><div class=\"col-8 h3\" data-v-33bcc47e>Breaking New Ground by Building Trust</div><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row px-4 py-2\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><p class=\"col-8\" data-v-33bcc47e>There are countless hurdles to cross when you enter a new market, and as Mary Akinyi the Ecommerce &amp; Social Media Manager at Bella Beauty explains, a lot of these centre around customer acquisition. In Nigeria, Bella Beauty is a known entity with a healthy customer base, but before the expansion, it was a different story in Kenya.</p><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row p-4\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><p class=\"col-8\" data-v-33bcc47e>The team were essentially starting from scratch, battling with minimal brand awareness, the rising cost of search and social campaigns, and competition from established brands that had amassed loyal fans and followers.</p><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row p-4\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><div class=\"col-8\" data-v-33bcc47e><img class=\"img-fluid rounded-5\" src=\"/images/bella.jpg\" alt=\"banner\" data-v-33bcc47e></div><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row p-4\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><p class=\"col-8\" data-v-33bcc47e>One strategy they used to overcome these barriers was to earn that all important buyer trust by sharing authentic reviews of their products and service - of which they already had around 2,500 from their Kenyan customer base. </p><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row p-2\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><p class=\"col-8 bg-light rounded-5 p-5 lead\" data-v-33bcc47e><em data-v-33bcc47e>“The fact that we could connect our Reviewed.ke account to our Nigerian website allowed us to instantly share customer feedback with a new and tentative audience. With the high cost of getting customers to the website it&#39;s been crucial that they can see honest customer reviews that give them confidence to purchase.”</em></p><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row p-4\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><p class=\"col-8\" data-v-33bcc47e>Though yet to carry out any controlled testing, Mary is convinced that the positive sentiment found in this review content has had a huge impact on conversion rates, giving browsers the confidence they need to try a new product - from a relatively unknown brand - for the first time.</p><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row p-4\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><p class=\"col-8\" data-v-33bcc47e>As well as adding that trusted source of information to product pages, review content has proved valuable in driving engagement and awareness, bringing persuasive social proof to the brand&#39;s marketing. .</p><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row p-2\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><p class=\"col-8 bg-light rounded-5 p-5 lead\" data-v-33bcc47e><em data-v-33bcc47e>“We use our 4.7 star review average for headlines in social campaigns and include reviews in many of our social posts and ads. It&#39;s an incredible asset to have so many reviews already present on a new Ecommerce site.”</em></p><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row py-2 px-4\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><div class=\"col-8 h3\" data-v-33bcc47e>The Future</div><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row py-2 px-4\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><p class=\"col-8\" data-v-33bcc47e>So what&#39;s next for the Bella Beauty team, and how do they plan to continue their growth? Last year brought major challenges on a global scale, with tighter privacy regulations, increased competition and the subsequent rise in acquisition costs. Despite that, the team managed to actually improve ROAS in the Nigerian market, though that&#39;s been harder to achieve in Kenya.</p><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row p-4\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><p class=\"col-8\" data-v-33bcc47e>Mary explains how the brand exists in a marketplace saturated with great quality outfits, and faces challenges such as price point and low recognition, but we&#39;re sure by adopting the same strategy here as they did on home soil, they&#39;ll continue to gain profitable traction.</p><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row p-4\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><p class=\"col-8\" data-v-33bcc47e>We&#39;re also on the verge of launching a proprietary analytics platform to help brands better understand conversion attribution. Keep your eyes peeled for more information on FullPicture.io and the actionable data it adds to your eCommerce growth strategy. </p><div class=\"col-2\" data-v-33bcc47e></div></div>", 15);
-
-var _hoisted_18 = {
-  "class": "row p-4 mb-5"
-};
-
-var _hoisted_19 = /*#__PURE__*/_withScopeId(function () {
-  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "col-2"
-  }, null, -1
-  /* HOISTED */
-  );
-});
-
-var _hoisted_20 = {
-  "class": "col-8 lead"
-};
-
-var _hoisted_21 = /*#__PURE__*/_withScopeId(function () {
-  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-    "class": "uil uil-arrow-left"
-  }, null, -1
-  /* HOISTED */
-  );
-});
-
-var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Back to home");
-
-var _hoisted_23 = /*#__PURE__*/_withScopeId(function () {
-  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "col-2"
-  }, null, -1
-  /* HOISTED */
-  );
-});
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<main data-v-33bcc47e><div class=\"position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-blue-light rounded-5\" data-v-33bcc47e><div class=\"col-md-8 p-lg-5 mx-auto my-2\" data-v-33bcc47e><span class=\"badge badge-primary mb-2\" data-v-33bcc47e>Case Study</span><div class=\"h1 display-6\" data-v-33bcc47e>How reviews allowed for an easier <span class=\"text-primary\" data-v-33bcc47e>expansion</span> for Bella Beauty.</div></div><div class=\"product-device shadow-sm d-none d-md-block\" data-v-33bcc47e></div><div class=\"product-device product-device-2 shadow-sm d-none d-md-block\" data-v-33bcc47e></div></div><div class=\"container\" data-v-33bcc47e><div class=\"row p-4\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><p class=\"col-8\" data-v-33bcc47e>As a little bit of background, Bella Beauty has been in business since 2012. Working out of Nairobi, it&#39;s a small team of women passionate about what they do - inspiring confidence in other women with their inclusive range of functional, yet comfortable, outfits and dresses. </p><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row px-4 py-2\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><p class=\"col-8\" data-v-33bcc47e>Quality products, personal service, and a focus on sustainability helped the brand become a household name on home turf, and now the team has carried that same ethos overseas with a new warehouse and dedicated website for the Kenyan market.</p><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row px-4 py-2\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><div class=\"col-8 h3\" data-v-33bcc47e>Breaking New Ground by Building Trust</div><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row px-4 py-2\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><p class=\"col-8\" data-v-33bcc47e>There are countless hurdles to cross when you enter a new market, and as Mary Akinyi the Ecommerce &amp; Social Media Manager at Bella Beauty explains, a lot of these centre around customer acquisition. In Nigeria, Bella Beauty is a known entity with a healthy customer base, but before the expansion, it was a different story in Kenya.</p><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row p-4\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><p class=\"col-8\" data-v-33bcc47e>The team were essentially starting from scratch, battling with minimal brand awareness, the rising cost of search and social campaigns, and competition from established brands that had amassed loyal fans and followers.</p><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row p-4\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><div class=\"col-8\" data-v-33bcc47e><img class=\"img-fluid rounded-5\" src=\"/images/bella.jpg\" alt=\"banner\" data-v-33bcc47e></div><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row p-4\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><p class=\"col-8\" data-v-33bcc47e>One strategy they used to overcome these barriers was to earn that all important buyer trust by sharing authentic reviews of their products and service - of which they already had around 2,500 from their Kenyan customer base. </p><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row p-2\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><p class=\"col-8 bg-light rounded-5 p-5 lead\" data-v-33bcc47e><em data-v-33bcc47e>“The fact that we could connect our Reviewed.ke account to our Nigerian website allowed us to instantly share customer feedback with a new and tentative audience. With the high cost of getting customers to the website it&#39;s been crucial that they can see honest customer reviews that give them confidence to purchase.”</em></p><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row p-4\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><p class=\"col-8\" data-v-33bcc47e>Though yet to carry out any controlled testing, Mary is convinced that the positive sentiment found in this review content has had a huge impact on conversion rates, giving browsers the confidence they need to try a new product - from a relatively unknown brand - for the first time.</p><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row p-4\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><p class=\"col-8\" data-v-33bcc47e>As well as adding that trusted source of information to product pages, review content has proved valuable in driving engagement and awareness, bringing persuasive social proof to the brand&#39;s marketing. .</p><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row p-2\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><p class=\"col-8 bg-light rounded-5 p-5 lead\" data-v-33bcc47e><em data-v-33bcc47e>“We use our 4.7 star review average for headlines in social campaigns and include reviews in many of our social posts and ads. It&#39;s an incredible asset to have so many reviews already present on a new Ecommerce site.”</em></p><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row py-2 px-4\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><div class=\"col-8 h3\" data-v-33bcc47e>The Future</div><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row py-2 px-4\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><p class=\"col-8\" data-v-33bcc47e>So what&#39;s next for the Bella Beauty team, and how do they plan to continue their growth? Last year brought major challenges on a global scale, with tighter privacy regulations, increased competition and the subsequent rise in acquisition costs. Despite that, the team managed to actually improve ROAS in the Nigerian market, though that&#39;s been harder to achieve in Kenya.</p><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row p-4\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><p class=\"col-8\" data-v-33bcc47e>Mary explains how the brand exists in a marketplace saturated with great quality outfits, and faces challenges such as price point and low recognition, but we&#39;re sure by adopting the same strategy here as they did on home soil, they&#39;ll continue to gain profitable traction.</p><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row p-4\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><p class=\"col-8\" data-v-33bcc47e>We&#39;re also on the verge of launching a proprietary analytics platform to help brands better understand conversion attribution. Keep your eyes peeled for more information on FullPicture.io and the actionable data it adds to your eCommerce growth strategy. </p><div class=\"col-2\" data-v-33bcc47e></div></div><div class=\"row p-4 mb-5\" data-v-33bcc47e><div class=\"col-2\" data-v-33bcc47e></div><div class=\"col-8 lead\" data-v-33bcc47e><i class=\"uil uil-arrow-left\" data-v-33bcc47e></i><a class=\"text-dark\" href=\"/\" data-v-33bcc47e>Back to home</a></div><div class=\"col-2\" data-v-33bcc47e></div></div></div></main>", 1);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
@@ -23832,23 +23825,11 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   var _component_Header = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Header");
 
-  var _component_Link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Link");
-
   var _component_Footer = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Footer");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, {
     title: "Bella Beauty Case Study"
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Nav), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Header), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("main", null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [_hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [_hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
-    "class": "text-dark",
-    href: "/"
-  }, {
-    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_22];
-    }),
-    _: 1
-    /* STABLE */
-
-  })]), _hoisted_23])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Nav), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Header), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
   /* STABLE_FRAGMENT */
   );
 }
@@ -24253,7 +24234,7 @@ var appName = ((_window$document$getE = window.document.getElementsByTagName('ti
   }
 });
 _inertiajs_progress__WEBPACK_IMPORTED_MODULE_2__.InertiaProgress.init({
-  color: '#05948b'
+  color: '#ff8c00'
 });
 
 /***/ }),
