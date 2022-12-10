@@ -329,7 +329,7 @@ export default {
     margin-top: 40px;
 }
 .card-head {
-    color: #fff;
+    color: #0b2051;
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
@@ -342,9 +342,9 @@ export default {
     align-items: center;
     -webkit-box-pack: center;
     justify-content: center;
-    background: rgb(253, 200, 48, 0.8);  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, rgb(253, 200, 48, 0.8), rgb(243, 115, 53, 0.8));  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom,rgb(253, 200, 48, 0.8), rgb(243, 115, 53, 0.8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgb(253, 200, 48, 0.6);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, rgb(253, 200, 48, 0.6), rgb(243, 115, 53, 0.6));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom,rgb(253, 200, 48, 0.6), rgb(243, 115, 53, 0.6)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 hr {

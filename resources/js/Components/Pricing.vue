@@ -19,7 +19,7 @@
                       <span class="h2 text-primary">Ksh. 1,200</span>/month
                       <br><br>
                       <div class="d-grid my-3">
-                        <button class="btn btn-lg btn-outline-dark btn-block">Book a demo</button>
+                        <Link href="/register" class="btn btn-lg btn-outline-dark btn-block">Book a demo</Link>
                       </div>
                       <ul>
                         <li class="list-item"> <i class="uil uil-check-circle"></i> 500 monthly verified review invitations</li>
@@ -41,7 +41,7 @@
                         <span class="h2 text-primary">Ksh. 2,800</span>/month
                         <br><br>
                         <div class="d-grid my-3">
-                          <button class="btn btn-lg btn-outline-dark btn-block">Book a demo</button>
+                          <Link href="/register" class="btn btn-lg btn-outline-dark btn-block">Book a demo</Link>
                         </div>
                         <ul>
                           <li class="list-item"> <i class="uil uil-check-circle"></i> 750 monthly verified review invitations</li>
@@ -59,13 +59,13 @@
                 <div class="col-lg-3 col-md-12 mb-4">
                   <div class="card card1 h-100 shadow bg-blue-light">
                     <div class="card-body p-4">
-                      <h5 class="card-title h5">Scale Plan</h5>
+                      <h5 class="card-title h5"><img class="img-fluid px-1" width="18" height="18" src="images/fire-w15.svg" alt="popular">Scale Plan</h5>
                       <small class='text-muted text-sm'>For scaling businesses who want to their maximize performance with a high volume of reviews</small>
                       <br><br>
                       <span class="h2 text-primary">Ksh. 3,500</span>/month
                       <br><br>
                       <div class="d-grid my-3">
-                        <button class="btn btn-lg btn-outline-dark btn-block">Book a demo</button>
+                        <Link href="/register" class="btn btn-lg btn-outline-dark btn-block">Book a demo</Link>
                       </div>
                       <ul>
                           <li class="list-item"> <i class="uil uil-check-circle"></i> Unlimited monthly verified review invitations</li>
@@ -90,7 +90,7 @@
                       <span class="h2 text-primary">Ask for a Quote</span>
                       <br><br>
                       <div class="d-grid my-3">
-                        <button class="btn btn-lg btn-outline-dark btn-block">Book a demo</button>
+                        <Link href="/register" class="btn btn-lg btn-outline-dark btn-block">Book a demo</Link>
                       </div>
                       <ul>
                             <li class="list-item"> <i class="uil uil-check-circle"></i> Unlimited monthly verified review invitations</li>
@@ -116,7 +116,12 @@
 </template>
 
 <script>
+
+import { Link } from '@inertiajs/inertia-vue3';
+
 export default {
-    
+    components: {
+      Link
+    }
 }
 </script>

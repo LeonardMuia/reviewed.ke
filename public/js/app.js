@@ -19627,7 +19627,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
+/* harmony import */ var _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia-vue3 */ "./node_modules/@inertiajs/inertia-vue3/dist/index.js");
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {
+    Link: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__.Link
+  }
+});
 
 /***/ }),
 
@@ -22938,12 +22944,289 @@ __webpack_require__.r(__webpack_exports__);
 var _hoisted_1 = {
   "class": "section py-5 bg-light"
 };
+var _hoisted_2 = {
+  "class": "container"
+};
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\"><div class=\"row\"><div class=\"col-12 text-center\"><div class=\"h6 text-muted\">Plan &amp; Pricing</div><div class=\"h1\">Choose your Plan</div><p>14-day free trial. No annual contracts. Import your existing reviews. 90-day money back guarantee.</p></div></div><div class=\"row mt-5\"><div class=\"col-lg-3 col-md-12 mb-4\"><div class=\"card card1 h-100 shadow\"><div class=\"card-body p-4\"><h5 class=\"card-title h5\">Standard Plan</h5><small class=\"text-muted text-sm\">For smaller businesses ready to expand their brand reach and online presence</small><br><br><span class=\"h2 text-primary\">Ksh. 1,200</span>/month <br><br><div class=\"d-grid my-3\"><button class=\"btn btn-lg btn-outline-dark btn-block\">Book a demo</button></div><ul><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> 500 monthly verified review invitations</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> An additional 500 invitations to invite past customers in the first 90 days</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Downloadable marketing assets</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Third party eCommerce, helpdesk, and marketing integrations</li></ul></div></div></div><div class=\"col-lg-3 col-md-12 mb-4\"><div class=\"card card1 h-100 shadow\"><div class=\"card-body p-4\"><h5 class=\"card-title h5\">Growth Plan</h5><small class=\"text-muted text-sm\">For growing businesses looking to convert more customers with review content</small><br><br><span class=\"h2 text-primary\">Ksh. 2,800</span>/month <br><br><div class=\"d-grid my-3\"><button class=\"btn btn-lg btn-outline-dark btn-block\">Book a demo</button></div><ul><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> 750 monthly verified review invitations</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> An additional 750 invitations to invite past customers in the first 90 days</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Personalize your profile, invitations and more with your own branding</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Downloadable marketing assets</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Third party eCommerce, helpdesk, and marketing integrations</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Access to all Standard plan features and more</li></ul></div></div></div><div class=\"col-lg-3 col-md-12 mb-4\"><div class=\"card card1 h-100 shadow bg-blue-light\"><div class=\"card-body p-4\"><h5 class=\"card-title h5\">Scale Plan</h5><small class=\"text-muted text-sm\">For scaling businesses who want to their maximize performance with a high volume of reviews</small><br><br><span class=\"h2 text-primary\">Ksh. 3,500</span>/month <br><br><div class=\"d-grid my-3\"><button class=\"btn btn-lg btn-outline-dark btn-block\">Book a demo</button></div><ul><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Unlimited monthly verified review invitations</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Invite unlimited past customers to leave reviews in your first 90 days</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Personalize your profile, invitations and more with your own branding</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Downloadable marketing assets</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Advanced Analytics</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Third party eCommerce, helpdesk, and marketing integrations</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Collect more reviews to showcase throughout your buyer&#39;s journey and drive conversions</li></ul></div></div></div><div class=\"col-lg-3 col-md-12 mb-4\"><div class=\"card card1 h-100 shadow\"><div class=\"card-body p-4\"><h5 class=\"card-title h5\">Enterprise Plan</h5><small class=\"text-muted text-sm\">For established businesses with a need for custom, advanced features in a bespoke package</small><br><br><span class=\"h2 text-primary\">Ask for a Quote</span><br><br><div class=\"d-grid my-3\"><button class=\"btn btn-lg btn-outline-dark btn-block\">Book a demo</button></div><ul><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Unlimited monthly verified review invitations</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Invite unlimited past customers to leave reviews in your first 90 days</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Personalize your profile, invitations and more with your own branding</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Downloadable marketing assets</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Access APIs to integrate with your current systems</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Collect and engage with reviews within your existing CRM</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Build unique dynamic widgets to drive on site conversions</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Third party eCommerce, helpdesk, and marketing integrations</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Collect more reviews to showcase throughout your buyer&#39;s journey and drive conversions</li></ul></div></div></div></div></div>", 1);
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "row"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "col-12 text-center"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "h6 text-muted"
+}, "Plan & Pricing"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "h1"
+}, "Choose your Plan"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "14-day free trial. No annual contracts. Import your existing reviews. 90-day money back guarantee.")])], -1
+/* HOISTED */
+);
 
-var _hoisted_3 = [_hoisted_2];
+var _hoisted_4 = {
+  "class": "row mt-5"
+};
+var _hoisted_5 = {
+  "class": "col-lg-3 col-md-12 mb-4"
+};
+var _hoisted_6 = {
+  "class": "card card1 h-100 shadow"
+};
+var _hoisted_7 = {
+  "class": "card-body p-4"
+};
+
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", {
+  "class": "card-title h5"
+}, "Standard Plan", -1
+/* HOISTED */
+);
+
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("small", {
+  "class": "text-muted text-sm"
+}, "For smaller businesses ready to expand their brand reach and online presence", -1
+/* HOISTED */
+);
+
+var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1
+/* HOISTED */
+);
+
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1
+/* HOISTED */
+);
+
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "h2 text-primary"
+}, "Ksh. 1,200", -1
+/* HOISTED */
+);
+
+var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("/month ");
+
+var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1
+/* HOISTED */
+);
+
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1
+/* HOISTED */
+);
+
+var _hoisted_16 = {
+  "class": "d-grid my-3"
+};
+
+var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Book a demo");
+
+var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<ul><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> 500 monthly verified review invitations</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> An additional 500 invitations to invite past customers in the first 90 days</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Downloadable marketing assets</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Third party eCommerce, helpdesk, and marketing integrations</li></ul>", 1);
+
+var _hoisted_19 = {
+  "class": "col-lg-3 col-md-12 mb-4"
+};
+var _hoisted_20 = {
+  "class": "card card1 h-100 shadow"
+};
+var _hoisted_21 = {
+  "class": "card-body p-4"
+};
+
+var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", {
+  "class": "card-title h5"
+}, "Growth Plan", -1
+/* HOISTED */
+);
+
+var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("small", {
+  "class": "text-muted text-sm"
+}, "For growing businesses looking to convert more customers with review content", -1
+/* HOISTED */
+);
+
+var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1
+/* HOISTED */
+);
+
+var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1
+/* HOISTED */
+);
+
+var _hoisted_26 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "h2 text-primary"
+}, "Ksh. 2,800", -1
+/* HOISTED */
+);
+
+var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("/month ");
+
+var _hoisted_28 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1
+/* HOISTED */
+);
+
+var _hoisted_29 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1
+/* HOISTED */
+);
+
+var _hoisted_30 = {
+  "class": "d-grid my-3"
+};
+
+var _hoisted_31 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Book a demo");
+
+var _hoisted_32 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<ul><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> 750 monthly verified review invitations</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> An additional 750 invitations to invite past customers in the first 90 days</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Personalize your profile, invitations and more with your own branding</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Downloadable marketing assets</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Third party eCommerce, helpdesk, and marketing integrations</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Access to all Standard plan features and more</li></ul>", 1);
+
+var _hoisted_33 = {
+  "class": "col-lg-3 col-md-12 mb-4"
+};
+var _hoisted_34 = {
+  "class": "card card1 h-100 shadow bg-blue-light"
+};
+var _hoisted_35 = {
+  "class": "card-body p-4"
+};
+
+var _hoisted_36 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", {
+  "class": "card-title h5"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  "class": "img-fluid px-1",
+  width: "18",
+  height: "18",
+  src: "images/fire-w15.svg",
+  alt: "popular"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Scale Plan")], -1
+/* HOISTED */
+);
+
+var _hoisted_37 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("small", {
+  "class": "text-muted text-sm"
+}, "For scaling businesses who want to their maximize performance with a high volume of reviews", -1
+/* HOISTED */
+);
+
+var _hoisted_38 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1
+/* HOISTED */
+);
+
+var _hoisted_39 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1
+/* HOISTED */
+);
+
+var _hoisted_40 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "h2 text-primary"
+}, "Ksh. 3,500", -1
+/* HOISTED */
+);
+
+var _hoisted_41 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("/month ");
+
+var _hoisted_42 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1
+/* HOISTED */
+);
+
+var _hoisted_43 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1
+/* HOISTED */
+);
+
+var _hoisted_44 = {
+  "class": "d-grid my-3"
+};
+
+var _hoisted_45 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Book a demo");
+
+var _hoisted_46 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<ul><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Unlimited monthly verified review invitations</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Invite unlimited past customers to leave reviews in your first 90 days</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Personalize your profile, invitations and more with your own branding</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Downloadable marketing assets</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Advanced Analytics</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Third party eCommerce, helpdesk, and marketing integrations</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Collect more reviews to showcase throughout your buyer&#39;s journey and drive conversions</li></ul>", 1);
+
+var _hoisted_47 = {
+  "class": "col-lg-3 col-md-12 mb-4"
+};
+var _hoisted_48 = {
+  "class": "card card1 h-100 shadow"
+};
+var _hoisted_49 = {
+  "class": "card-body p-4"
+};
+
+var _hoisted_50 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", {
+  "class": "card-title h5"
+}, "Enterprise Plan", -1
+/* HOISTED */
+);
+
+var _hoisted_51 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("small", {
+  "class": "text-muted text-sm"
+}, "For established businesses with a need for custom, advanced features in a bespoke package", -1
+/* HOISTED */
+);
+
+var _hoisted_52 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1
+/* HOISTED */
+);
+
+var _hoisted_53 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1
+/* HOISTED */
+);
+
+var _hoisted_54 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "h2 text-primary"
+}, "Ask for a Quote", -1
+/* HOISTED */
+);
+
+var _hoisted_55 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1
+/* HOISTED */
+);
+
+var _hoisted_56 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1
+/* HOISTED */
+);
+
+var _hoisted_57 = {
+  "class": "d-grid my-3"
+};
+
+var _hoisted_58 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Book a demo");
+
+var _hoisted_59 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<ul><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Unlimited monthly verified review invitations</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Invite unlimited past customers to leave reviews in your first 90 days</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Personalize your profile, invitations and more with your own branding</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Downloadable marketing assets</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Access APIs to integrate with your current systems</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Collect and engage with reviews within your existing CRM</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Build unique dynamic widgets to drive on site conversions</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Third party eCommerce, helpdesk, and marketing integrations</li><li class=\"list-item\"><i class=\"uil uil-check-circle\"></i> Collect more reviews to showcase throughout your buyer&#39;s journey and drive conversions</li></ul>", 1);
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("section", _hoisted_1, _hoisted_3);
+  var _component_Link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Link");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("section", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [_hoisted_8, _hoisted_9, _hoisted_10, _hoisted_11, _hoisted_12, _hoisted_13, _hoisted_14, _hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+    href: "/register",
+    "class": "btn btn-lg btn-outline-dark btn-block"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_17];
+    }),
+    _: 1
+    /* STABLE */
+
+  })]), _hoisted_18])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [_hoisted_22, _hoisted_23, _hoisted_24, _hoisted_25, _hoisted_26, _hoisted_27, _hoisted_28, _hoisted_29, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_30, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+    href: "/register",
+    "class": "btn btn-lg btn-outline-dark btn-block"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_31];
+    }),
+    _: 1
+    /* STABLE */
+
+  })]), _hoisted_32])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_33, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_34, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_35, [_hoisted_36, _hoisted_37, _hoisted_38, _hoisted_39, _hoisted_40, _hoisted_41, _hoisted_42, _hoisted_43, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_44, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+    href: "/register",
+    "class": "btn btn-lg btn-outline-dark btn-block"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_45];
+    }),
+    _: 1
+    /* STABLE */
+
+  })]), _hoisted_46])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_47, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_48, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_49, [_hoisted_50, _hoisted_51, _hoisted_52, _hoisted_53, _hoisted_54, _hoisted_55, _hoisted_56, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_57, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+    href: "/register",
+    "class": "btn btn-lg btn-outline-dark btn-block"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_58];
+    }),
+    _: 1
+    /* STABLE */
+
+  })]), _hoisted_59])])])])])]);
 }
 
 /***/ }),
@@ -27775,7 +28058,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.card[data-v-6b2e5fe2] {\n    margin-top: 40px;\n}\n.card-head[data-v-6b2e5fe2] {\n    color: #fff;\n    display: flex;\n    flex-direction: column;\n    border-top-left-radius: 10px;\n    border-top-right-radius: 10px;\n    -ms-flex-align: center;\n    -ms-flex-pack: center;\n    align-items: center;\n    justify-content: center;\n    background: rgb(253, 200, 48, 0.8);  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */\n    background: linear-gradient(to bottom,rgb(253, 200, 48, 0.8), rgb(243, 115, 53, 0.8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */\n}\nhr[data-v-6b2e5fe2] {\n    background-color: #ccc;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.card[data-v-6b2e5fe2] {\n    margin-top: 40px;\n}\n.card-head[data-v-6b2e5fe2] {\n    color: #0b2051;\n    display: flex;\n    flex-direction: column;\n    border-top-left-radius: 10px;\n    border-top-right-radius: 10px;\n    -ms-flex-align: center;\n    -ms-flex-pack: center;\n    align-items: center;\n    justify-content: center;\n    background: rgb(253, 200, 48, 0.6);  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */\n    background: linear-gradient(to bottom,rgb(253, 200, 48, 0.6), rgb(243, 115, 53, 0.6)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */\n}\nhr[data-v-6b2e5fe2] {\n    background-color: #ccc;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
