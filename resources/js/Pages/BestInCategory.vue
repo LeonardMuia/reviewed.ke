@@ -1,5 +1,5 @@
 <template>
-    <Head title=""></Head>
+    <Head :title="'Best in '+category"></Head>
 
     <Nav></Nav>
 
@@ -7,6 +7,7 @@
 
     <main>
         <BestInHero :category="category"></BestInHero>
+        <BestInItems :companies="companies"></BestInItems>
     </main>
 
     <Footer></Footer>
@@ -19,6 +20,7 @@ import Nav from '../Components/Nav.vue';
 import Header from '../Components/Header.vue';
 import Footer from '../Components/Footer.vue';
 import BestInHero from '../Components/BestInHero.vue';
+import BestInItems from '../Components/BestInItems.vue';
 
 export default {
     props: {
@@ -36,7 +38,8 @@ export default {
         Nav,
         Header,
         Footer,
-        BestInHero
+        BestInHero,
+        BestInItems
     },
 }
 </script>

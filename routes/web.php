@@ -21,7 +21,7 @@ Route::get('/for-business', [LandingPage::class, 'forBusiness']);
 Route::get('/onboarding', [LandingPage::class, 'onBoarding']);
 Route::get('/bella-beauty', [LandingPage::class, 'bellaBeauty']);
 
-Route::get('/categories/{id}', [LandingPage::class, 'bestInCategory']);
+Route::get('/category/{id}', [LandingPage::class, 'bestInCategory']);
 
 
 

@@ -6,6 +6,7 @@
     <Header></Header>
 
     <main>
+        <BestInItems :companies="companies"></BestInItems>
     </main>
 
     <Footer></Footer>
@@ -17,10 +18,11 @@ import { Head,Link } from '@inertiajs/inertia-vue3';
 import Nav from '../Components/Nav.vue';
 import Header from '../Components/Header.vue';
 import Footer from '../Components/Footer.vue';
+import BestInItems from '../Components/BestInItems.vue';
 
 export default {
     props: {
-       brands: {
+       companies: {
          type: Object
        }
     },  
@@ -29,7 +31,8 @@ export default {
         Link,
         Nav,
         Header,
-        Footer
+        Footer,
+        BestInItems
     }
 }
 </script>

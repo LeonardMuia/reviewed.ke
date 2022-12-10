@@ -1,5 +1,5 @@
 <template>
-  <section class="section mt-0 mb-0">
+  <section class="section mt-5 mb-0">
     <div class="container">
       <div class="row">
         <div class="to-top col-12 bg-dark text-center py-3" @click="scrollToTop">
