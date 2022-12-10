@@ -22507,7 +22507,7 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "class": "col-lg-12 p-3 text-center"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
   "class": "display-6 fw-bold lh-1 mb-4"
-}, "What are you looking for?"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Explore companies by category")])])], -1
+}, "Find companies by category"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Explore companies by category. If you don't find a category you're looking for, recommend to us.")])])], -1
 /* HOISTED */
 );
 
