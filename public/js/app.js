@@ -20036,8 +20036,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia-vue3 */ "./node_modules/@inertiajs/inertia-vue3/dist/index.js");
 /* harmony import */ var _Components_Nav_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Components/Nav.vue */ "./resources/js/Components/Nav.vue");
 /* harmony import */ var _Components_Header_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Components/Header.vue */ "./resources/js/Components/Header.vue");
-/* harmony import */ var _Components_Footer_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Components/Footer.vue */ "./resources/js/Components/Footer.vue");
-/* harmony import */ var _Components_Support_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Components/Support.vue */ "./resources/js/Components/Support.vue");
+/* harmony import */ var _Components_Support_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Components/Support.vue */ "./resources/js/Components/Support.vue");
+/* harmony import */ var _Components_Trusted_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Components/Trusted.vue */ "./resources/js/Components/Trusted.vue");
+/* harmony import */ var _Components_Footer_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Components/Footer.vue */ "./resources/js/Components/Footer.vue");
+
 
 
 
@@ -20049,8 +20051,9 @@ __webpack_require__.r(__webpack_exports__);
     Link: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__.Link,
     Nav: _Components_Nav_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
     Header: _Components_Header_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
-    Footer: _Components_Footer_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
-    Support: _Components_Support_vue__WEBPACK_IMPORTED_MODULE_4__["default"]
+    Support: _Components_Support_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
+    Trusted: _Components_Trusted_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
+    Footer: _Components_Footer_vue__WEBPACK_IMPORTED_MODULE_5__["default"]
   }
 });
 
@@ -22543,9 +22546,44 @@ var _hoisted_1 = {
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\"><div class=\"row\"><div class=\"col-12 text-center\"><div class=\"h6 text-muted\"></div><div class=\"h1\">Frequently Asked Questions</div><p>Find answers to commonly asked questions about our service.</p></div></div><div class=\"row mt-5\"><div class=\"col-lg-6 mt-2 col-md-12 col-sm-12\"><div class=\"h5 text-dark\">What is the fastest way to collect reviews?</div><p class=\"mt-4\">Start out by using our Review Booster. Email a review request to your last few months customers to see a quick return in just a few days.</p></div><div class=\"col-lg-6 mt-2 col-md-12 col-sm-12\"><div class=\"h5 text-dark\">Can I customize the collection email?</div><p class=\"mt-4\">Of course! You can add your company logo and change the colours and design of the collection email to suit your companies image. If you need any help customising your email please don&#39;t hesitate to ask! We have a team of experienced email specialist who can create the perfect collection email free of charge.</p></div></div><div class=\"row mt-5\"><div class=\"col-lg-6 mt-2 col-md-12 col-sm-12\"><div class=\"h5 text-dark\">Can I customize the questions I ask customers?</div><p class=\"mt-4\">Yes, our system is fully customisable. You can tailor questions around delivery or specific customer service questions.</p></div><div class=\"col-lg-6 mt-2 col-md-12 col-sm-12\"><div class=\"h5 text-dark\">Can you do review booster for me?</div><p class=\"mt-4\">Yes, no problem. As long as you are a paying customer we will be happy to process your review booster for you.</p></div></div><div class=\"row mt-5\"><div class=\"col-lg-6 mt-2 col-md-12 col-sm-12\"><div class=\"h5 text-dark\">Where are you based?</div><p class=\"mt-4\">Our head office is in 3rd Floor, Odyssey Building, 84 Muthithi Road, Nairobi.</p></div><div class=\"col-lg-6 mt-2 col-md-12 col-sm-12\"><div class=\"h5 text-dark\">Is there a 12 month contract?</div><p class=\"mt-4\">No, we don&#39;t believe in lengthy contracts. We just need 30 days written notice if you want to cancel. We are confident that if you sign up with us you will stay because you want to, not because you have to.</p></div></div><div class=\"row mt-5\"><div class=\"col-lg-6 mt-2 col-md-12 col-sm-12\"><div class=\"h5 text-dark\">How often can I use review booster?</div><p class=\"mt-4\">You can use the Review Booster as often as you like. Some of our clients use it daily.</p></div><div class=\"col-lg-6 mt-2 col-md-12 col-sm-12\"><div class=\"h5 text-dark\">How long does it take to set up and is there a set up cost?</div><p class=\"mt-4\">It normally takes around 2 to 4 hours to get you set up. We don&#39;t charge for set up on Standard and Growth packages.</p></div></div><div class=\"row mt-5\"><div class=\"col-lg-6 mt-2 col-md-12 col-sm-12\"><div class=\"h5 text-dark\">Why isn&#39;t my review showing up?</div><p class=\"mt-4\">Your review should be posted within 48 hours. If it&#39;s not up after that amount of time, be sure to check that your account is activated. Simply click on the link in the email that we sent out when you first signed up. Also, check to see that your review has not violated any of our policies. We usually send an email to let you know if it has.</p></div><div class=\"col-lg-6 mt-2 col-md-12 col-sm-12\"><div class=\"h5 text-dark\">Will you use my customers data?</div><p class=\"mt-4\">Never. We work as an email service provider similar to MailChimp or Constant Contact. We have a section in our Privacy Policy that says we will never use an email address unless instructed by the company sending the data. We take your data seriously which is why all data is stored on a SSL 128 bits protected server.</p></div></div></div>", 1);
 
-var _hoisted_3 = [_hoisted_2];
+var _hoisted_3 = {
+  "class": "mt-5 support-button text-center d-flex align-items-center justify-content-center mt-4 wow fadeInUp",
+  "data-wow-delay": "0.5s",
+  style: {
+    "visibility": "visible",
+    "animation-delay": "0.5s",
+    "animation-name": "fadeInUp"
+  }
+};
+
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "lni-emoji-sad"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "mb-0 px-2 h5"
+}, "Can't find your answers to your questions?", -1
+/* HOISTED */
+);
+
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Contact Support");
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("section", _hoisted_1, _hoisted_3);
+  var _component_Link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Link");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("section", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [_hoisted_4, _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+    "class": "text-success",
+    href: "/support"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_6];
+    }),
+    _: 1
+    /* STABLE */
+
+  })])]);
 }
 
 /***/ }),
@@ -23400,7 +23438,7 @@ var _hoisted_1 = {
   "class": "section py-5 bg-light"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\"><div class=\"row\"><div class=\"col-12 text-center\"><div class=\"h6 text-muted\"></div><div class=\"h1\">Contact Support</div><p>Need help using our service? Seek help from out team.</p></div></div></div>", 1);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\"><div class=\"row mb-4\"><div class=\"col-12 text-center\"><div class=\"h1\">Welcome! How can we help you?</div><p>Need help using our service? Seek help from out team.</p></div></div><div class=\"row mt-5 px-5 align-items-center\"><div class=\"col-6\"><div class=\"h4\">Contact Support</div><p class=\"col-8\">Have questions about our solutions, products, or licenses? Contact our Customer Support or find your answers online.</p><div class=\"mt-1\"><a href=\"tel:+254700000000\" class=\"d-block h6 text-decoration-none mt-4\"><i class=\"uil uil-phone\"></i> Phone: +254 700 000 000</a><a href=\"mailto:support@reviewed.ke\" class=\"d-block h6 text-decoration-none mt-4\"><i class=\"uil uil-envelope\"></i> Email: support@reviewed.ke</a><a href=\"#\" class=\"d-block h6 mt-4 text-decoration-none\"><i class=\"uil uil-map-marker\"></i> 3rd Floor, Odyssey Building, Westlands, Nairobi.</a></div></div><div class=\"col-5\"><div class=\"card shadow-lg bg-white\"><div class=\"card-head bg-light\"><div class=\"h5 text-center py-4\">Contact Form</div></div><div class=\"card-body px-4\"><div class=\"row\"><div class=\"col-6\"><input type=\"text\" placeholder=\"first name\" class=\"form-control\"></div><div class=\"col-6\"><input type=\"text\" placeholder=\"Surname\" class=\"form-control\"></div><div class=\"col-12 mt-3\"><input type=\"text\" placeholder=\"Phone Number\" class=\"form-control\"></div><div class=\"col-12 mt-3\"><input type=\"text\" placeholder=\"Email\" class=\"form-control\"></div><div class=\"col-12 mt-3\"><textarea class=\"form-control\" placeholder=\"message\" rows=\"5\"></textarea></div><div class=\"col-12 mt-3\"><button type=\"submit\" class=\"btn btn-outline-dark btn-lg col-12\">Submit</button></div></div></div></div></div></div></div>", 1);
 
 var _hoisted_3 = [_hoisted_2];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -23878,6 +23916,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
+
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", {
+  "class": "section py-5"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "container"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  "class": "img-fluid rounded-5 shadow-sm",
+  src: "images/reviews.png",
+  alt: ""
+})])], -1
+/* HOISTED */
+);
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
 
@@ -23893,7 +23944,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     title: "Support"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Nav, {
     support: true
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Header), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("main", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Support)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Header), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("main", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Support), _hoisted_1]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
   /* STABLE_FRAGMENT */
   );
 }

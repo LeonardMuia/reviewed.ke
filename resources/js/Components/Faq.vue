@@ -59,6 +59,11 @@
                 </div>
             </div>
         </div>
+        <div class="mt-5 support-button text-center d-flex align-items-center justify-content-center mt-4 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+            <i class="lni-emoji-sad"></i>
+            <p class="mb-0 px-2 h5">Can't find your answers to your questions?</p>
+            <Link class="text-success" href="/support"> Contact Support</Link>
+        </div>
     </section>
 </template>
 
