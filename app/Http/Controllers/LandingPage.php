@@ -61,6 +61,19 @@ class LandingPage extends Controller
         ]);
     }
 
+    public function bestInCategory($id)
+    {
+        $companies = Brand::where('category_id', $id)->orderBy('rating', 'DESC')->get();
+        $category = Category::where('id', $id)->value('name');
+
+        return Inertia::render('BestInCategory', 
+            [
+                'companies' => $companies,
+                'category' => $category
+            ]
+        );
+    }
+
     public function onBoarding()
     {
         return Inertia::render('OnBoarding');
