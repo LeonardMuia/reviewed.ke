@@ -7,6 +7,7 @@
 
     <main>
         <CompanyHero :company="company" :count="count"></CompanyHero>
+        <CompanyContent :reviews="reviews"></CompanyContent>
     </main>
 
     <Footer></Footer>
@@ -19,6 +20,7 @@ import Nav from '../Components/Nav.vue';
 import Header from '../Components/Header.vue';
 import CompanyHero from '../Components/CompanyHero.vue';
 import Footer from '../Components/Footer.vue';
+import CompanyContent from '../Components/CompanyContent.vue';
 
 export default {
     props: {
@@ -34,13 +36,14 @@ export default {
     },  
 
     components: {
-        Head,
-        Link,
-        Nav,
-        Header,
-        CompanyHero,
-        Footer
-    },
+    Head,
+    Link,
+    Nav,
+    Header,
+    CompanyHero,
+    Footer,
+    CompanyContent
+},
 
     mounted() {
     }
