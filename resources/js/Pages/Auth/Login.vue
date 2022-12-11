@@ -1,5 +1,5 @@
 <template>
-    <Head title="Create an Account"></Head>
+    <Head title="Login"></Head>
     <section class="section">
         <div class="">
             <div class="text-center mb-3">
@@ -10,9 +10,9 @@
             <div class="card border rounded-5">
                 <div class="card-body">
                     <form class="form-signin">
-                        <h1 class="h4 mb-2">Login to Business Account</h1>
-                        <label for="inputEmail" class="sr-only">Business Account Email</label>
-                        <input type="email" class="form-control" placeholder="Work Email" required autofocus>
+                        <h1 class="h4 mb-2">Login to Your Account</h1>
+                        <label for="inputEmail" class="sr-only">Account Email</label>
+                        <input type="email" class="form-control" placeholder="Registered Email" required autofocus>
                         <label for="inputPassword" class="sr-only">Password</label>
                         <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
                         <div class="row mt-3">
@@ -63,7 +63,7 @@ export default {
 }
 
 .card {
-    width: 600px !important;
+    width: 500px !important;
 }
 
 label {
