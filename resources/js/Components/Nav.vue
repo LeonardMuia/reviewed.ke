@@ -2,15 +2,15 @@
   <nav class="py-2 bg-light border-bottom">
     <div class="container d-flex flex-wrap">
       <ul class="nav me-auto">
-        <li class="nav-item"><Link href="/" class="nav-link link-dark px-2" :class="{'active': home}">Home</Link></li>
-        <li class="nav-item"><Link href="/categories" class="nav-link link-dark px-2" :class="{'active': categories}" >Categories</Link></li>
-        <li class="nav-item"><Link href="/pricing" class="nav-link link-dark px-2" :class="{'active': pricing}" >Pricing</Link></li>
-        <li class="nav-item"><Link href="/faqs" class="nav-link link-dark px-2"  :class="{'active': faq}" >FAQs</Link></li>
-        <li class="nav-item"><Link href="/support" class="nav-link link-dark px-2" :class="{'active': support}" >Support</Link></li>
+        <li class="nav-item"><a href="/" class="nav-link link-dark px-2" :class="{'active': home}">Home</a></li>
+        <li class="nav-item"><a href="/categories" class="nav-link link-dark px-2" :class="{'active': categories}" >Categories</a></li>
+        <li class="nav-item"><a href="/pricing" class="nav-link link-dark px-2" :class="{'active': pricing}" >Pricing</a></li>
+        <li class="nav-item"><a href="/faqs" class="nav-link link-dark px-2"  :class="{'active': faq}" >FAQs</a></li>
+        <li class="nav-item"><a href="/support" class="nav-link link-dark px-2" :class="{'active': support}" >Support</a></li>
       </ul>
       <ul class="nav">
-        <li class="nav-item"><Link href="/login" class="nav-link link-dark px-2">Login</Link></li>
-        <li class="nav-item"><Link href="/register" class="nav-link link-dark px-2">Create an Account</Link></li>
+        <li class="nav-item"><a href="/login" class="nav-link link-dark px-2">Login</a></li>
+        <li class="nav-item"><a href="/register" class="nav-link link-dark px-2">Create an Account</a></li>
       </ul>
     </div>
   </nav>

@@ -1,6 +1,6 @@
 <template>
-    <div class="modal fade" :id="'company'+id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal fade" :id="'company'+id" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <div class="modal-title h5 text-dark" id="postReview">Write your review on {{ name }}</div>
@@ -80,7 +80,7 @@ export default {
     ],
 
     components: {
-        intlTelInput
+      
     },
     
     data() {
