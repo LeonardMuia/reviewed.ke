@@ -6,7 +6,7 @@
     <Header></Header>
 
     <main>
-        <CompanyHero :company="company"></CompanyHero>
+        <CompanyHero :company="company" :count="count"></CompanyHero>
     </main>
 
     <Footer></Footer>
@@ -43,7 +43,6 @@ export default {
     },
 
     mounted() {
-        
     }
 }
 </script>

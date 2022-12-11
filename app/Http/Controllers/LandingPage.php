@@ -93,9 +93,14 @@ class LandingPage extends Controller
 
     public function onBoarding()
     {
-        $companies = Brand::where('category_id', 9)->orderBy('rating', 'DESC')->get();
+        $company = Brand::where('id', 6)->get();
+        $reviews = Review::where('company_id', 6)->orderBy('created_at','DESC')->get();
+        $reviewsCount = $reviews->count();
+
         return Inertia::render('OnBoarding',[
-            "companies" => $companies
+            'company' => $company,
+            'reviews' => $reviews,
+            'count' => $reviewsCount
         ]);
     }
 

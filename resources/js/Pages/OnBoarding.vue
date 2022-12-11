@@ -1,12 +1,12 @@
 <template>
-    <Head title="For Businesses"></Head>
+    <Head :title="company[0].name"></Head>
 
     <Nav></Nav>
 
     <Header></Header>
 
     <main>
-        <BestInItems :companies="companies"></BestInItems>
+        <CompanyHero :company="company" :count="count"></CompanyHero>
     </main>
 
     <Footer></Footer>
@@ -17,22 +17,32 @@
 import { Head,Link } from '@inertiajs/inertia-vue3';
 import Nav from '../Components/Nav.vue';
 import Header from '../Components/Header.vue';
+import CompanyHero from '../Components/CompanyHero.vue';
 import Footer from '../Components/Footer.vue';
-import BestInItems from '../Components/BestInItems.vue';
 
 export default {
     props: {
-       companies: {
-         type: Object
+       company: {
+            type: Object
+       },
+       reviews: {
+            type: Object
+       },
+       count: {
+            type: Number
        }
     },  
+
     components: {
         Head,
         Link,
         Nav,
         Header,
-        Footer,
-        BestInItems
+        CompanyHero,
+        Footer
+    },
+
+    mounted() {
     }
 }
 </script>
