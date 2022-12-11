@@ -78,7 +78,7 @@ class LandingPage extends Controller
     public function showCompany($id)
     {
         $company = Brand::where('id', $id)->get();
-        $reviews = Review::where('company_id', $id)->get();
+        $reviews = Review::where('company_id', $id)->orderBy('created_at','DESC')->get();
         $reviewsCount = $reviews->count();
 
         return Inertia::render('Company', 
