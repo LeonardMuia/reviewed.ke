@@ -22924,7 +22924,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
           src: company.logo_path,
           alt: company.name,
-          "class": "img-fluid",
+          "class": "img-fluid shadow",
           height: "96",
           width: "96"
         }, null, 8
@@ -23160,7 +23160,7 @@ var _hoisted_9 = /*#__PURE__*/_withScopeId(function () {
 var _hoisted_10 = {
   "class": "mt-4"
 };
-var _hoisted_11 = ["data-bs-target"];
+var _hoisted_11 = ["data-target"];
 var _hoisted_12 = {
   "class": "card-header py-3 align-items-center"
 };
@@ -23337,8 +23337,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("section", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [_hoisted_7, _hoisted_8, _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     "class": "btn btn-outline-dark shadow btn-lg",
     href: "/for-business",
-    "data-bs-toggle": "modal",
-    "data-bs-target": '#company' + $props.company[0].id
+    "data-toggle": "modal",
+    "data-target": '#company' + $props.company[0].id
   }, "Write your review", 8
   /* PROPS */
   , _hoisted_11), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_PostReviewForm, {
@@ -23993,7 +23993,7 @@ var _hoisted_6 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
     href: "#",
     "class": "close text-decoration-none h4 text-dark",
-    "data-bs-dismiss": "modal",
+    "data-dismiss": "modal",
     "aria-label": "Close"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
     "aria-hidden": "true"
@@ -24119,8 +24119,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
     "class": "modal fade",
     id: 'company' + $props.id,
-    "data-bs-backdrop": "static",
-    "data-bs-keyboard": "false",
+    "data-backdrop": "static",
+    "data-keyboard": "false",
     tabindex: "-1",
     "aria-labelledby": "staticBackdropLabel",
     "aria-hidden": "true"

@@ -1,10 +1,10 @@
 <template>
-    <div class="modal fade" :id="'company'+id" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog">
+    <div class="modal fade" :id="'company'+id" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header">
             <div class="modal-title h5 text-dark" id="postReview">Write your review on {{ name }}</div>
-            <a href="#" class="close text-decoration-none h4 text-dark" data-bs-dismiss="modal" aria-label="Close">
+            <a href="#" class="close text-decoration-none h4 text-dark" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </a>
           </div>
@@ -80,7 +80,6 @@ export default {
     ],
 
     components: {
-      
     },
     
     data() {
