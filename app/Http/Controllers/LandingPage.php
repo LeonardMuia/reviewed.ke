@@ -63,7 +63,7 @@ class LandingPage extends Controller
 
     public function bestInCategory($id)
     {
-        $companies = Brand::where('category_id', $id)->orderBy('rating', 'DESC')->get();
+        $companies = Brand::where('category_id', $id)->orderBy('rating', 'DESC')->orderBy('name', 'ASC')->get();
         $category = Category::where('id', $id)->value('name');
 
         return Inertia::render('BestInCategory', 

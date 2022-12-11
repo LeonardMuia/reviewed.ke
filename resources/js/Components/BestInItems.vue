@@ -14,17 +14,18 @@
                             </div>
                         </div>
                     </div>
-                    <Link href="#" class="card bg-light text-decoration-none text-dark mt-3" v-for="company in companies" :key="company" v-if="companies">
+                    <Link href="#" class="card bg-light text-decoration-none text-dark mt-4" v-for="company in companies" :key="company" v-if="companies">
                         <div class="card-body">
                             <img :src="company.logo_path" :alt="company.name" class="img-fluid" height="96" width="96">
                             <div class="company-data px-4">
                                 <div class="h4">{{ company.name }}</div>
                                 <div class="stars">
-                                    <img class="img-fluid" src="/images/stars/one.png" alt="Poor" v-if="company.rating < 2">
-                                    <img class="img-fluid" src="/images/stars/two.png" alt="Bad" v-if="company.rating < 3">
-                                    <img class="img-fluid" src="/images/stars/three.png" alt="Fair" v-if="company.rating < 4">
-                                    <img class="img-fluid" src="/images/stars/four.png" alt="good" v-if="company.rating < 4.5">
-                                    <img class="img-fluid" src="/images/stars/five.png" alt="excellent" v-if="company.rating > 4.5">
+                                    <img class="img-fluid" src="/images/stars/zero.png" alt="Poor" v-if="company.rating < 1">
+                                    <img class="img-fluid" src="/images/stars/one.png" alt="Poor" v-if="company.rating < 2 && company.rating > 2">
+                                    <img class="img-fluid" src="/images/stars/two.png" alt="Bad" v-if="company.rating < 3 && company.rating > 2">
+                                    <img class="img-fluid" src="/images/stars/three.png" alt="Fair" v-if="company.rating < 4 && company.rating > 3">
+                                    <img class="img-fluid" src="/images/stars/four.png" alt="Good" v-if="company.rating < 4.5 && company.rating > 4">
+                                    <img class="img-fluid" src="/images/stars/five.png" alt="Excellent" v-if="company.rating > 4.5">
                                 </div>
                                 <div class="mt-2 text-muted text-sm">{{ 'Average Rating ' + getRating(company.rating) }} | 1,220 reviews </div>
                                 <div class="mt-2 text-muted text-sm">Nairobi, Kenya. </div>
