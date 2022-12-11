@@ -27,8 +27,8 @@
                                     <img class="img-fluid" src="/images/stars/four.png" alt="Good" v-if="company.rating < 4.5 && company.rating > 4">
                                     <img class="img-fluid" src="/images/stars/five.png" alt="Excellent" v-if="company.rating > 4.5">
                                 </div>
-                                <div class="mt-2 text-muted text-sm">{{ 'Average Rating ' + getRating(company.rating) }} | 1,220 reviews </div>
-                                <div class="mt-2 text-muted text-sm">Nairobi, Kenya. </div>
+                                <div class="mt-2 text-muted text-sm" v-if="company.rating">{{ 'Average Rating ' + getRating(company.rating) }}</div>
+                                <div class="mt-2 text-muted text-sm" v-if="company.rating == 0">No reviews submited</div>
                             </div> 
                             <div class="badge badge-secondary">Most Relevant</div>
                         </div>

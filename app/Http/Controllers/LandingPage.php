@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Inertia\Inertia;
 use App\Models\Category;
 use App\Models\Brand;
+use App\Models\Review;
 
 class LandingPage extends Controller
 {
@@ -72,6 +73,22 @@ class LandingPage extends Controller
                 'category' => $category
             ]
         );
+    }
+
+    public function showCompany($id)
+    {
+        $company = Brand::where('id', $id)->get();
+        $reviews = Review::where('company_id', $id)->get();
+        $reviewsCount = $reviews->count();
+
+        return Inertia::render('Company', 
+            [
+                'company' => $company,
+                'reviews' => $reviews,
+                'count' => $reviewsCount
+            ]
+        );
+        
     }
 
     public function onBoarding()
