@@ -92,7 +92,7 @@ export default {
 .company-details {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .company-details > img {
@@ -131,6 +131,5 @@ export default {
     background-color: #cce3ff; 
     transition: .3s ease-in-out;
 }
-
 </style>
 

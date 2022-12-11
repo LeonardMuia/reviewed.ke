@@ -19524,7 +19524,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  props: ['reviews']
+  props: ['reviews', 'company']
 });
 
 /***/ }),
@@ -23066,12 +23066,94 @@ var _withScopeId = function _withScopeId(n) {
 var _hoisted_1 = {
   "class": "section py-5"
 };
+var _hoisted_2 = {
+  "class": "container"
+};
+var _hoisted_3 = {
+  "class": "row"
+};
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\" data-v-5654d647><div class=\"row\" data-v-5654d647><div class=\"col-8\" data-v-5654d647><div class=\"card bg-light py-4\" data-v-5654d647><div class=\"card-body text-center\" data-v-5654d647><div class=\"col-12 mb-2\" data-v-5654d647><img class=\"img-fluid\" src=\"/images/stars/zero.png\" alt=\"\" data-v-5654d647></div><div class=\"h4 text-dark\" data-v-5654d647>Writer your review</div><p class=\"text-sm\" data-v-5654d647>Help future customers by talking about customer service, price, delivery, returns &amp; refunds.</p><div class=\"mt-4\" data-v-5654d647><a class=\"btn btn-outline-dark shadow btn-lg\" href=\"/for-business\" data-v-5654d647>Post a review</a></div></div></div></div><div class=\"col-4\" data-v-5654d647><div class=\"card bg-light px-2\" data-v-5654d647></div></div></div></div>", 1);
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-8\" data-v-5654d647><div class=\"card bg-light py-4\" data-v-5654d647><div class=\"card-body text-center\" data-v-5654d647><div class=\"col-12 mb-2\" data-v-5654d647><img class=\"img-fluid\" src=\"/images/stars/zero.png\" alt=\"\" data-v-5654d647></div><div class=\"h4 text-dark\" data-v-5654d647>Writer your review</div><p class=\"text-sm\" data-v-5654d647>Help future customers by talking about customer service, price, delivery, returns &amp; refunds.</p><div class=\"mt-4\" data-v-5654d647><a class=\"btn btn-outline-dark shadow btn-lg\" href=\"/for-business\" data-v-5654d647>Post a review</a></div></div></div><div class=\"card bg-light mt-2\" data-v-5654d647></div></div>", 1);
 
-var _hoisted_3 = [_hoisted_2];
+var _hoisted_5 = {
+  "class": "col-4 sticky-top"
+};
+var _hoisted_6 = {
+  "class": "card bg-light p-4"
+};
+var _hoisted_7 = {
+  "class": "row text-secondary"
+};
+var _hoisted_8 = {
+  "class": "col-12"
+};
+var _hoisted_9 = {
+  "class": "h4 text-dark"
+};
+
+var _hoisted_10 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "text-sm"
+  }, "Information written by the company.", -1
+  /* HOISTED */
+  );
+});
+
+var _hoisted_11 = {
+  "class": "mt-3"
+};
+
+var _hoisted_12 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("hr", {
+    "class": "mt-4 mb-4"
+  }, null, -1
+  /* HOISTED */
+  );
+});
+
+var _hoisted_13 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "h5 text-dark"
+  }, "Contact", -1
+  /* HOISTED */
+  );
+});
+
+var _hoisted_14 = {
+  "class": "mt-2"
+};
+
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Email: ");
+
+var _hoisted_16 = ["href"];
+var _hoisted_17 = {
+  "class": "mt-2"
+};
+
+var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Phone: ");
+
+var _hoisted_19 = ["href"];
+var _hoisted_20 = {
+  "class": "mt-2"
+};
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("section", _hoisted_1, _hoisted_3);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("section", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [_hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, "About " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.company[0].name), 1
+  /* TEXT */
+  ), _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.company[0].about), 1
+  /* TEXT */
+  ), _hoisted_12, _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [_hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    href: 'mailto:' + $props.company[0].company_email,
+    target: "blank"
+  }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.company[0].company_email), 9
+  /* TEXT, PROPS */
+  , _hoisted_16)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, [_hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    href: 'tel:' + $props.company[0].company_phone,
+    target: "blank"
+  }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.company[0].company_phone), 9
+  /* TEXT, PROPS */
+  , _hoisted_19)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, " Address: " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.company[0].address), 1
+  /* TEXT */
+  )])])])])])])]);
 }
 
 /***/ }),
@@ -24578,7 +24660,12 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     count: $props.count
   }, null, 8
   /* PROPS */
-  , ["company", "count"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_CompanyContent)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
+  , ["company", "count"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_CompanyContent, {
+    company: $props.company,
+    reviews: $props.reviews
+  }, null, 8
+  /* PROPS */
+  , ["company", "reviews"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
   /* STABLE_FRAGMENT */
   );
 }
@@ -24718,10 +24805,11 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   }, null, 8
   /* PROPS */
   , ["company", "count"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_CompanyContent, {
+    company: $props.company,
     reviews: $props.reviews
   }, null, 8
   /* PROPS */
-  , ["reviews"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
+  , ["company", "reviews"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
   /* STABLE_FRAGMENT */
   );
 }
@@ -29038,7 +29126,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.img-fluid[data-v-5654d647] {\n        max-width: 144px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.img-fluid[data-v-5654d647] {\n        max-width: 144px;\n}\nhr[data-v-5654d647] {\n        background-color: #777;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -29062,7 +29150,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.company-details[data-v-c106a4c8] {\n    display: flex;\n    flex-direction: row;\n    justify-content: start;\n}\n.company-details > img[data-v-c106a4c8] {\n    max-width: 172px;\n    max-height: 172px;\n}\n.company-rating[data-v-c106a4c8] {\n    display:flex;\n    flex-direction: column;\n    align-items: flex-start;\n}\n.company-rating > img[data-v-c106a4c8] {\n    max-width: 144px;\n    margin: 8px 0;\n}\n.badge-success[data-v-c106a4c8] {\n    text-transform: uppercase;\n    color: #333;\n    background-color:#90EE90;\n}\n.website[data-v-c106a4c8] {\n    margin-left: auto;\n    cursor: pointer;\n}\n.website > .card[data-v-c106a4c8] {\n    display: flex;\n    flex-direction: row;\n    padding: 20px 40px;\n}\n.website > .card[data-v-c106a4c8]:hover {\n    background-color: #cce3ff; \n    transition: .3s ease-in-out;\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.company-details[data-v-c106a4c8] {\n    display: flex;\n    flex-direction: row;\n    justify-content: flex-start;\n}\n.company-details > img[data-v-c106a4c8] {\n    max-width: 172px;\n    max-height: 172px;\n}\n.company-rating[data-v-c106a4c8] {\n    display:flex;\n    flex-direction: column;\n    align-items: flex-start;\n}\n.company-rating > img[data-v-c106a4c8] {\n    max-width: 144px;\n    margin: 8px 0;\n}\n.badge-success[data-v-c106a4c8] {\n    text-transform: uppercase;\n    color: #333;\n    background-color:#90EE90;\n}\n.website[data-v-c106a4c8] {\n    margin-left: auto;\n    cursor: pointer;\n}\n.website > .card[data-v-c106a4c8] {\n    display: flex;\n    flex-direction: row;\n    padding: 20px 40px;\n}\n.website > .card[data-v-c106a4c8]:hover {\n    background-color: #cce3ff; \n    transition: .3s ease-in-out;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

@@ -7,7 +7,7 @@
 
     <main>
         <CompanyHero :company="company" :count="count"></CompanyHero>
-        <CompanyContent></CompanyContent>
+        <CompanyContent :company="company" :reviews="reviews"></CompanyContent>
     </main>
 
     <Footer></Footer>
