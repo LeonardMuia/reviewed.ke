@@ -39,7 +39,7 @@
                     </div>
                    
                     <div class="form-group mt-2">
-                        <textarea class="form-control text-sm" rows="3" :placeholder="placeholder" v-model="form.review"></textarea>
+                        <textarea class="form-control text-sm" rows="4" :placeholder="placeholder" v-model="form.review"></textarea>
                     </div>
                     
                     <div class="text-dark mt-3 h6">
@@ -62,7 +62,7 @@
                     </div>
                     <small class="mt-1 d-block text-muted">Please note that we may share your email with the company to verify your order.</small>
 
-                    <button type="submit" class="btn btn-dark btn-lg mt-3 col-12" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">Submit Review</button>
+                    <button type="submit" class="btn btn-dark btn-lg mt-3 mb-3 col-12" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">Submit Review</button>
                 </div>
             </form>
           </div>
