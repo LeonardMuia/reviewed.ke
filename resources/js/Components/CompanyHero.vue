@@ -18,6 +18,9 @@
                 <div class="mt-2" v-if="company[0].is_verified">
                     <div class="badge badge-success p-2"> <i class="uil uil-check-circle"></i> Verified Company</div>
                 </div>
+                <div class="mt-2" v-if="company[0].is_verified != 1">
+                    <div class="badge badge-warning p-2"> <i class="uil uil-times-circle"></i> Unverified Company</div>
+                </div>
             </div>
             <div class="website">
                 <a class="card border text-decoration-none" :href="company[0].website_url" target="blank">
@@ -114,6 +117,12 @@ export default {
     text-transform: uppercase;
     color: #333;
     background-color:#90EE90;
+}
+
+.badge-warning {
+    text-transform: uppercase;
+    color: #fff;
+    background-color:#6c757d;
 }
 
 .website {
