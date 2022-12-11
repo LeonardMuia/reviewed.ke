@@ -19,6 +19,13 @@
                             <img :src="company.logo_path" :alt="company.name" class="img-fluid" height="96" width="96">
                             <div class="company-data px-4">
                                 <div class="h4">{{ company.name }}</div>
+                                <div class="stars">
+                                    <img class="img-fluid" src="/images/stars/one.png" alt="Poor" v-if="company.rating < 2">
+                                    <img class="img-fluid" src="/images/stars/two.png" alt="Bad" v-if="company.rating < 3">
+                                    <img class="img-fluid" src="/images/stars/three.png" alt="Fair" v-if="company.rating < 4">
+                                    <img class="img-fluid" src="/images/stars/four.png" alt="good" v-if="company.rating < 4.5">
+                                    <img class="img-fluid" src="/images/stars/five.png" alt="excellent" v-if="company.rating > 4.5">
+                                </div>
                                 <div class="mt-2 text-muted text-sm">{{ 'Average Rating ' + getRating(company.rating) }} | 1,220 reviews </div>
                                 <div class="mt-2 text-muted text-sm">Nairobi, Kenya. </div>
                             </div> 
@@ -94,5 +101,10 @@ export default {
     .badge-secondary {
         margin-left: auto;
         background-color: #6c757d;
+    }
+
+    .stars > img {
+        height: 20px;
+        width: auto;
     }
 </style>

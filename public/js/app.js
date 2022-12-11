@@ -22628,10 +22628,43 @@ var _hoisted_12 = {
   "class": "h4"
 };
 var _hoisted_13 = {
+  "class": "stars"
+};
+var _hoisted_14 = {
+  key: 0,
+  "class": "img-fluid",
+  src: "/images/stars/one.png",
+  alt: "Poor"
+};
+var _hoisted_15 = {
+  key: 1,
+  "class": "img-fluid",
+  src: "/images/stars/two.png",
+  alt: "Bad"
+};
+var _hoisted_16 = {
+  key: 2,
+  "class": "img-fluid",
+  src: "/images/stars/three.png",
+  alt: "Fair"
+};
+var _hoisted_17 = {
+  key: 3,
+  "class": "img-fluid",
+  src: "/images/stars/four.png",
+  alt: "good"
+};
+var _hoisted_18 = {
+  key: 4,
+  "class": "img-fluid",
+  src: "/images/stars/five.png",
+  alt: "excellent"
+};
+var _hoisted_19 = {
   "class": "mt-2 text-muted text-sm"
 };
 
-var _hoisted_14 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_20 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "mt-2 text-muted text-sm"
   }, "Nairobi, Kenya. ", -1
@@ -22639,7 +22672,7 @@ var _hoisted_14 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_15 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_21 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "badge badge-secondary"
   }, "Most Relevant", -1
@@ -22647,38 +22680,8 @@ var _hoisted_15 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_16 = {
-  "class": "card-footer text-muted text-sm"
-};
-var _hoisted_17 = {
-  "class": "text-dark"
-};
-
-var _hoisted_18 = /*#__PURE__*/_withScopeId(function () {
-  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-    "class": "uil uil-phone-alt"
-  }, null, -1
-  /* HOISTED */
-  );
-});
-
-var _hoisted_19 = {
-  "class": "px-2"
-};
-var _hoisted_20 = {
-  "class": "text-dark"
-};
-
-var _hoisted_21 = /*#__PURE__*/_withScopeId(function () {
-  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-    "class": "uil uil-envelope-alt"
-  }, null, -1
-  /* HOISTED */
-  );
-});
-
 var _hoisted_22 = {
-  "class": "px-2"
+  "class": "card-footer text-muted text-sm"
 };
 var _hoisted_23 = {
   "class": "text-dark"
@@ -22686,7 +22689,7 @@ var _hoisted_23 = {
 
 var _hoisted_24 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-    "class": "uil uil-globe"
+    "class": "uil uil-phone-alt"
   }, null, -1
   /* HOISTED */
   );
@@ -22695,8 +22698,38 @@ var _hoisted_24 = /*#__PURE__*/_withScopeId(function () {
 var _hoisted_25 = {
   "class": "px-2"
 };
+var _hoisted_26 = {
+  "class": "text-dark"
+};
 
-var _hoisted_26 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_27 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+    "class": "uil uil-envelope-alt"
+  }, null, -1
+  /* HOISTED */
+  );
+});
+
+var _hoisted_28 = {
+  "class": "px-2"
+};
+var _hoisted_29 = {
+  "class": "text-dark"
+};
+
+var _hoisted_30 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+    "class": "uil uil-globe"
+  }, null, -1
+  /* HOISTED */
+  );
+});
+
+var _hoisted_31 = {
+  "class": "px-2"
+};
+
+var _hoisted_32 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "col-2"
   }, null, -1
@@ -22726,13 +22759,13 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         /* PROPS */
         , _hoisted_10), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(company.name), 1
         /* TEXT */
-        ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)('Average Rating ' + $options.getRating(company.rating)) + " | 1,220 reviews ", 1
+        ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [company.rating < 2 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_14)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), company.rating < 3 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_15)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), company.rating < 4 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_16)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), company.rating < 4.5 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_17)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), company.rating > 4.5 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_18)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)('Average Rating ' + $options.getRating(company.rating)) + " | 1,220 reviews ", 1
         /* TEXT */
-        ), _hoisted_14]), _hoisted_15]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, [_hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(company.company_phone), 1
+        ), _hoisted_20]), _hoisted_21]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, [_hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_25, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(company.company_phone), 1
         /* TEXT */
-        )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [_hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_22, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(company.company_email), 1
+        )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_26, [_hoisted_27, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(company.company_email), 1
         /* TEXT */
-        )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, [_hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_25, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(company.website_url), 1
+        )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_29, [_hoisted_30, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_31, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(company.website_url), 1
         /* TEXT */
         )])])];
       }),
@@ -22744,7 +22777,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     );
   }), 128
   /* KEYED_FRAGMENT */
-  )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), _hoisted_26])])]);
+  )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), _hoisted_32])])]);
 }
 
 /***/ }),
@@ -28638,7 +28671,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.card-body[data-v-38ee669c] {\n        display: flex;\n        flex-direction: row;\n        flex-wrap: nowrap;\n        align-items: flex-start;\n}\n.company-data[data-v-38ee669c] {\n        display: flex;\n        flex-direction: column;\n}\n.card-footer[data-v-38ee669c] {\n        display: flex;\n        flex-direction: row;\n        justify-content: space-between;\n}\n.card[data-v-38ee669c]:hover {\n        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;\n        transition: .5s ease-in-out;\n}\n.badge-secondary[data-v-38ee669c] {\n        margin-left: auto;\n        background-color: #6c757d;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.card-body[data-v-38ee669c] {\n        display: flex;\n        flex-direction: row;\n        flex-wrap: nowrap;\n        align-items: flex-start;\n}\n.company-data[data-v-38ee669c] {\n        display: flex;\n        flex-direction: column;\n}\n.card-footer[data-v-38ee669c] {\n        display: flex;\n        flex-direction: row;\n        justify-content: space-between;\n}\n.card[data-v-38ee669c]:hover {\n        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;\n        transition: .5s ease-in-out;\n}\n.badge-secondary[data-v-38ee669c] {\n        margin-left: auto;\n        background-color: #6c757d;\n}\n.stars > img[data-v-38ee669c] {\n        height: 20px;\n        width: auto;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
