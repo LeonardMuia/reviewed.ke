@@ -19,7 +19,7 @@ class CreateReviewsTable extends Migration
             $table->foreign('company_id')->references('id')->on('brands');
             $table->integer('rating');
             $table->longText('review');
-            $table->string('title');
+            $table->string('title')->nullable();
             $table->string('user')->nullable();
             $table->string('phone')->nullable();
             $table->string('email')->nullable();
