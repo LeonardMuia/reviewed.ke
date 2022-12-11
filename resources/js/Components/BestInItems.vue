@@ -14,7 +14,7 @@
                             </div>
                         </div>
                     </div>
-                    <Link href="#" class="card bg-light text-decoration-none text-dark mt-4" v-for="company in companies" :key="company" v-if="companies">
+                    <Link :href="'/company/'+company.id" class="card bg-light text-decoration-none text-dark mt-4" v-for="company in companies" :key="company" v-if="companies">
                         <div class="card-body">
                             <img :src="company.logo_path" :alt="company.name" class="img-fluid" height="96" width="96">
                             <div class="company-data px-4">
