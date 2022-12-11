@@ -10,13 +10,13 @@
                     <div class="card-body text-sm">
                         <Link href="#" class="text-dark text-decoration-none">Administration & Services</Link>
                         <hr class="mt-3 mb-3">
-                        <Link href="#" class="text-dark text-decoration-none">Associations & Centers</Link>
+                        <Link href="/category/5" class="text-dark text-decoration-none">E-commerce</Link>
                         <hr class="mt-3 mb-3">
                         <Link href="#" class="text-dark text-decoration-none">HR & Recruiting</Link>
                         <hr class="mt-3 mb-3">
                         <Link href="#" class="text-dark text-decoration-none">Import & Export</Link>
                         <hr class="mt-3 mb-3">
-                        <Link href="#" class="text-dark text-decoration-none">IT & Communication</Link>
+                        <Link href="/category/4" class="text-dark text-decoration-none">IT & Communication</Link>
                         <hr class="mt-3 mb-3">
                         <Link href="#" class="text-dark text-decoration-none">Office Space & Supplies</Link>
                         <hr class="mt-3 mb-3">
@@ -41,7 +41,7 @@
                     <div class="card-body text-sm">
                         <Link href="#" class="text-dark text-decoration-none">Clubbing & Nightlife</Link>
                         <hr class="mt-3 mb-3">
-                        <Link href="#" class="text-dark text-decoration-none">Children's Entertainment</Link>
+                        <Link href="/category/9" class="text-dark text-decoration-none">TV Entertainment</Link>
                         <hr class="mt-3 mb-3">
                         <Link href="#" class="text-dark text-decoration-none">Events & Venues</Link>
                         <hr class="mt-3 mb-3">
@@ -136,7 +136,7 @@
                         <hr class="mt-3 mb-3">
                         <Link href="#" class="text-dark text-decoration-none">Health Equipment</Link>
                         <hr class="mt-3 mb-3">
-                        <Link href="#" class="text-dark text-decoration-none">Hospital & Emergency</Link>
+                        <Link href="/category/3" class="text-dark text-decoration-none">Hospital & Emergency</Link>
                         <hr class="mt-3 mb-3">
                         <Link href="#" class="text-dark text-decoration-none">Mental Health</Link>
                         <hr class="mt-3 mb-3">
@@ -190,7 +190,7 @@
                         <div class="h6">Education & Training</div>
                     </div>
                     <div class="card-body text-sm">
-                        <Link href="#" class="text-dark text-decoration-none">Colleges & Universities</Link>
+                        <Link href="/category/7" class="text-dark text-decoration-none">Colleges & Universities</Link>
                         <hr class="mt-3 mb-3">
                         <Link href="#" class="text-dark text-decoration-none">Courses & Classes</Link>
                         <hr class="mt-3 mb-3">
@@ -263,15 +263,15 @@
                     <div class="card-body text-sm">
                         <Link href="#" class="text-dark text-decoration-none">Accounting & Tax</Link>
                         <hr class="mt-3 mb-3">
-                        <Link href="#" class="text-dark text-decoration-none">Banking & Money</Link>
+                        <Link href="/category/1" class="text-dark text-decoration-none">Banking & Money</Link>
                         <hr class="mt-3 mb-3">
                         <Link href="#" class="text-dark text-decoration-none">Credit & Debt Services</Link>
                         <hr class="mt-3 mb-3">
-                        <Link href="#" class="text-dark text-decoration-none">Insurance</Link>
+                        <Link href="/category/2" class="text-dark text-decoration-none">Insurance</Link>
                         <hr class="mt-3 mb-3">
                         <Link href="#" class="text-dark text-decoration-none">Investment & Wealth</Link>
                         <hr class="mt-3 mb-3">
-                        <Link href="#" class="text-dark text-decoration-none">Real Estate</Link>
+                        <Link href="/category/6" class="text-dark text-decoration-none">Real Estate</Link>
                     </div>
                 </div>
             </div>

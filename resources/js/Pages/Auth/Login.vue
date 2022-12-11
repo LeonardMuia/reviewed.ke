@@ -10,7 +10,7 @@
             <div class="card border rounded-5">
                 <div class="card-body">
                     <form class="form-signin">
-                        <h1 class="h4 mb-2">Login to Your Account</h1>
+                        <h1 class="h4 mb-2">Login to your account</h1>
                         <label for="inputEmail" class="sr-only">Account Email</label>
                         <input type="email" class="form-control" placeholder="Registered Email" required autofocus>
                         <label for="inputPassword" class="sr-only">Password</label>

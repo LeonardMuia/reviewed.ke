@@ -2,17 +2,17 @@
     <section class="section bg-light shadow-sm border-bottom">
       <div class="container">
         <div class="row p-5 justify-contents-center">
-          <div class="text-center company-details">
+          <div class="text-center company-details align-items-center">
             <img :src="company[0].logo_path" :alt="company[0].name" class="img-fluid shadow-lg">
             <div class="company-rating px-5">
                 <div class="h2 fw-bold">{{ company[0].name }}</div>
-                <img class="img-fluid" src="/images/stars/zero.png" alt="Poor" v-if="company[0].rating < 1">
-                <img class="img-fluid" src="/images/stars/one.png" alt="Poor" v-if="company[0].rating < 2 && company[0].rating > 2">
-                <img class="img-fluid" src="/images/stars/two.png" alt="Bad" v-if="company[0].rating < 3 && company[0].rating > 2">
-                <img class="img-fluid" src="/images/stars/three.png" alt="Fair" v-if="company[0].rating < 4 && company[0].rating > 3">
-                <img class="img-fluid" src="/images/stars/four.png" alt="Good" v-if="company[0].rating < 4.5 && company[0].rating > 4">
-                <img class="img-fluid" src="/images/stars/five.png" alt="Excellent" v-if="company[0].rating > 4.5">
-                <div class="mt-1">
+                <img class="img-fluid rating-image" src="/images/stars/zero.png" alt="Poor" v-if="company[0].rating < 1">
+                <img class="img-fluid rating-image" src="/images/stars/one.png" alt="Poor" v-if="company[0].rating < 2 && company[0].rating > 2">
+                <img class="img-fluid rating-image" src="/images/stars/two.png" alt="Bad" v-if="company[0].rating < 3 && company[0].rating > 2">
+                <img class="img-fluid rating-image" src="/images/stars/three.png" alt="Fair" v-if="company[0].rating < 4 && company[0].rating > 3">
+                <img class="img-fluid rating-image" src="/images/stars/four.png" alt="Good" v-if="company[0].rating < 4.5 && company[0].rating > 4">
+                <img class="img-fluid rating-image" src="/images/stars/five.png" alt="Excellent" v-if="company[0].rating > 4.5">
+                <div class="mt-1 h4 text-secondary">
                     Rating of {{ getRating( company[0].rating) }} based on {{ count }} reviews
                 </div>
                 <div class="mt-2" v-if="company[0].is_verified">
@@ -23,10 +23,11 @@
                 </div>
             </div>
             <div class="website">
-                <a class="card border text-decoration-none" :href="company[0].website_url" target="blank">
+                <a class="card border text-decoration-none mb-3" :href="company[0].website_url" target="blank">
                     <i class="uil uil-external-link-alt px-2"></i>
                     <span class="">Visit this company's website</span>
                 </a>
+                <Link class="mt-3" :href="'/category/'+company[0].category_id">Go back to category</Link>
             </div>
           </div>
         </div>
@@ -110,13 +111,13 @@ export default {
 }
 
 .company-rating > img {
-    max-width: 144px;
+    max-width: 96px;
     margin: 8px 0;
 }
 .badge-success {
     text-transform: uppercase;
     color: #333;
-    background-color:#90EE90;
+    background-color: #bdf5bd;
 }
 
 .badge-warning {

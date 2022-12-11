@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-8">
-                    <div class="card bg-light py-4 rounded-5">
+                    <div class="card bg-light py-4 rounded-5 shadow">
                         <div class="card-body text-center">
                             <div class="col-12 mb-2">
                                 <img class="img-fluid" src="/images/stars/zero.png" alt="">
@@ -11,28 +11,29 @@
                             <div class="h4 text-dark">Writer your review</div>
                             <p class="text-sm">Help future customers by talking about customer service, price, delivery, returns & refunds.</p>
                             <div class="mt-4">
-                              <button class="btn btn-outline-dark shadow btn-lg" href="/for-business" data-toggle="modal" :data-target="'#company'+company[0].id">Write your review</button>
+                              <button class="btn btn-outline-dark btn-lg shadow" href="/for-business" data-toggle="modal" :data-target="'#company'+company[0].id">Write a review</button>
                               <PostReviewForm :id="company[0].id" :name="company[0].name"></PostReviewForm>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card bg-light mt-4 p-3 shadow rounded-5" v-for="review in reviews" :key="review">
+                    <div class="card bg-light mt-4 p-3 rounded-5" v-for="review in reviews" :key="review">
                         <div class="card-header py-3 align-items-center">
                             <span class="avatar mr-2">
                                 <span class="avatar-text avatar-primary-light">{{getUser(review.user)}}</span>
                             </span>
                             <div class="user-info px-4">
-                                <div class="fw-bold">{{ review.user }}</div>
+                                <div class="fw-bold h5">{{ review.user }}</div>
                                 <div class="span text-sm text-success" v-if="review.is_verified"><i class="uil uil-check-circle"></i> Verified Review</div>
                                 <div class="span text-sm text-danger" v-if="!review.is_verified"><i class="uil uil-times-circle"></i> Pending Verification</div>
                             </div>
                             <div class="rating">
-                                <img class="img-fluid" src="/images/stars/one.png" alt="Poor" v-if="review.rating == 1">
-                                <img class="img-fluid" src="/images/stars/two.png" alt="Bad" v-if="review.rating == 2">
-                                <img class="img-fluid" src="/images/stars/three.png" alt="Fair" v-if="review.rating == 3">
-                                <img class="img-fluid" src="/images/stars/four.png" alt="Good" v-if="review.rating == 4">
-                                <img class="img-fluid" src="/images/stars/five.png" alt="Excellent" v-if="review.rating == 5">
+                                <span class="h5 text-dark">{{review.rating}} out of 5</span>
+                                <img class="img-fluid rating-image" src="/images/stars/one.png" alt="Poor" v-if="review.rating == 1">
+                                <img class="img-fluid rating-image" src="/images/stars/two.png" alt="Bad" v-if="review.rating == 2">
+                                <img class="img-fluid rating-image" src="/images/stars/three.png" alt="Fair" v-if="review.rating == 3">
+                                <img class="img-fluid rating-image" src="/images/stars/four.png" alt="Good" v-if="review.rating == 4">
+                                <img class="img-fluid rating-image" src="/images/stars/five.png" alt="Excellent" v-if="review.rating == 5">
                             </div>
                         </div>
                         <div class="card-body">
@@ -42,7 +43,7 @@
                                     {{ review.review }}
                                 </div>
                                 <div class="mt-3 text-muted text-sm">
-                                    <span class="fw-bold">Date Posted:</span> <span class="text-dark">{{ getDate(review.created_at) }}</span> 
+                                    <span class="fw-bold">Date of Experience:</span> <span class="text-dark">{{ getDate(review.created_at) }}</span> 
                                 </div>
                             </div>
                         </div>
@@ -52,7 +53,7 @@
                     <div class="card bg-light p-4 rounded-5">
                         <div class="row text-secondary">
                             <div class="col-12">
-                                <div class="h4 text-dark">About {{ company[0].name }}</div>
+                                <div class="h5 text-dark">About {{ company[0].name }}</div>
                                 <div class="text-sm">Information written by the company.</div>
                                 <div class="mt-3">{{ company[0].about }}</div>
                                 <hr class="mt-4 mb-4">
@@ -103,7 +104,7 @@ export default {
         },
 
         getDate(date){
-            return moment(date).format("Do MMMM YYYY [at] h:mm a");  
+            return moment(date).format("Do MMMM YYYY");  
         }
     }
 }
@@ -133,5 +134,12 @@ export default {
     }
     .rating {
        margin-left: auto;
+       display: flex;
+       flex-direction: column;
+       align-items: flex-end;
+    }
+
+    .rating-image {
+        max-width: 96px;
     }
 </style>
