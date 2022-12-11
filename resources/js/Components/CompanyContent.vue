@@ -11,7 +11,7 @@
                             <div class="h4 text-dark">Writer your review</div>
                             <p class="text-sm">Help future customers by talking about customer service, price, delivery, returns & refunds.</p>
                             <div class="mt-4">
-                              <button class="btn btn-outline-dark shadow btn-lg" href="/for-business" data-toggle="modal" :data-target="'#company'+company[0].id">Post a review</button>
+                              <button class="btn btn-outline-dark shadow btn-lg" href="/for-business" data-bs-toggle="modal" :data-bs-target="'#company'+company[0].id">Write your review</button>
                               <PostReviewForm :id="company[0].id" :name="company[0].name"></PostReviewForm>
                             </div>
                         </div>
@@ -85,6 +85,7 @@
 
 import moment from 'moment';
 import PostReviewForm from '../Components/PostReviewForm.vue';
+import intlTelInput from 'intl-tel-input'; 
 
 export default {
     props: [
@@ -93,7 +94,8 @@ export default {
     ],
 
     components: {
-        PostReviewForm
+        PostReviewForm,
+        intlTelInput
     },  
 
     methods: {
