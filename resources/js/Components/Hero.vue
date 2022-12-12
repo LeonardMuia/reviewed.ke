@@ -8,7 +8,7 @@
             <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
               <form class="row g-3">
                 <div class="col-auto">
-                  <input type="text" class="form-control rounded-6 px-4 py-2" id="category" placeholder="Search by company name">
+                  <input type="text" class="form-control rounded-6 px-4 py-2" id="category" placeholder="Search company name">
                 </div>
                 <div class="col-auto">
                   <button type="submit" class="btn-search rounded-6">Search</button>
