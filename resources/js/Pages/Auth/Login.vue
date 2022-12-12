@@ -11,10 +11,14 @@
                 <div class="card-body">
                     <form class="form-signin">
                         <h1 class="h4 mb-2">Login to your account</h1>
+                        <div class="alert alert-danger" role="alert" v-if="form.errors.email || form.errors.password" >
+                            <span class="text-sm">Please enter a correct email address and password. Note that both fields may be case-sensitive.</span>
+                        </div>
                         <label for="inputEmail" class="sr-only">Account Email</label>
-                        <input type="email" class="form-control" placeholder="Registered Email" required autofocus>
+                        <input type="email" class="form-control" placeholder="Registered Email" v-model="form.email" required autofocus>
+                        <div v-if="form.errors.email">{{ form.errors.email }}</div>
                         <label for="inputPassword" class="sr-only">Password</label>
-                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" v-model="form.password" required>
                         <div class="row mt-3">
                             <div class="col-6">
                                 <a href="/forgot-password" class="text-sm text-decoration-none">Forgot Password?</a>
@@ -23,7 +27,7 @@
                                 <div class="text-sm text-black show-password">Show Password</div>
                             </div>
                         </div>
-                        <button class="mt-4 btn btn-lg btn-dark col-12" type="submit" disabled>Log In</button>
+                        <button class="mt-4 btn btn-lg btn-dark col-12" type="submit" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">Log In</button>
                         <div class="text-sm mt-3">Don't have a Reviewed.ke account? <a href="/register" class="text-decoration-none">Sign up for free now.</a></div>
                     </form>
                 </div>
@@ -38,9 +42,37 @@
 import { Head, Link } from '@inertiajs/inertia-vue3';
 
 export default {
+    props: {
+        canResetPassword: Boolean,
+        status: String,
+        errors: Object
+    },
+
     components: {
         Head,
         Link
+    },
+
+    data() {
+        return {
+            form: this.$inertia.form({
+                email: '',
+                password: '',
+                remember: false
+            })
+        }
+    },
+    methods: {
+        submit() {
+            this.form
+                .transform(data => ({
+                    ... data,
+                    remember: this.form.remember ? 'on' : ''
+                }))
+                .post(this.route('login'), {
+                    onFinish: () => this.form.reset('password'),
+                })
+        }
     }
 }
 
@@ -67,7 +99,7 @@ export default {
 }
 
 label {
-    margin-top: 22px;
+    margin-top: 8px;
 }
 
 input {
