@@ -1,51 +1,40 @@
 <template>
-    <Head :title="company[0].name"></Head>
+    <Head title="Admin Dashboard"></Head>
 
-    <Nav></Nav>
-
-    <Header></Header>
+    <DashHeader></DashHeader>
 
     <main>
-        <CompanyHero :company="company" :count="count"></CompanyHero>
-        <CompanyContent :company="company" :reviews="reviews"></CompanyContent>
+
+        <DashHero></DashHero>
+        
+        <DashContent></DashContent>
+
     </main>
 
-    <Footer></Footer>
 </template>
 
 <script>
 
 import { Head,Link } from '@inertiajs/inertia-vue3';
-import Nav from '../Components/Nav.vue';
-import Header from '../Components/Header.vue';
-import CompanyHero from '../Components/CompanyHero.vue';
-import Footer from '../Components/Footer.vue';
-import CompanyContent from '../Components/CompanyContent.vue';
+import DashContent from '../Components/Dashboard/DashContent.vue';
+import DashHeader from '../Components/Dashboard/DashHeader.vue';
+import DashHero from '../Components/Dashboard/DashHero.vue';
 
 export default {
     props: {
-       company: {
-            type: Object
-       },
-       reviews: {
-            type: Object
-       },
-       count: {
-            type: Number
-       }
+       
     },  
 
     components: {
     Head,
     Link,
-    Nav,
-    Header,
-    CompanyHero,
-    Footer,
-    CompanyContent
+    DashHeader,
+    DashHero,
+    DashContent
 },
 
     mounted() {
+
     }
 }
 </script>

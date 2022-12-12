@@ -20,7 +20,6 @@
         <!-- Scripts -->
         <script src="{{ mix('js/main.js') }}"></script>
         <script src="{{ mix('js/utils.js') }}"></script>
-        <script src="plugin/build/js/utils.js"></script>
         <script src="{{ mix('js/app.js') }}" defer></script>
 
     </head>
