@@ -16,7 +16,7 @@
                       <h5 class="card-title h5">Standard Plan</h5>
                       <small class='text-muted text-sm'>For smaller businesses ready to expand their brand reach and online presence</small>
                       <br><br>
-                      <span class="h2 text-primary">Ksh. 1,200</span>/month
+                      <span class="h3 text-primary">Ksh. 1,200</span>/month
                       <br><br>
                       <div class="d-grid my-3">
                         <Link href="/register" class="btn btn-lg btn-outline-dark btn-block">Book a demo</Link>
@@ -38,7 +38,7 @@
                         <h5 class="card-title h5">Growth Plan</h5>
                         <small class='text-muted text-sm'>For growing businesses looking to convert more customers with review content</small>
                         <br><br>
-                        <span class="h2 text-primary">Ksh. 2,800</span>/month
+                        <span class="h3 text-primary">Ksh. 2,800</span>/month
                         <br><br>
                         <div class="d-grid my-3">
                           <Link href="/register" class="btn btn-lg btn-outline-dark btn-block">Book a demo</Link>
@@ -60,9 +60,9 @@
                   <div class="card card1 h-100 shadow">
                     <div class="card-body p-4">
                       <h5 class="card-title h5">Scale Plan<img class="img-fluid px-1" width="22" height="22" src="images/fire-w15.svg" alt="popular"></h5>
-                      <small class='text-muted text-sm'>For scaling businesses who want to their maximize performance with a high volume of reviews</small>
+                      <small class='text-muted text-sm'>For businesses who want to their maximize performance with a high volume of reviews</small>
                       <br><br>
-                      <span class="h2 text-primary">Ksh. 3,500</span>/month
+                      <span class="h3 text-primary">Ksh. 3,500</span>/month
                       <br><br>
                       <div class="d-grid my-3">
                         <Link href="/register" class="btn btn-lg btn-outline-dark btn-block">Book a demo</Link>
@@ -85,9 +85,9 @@
                   <div class="card card1 h-100 shadow">
                     <div class="card-body p-4">
                       <h5 class="card-title h5">Enterprise Plan</h5>
-                      <small class='text-muted text-sm'>For established businesses with a need for custom, advanced features in a bespoke package</small>
+                      <small class='text-muted text-sm'>For established businesses with a need for custom, advanced features package</small>
                       <br><br>
-                      <span class="h2 text-primary">Ask for a Quote</span>
+                      <span class="h3 text-primary">Ask a Quote</span>
                       <br><br>
                       <div class="d-grid my-3">
                         <Link href="/register" class="btn btn-lg btn-outline-dark btn-block">Book a demo</Link>

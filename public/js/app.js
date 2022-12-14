@@ -24392,7 +24392,7 @@ var _hoisted_1 = {
   "class": "section bg-blue-light"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\"><div class=\"row p-5 pb-0 pe-lg-0 pt-lg-5 justify-contents-center\"><div class=\"col-lg-6 p-3 p-lg-5 pt-lg-3\"><h1 class=\"display-5 fw-bold lh-1 mb-4\">Read &amp; Write reviews.<br>Find companies you can <span class=\"text-primary\">trust.</span></h1><p class=\"mb-4\">We&#39;re a digital platform that brings businesses and consumers together to foster trust and inspire collaboration. We&#39;re free to use, open to everybody, and built on transparency.</p><div class=\"d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3\"><form class=\"row g-3\"><div class=\"col-auto\"><input type=\"text\" class=\"form-control rounded-6 px-4 py-2\" id=\"category\" placeholder=\"Search company name\"></div><div class=\"col-auto\"><button type=\"submit\" class=\"btn-search rounded-6\">Search</button></div></form></div></div><div class=\"col-lg-5\"><img src=\"images/banner.png\" class=\"d-block mx-lg-auto img-fluid rounded-5 shadow-lg\" alt=\"Banner\"></div></div></div>", 1);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\"><div class=\"row p-5 pb-0 pe-lg-0 pt-lg-5 justify-contents-center\"><div class=\"col-lg-6 p-3 p-lg-5 pt-lg-3\"><h1 class=\"display-5 fw-bold lh-1 mb-4\">Read &amp; Write reviews.<br>Find companies you can <span class=\"text-primary\">trust.</span></h1><p class=\"mb-4\">We&#39;re a digital platform that brings businesses and consumers together to foster trust and inspire collaboration. We&#39;re free to use, open to everybody, and built on transparency.</p><div class=\"d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3\"><form class=\"row g-3\"><!-- &lt;div class=&quot;col-auto&quot;&gt;\r\n                  &lt;input type=&quot;text&quot; class=&quot;form-control rounded-6 px-4 py-2&quot; id=&quot;category&quot; placeholder=&quot;Search company name&quot;&gt;\r\n                &lt;/div&gt;\r\n                &lt;div class=&quot;col-auto&quot;&gt;\r\n                  &lt;button type=&quot;submit&quot; class=&quot;btn-search rounded-6&quot;&gt;Search&lt;/button&gt;\r\n                &lt;/div&gt; --></form></div></div><div class=\"col-lg-5\"><img src=\"images/banner.png\" class=\"d-block mx-lg-auto img-fluid rounded-5 shadow-lg\" alt=\"Banner\"></div></div></div>", 1);
 
 var _hoisted_3 = [_hoisted_2];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -25089,7 +25089,7 @@ var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 );
 
 var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
-  "class": "h2 text-primary"
+  "class": "h3 text-primary"
 }, "Ksh. 1,200", -1
 /* HOISTED */
 );
@@ -25143,7 +25143,7 @@ var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 );
 
 var _hoisted_26 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
-  "class": "h2 text-primary"
+  "class": "h3 text-primary"
 }, "Ksh. 2,800", -1
 /* HOISTED */
 );
@@ -25190,7 +25190,7 @@ var _hoisted_36 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 
 var _hoisted_37 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("small", {
   "class": "text-muted text-sm"
-}, "For scaling businesses who want to their maximize performance with a high volume of reviews", -1
+}, "For businesses who want to their maximize performance with a high volume of reviews", -1
 /* HOISTED */
 );
 
@@ -25203,7 +25203,7 @@ var _hoisted_39 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 );
 
 var _hoisted_40 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
-  "class": "h2 text-primary"
+  "class": "h3 text-primary"
 }, "Ksh. 3,500", -1
 /* HOISTED */
 );
@@ -25244,7 +25244,7 @@ var _hoisted_50 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 
 var _hoisted_51 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("small", {
   "class": "text-muted text-sm"
-}, "For established businesses with a need for custom, advanced features in a bespoke package", -1
+}, "For established businesses with a need for custom, advanced features package", -1
 /* HOISTED */
 );
 
@@ -25257,8 +25257,8 @@ var _hoisted_53 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 );
 
 var _hoisted_54 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
-  "class": "h2 text-primary"
-}, "Ask for a Quote", -1
+  "class": "h3 text-primary"
+}, "Ask a Quote", -1
 /* HOISTED */
 );
 
