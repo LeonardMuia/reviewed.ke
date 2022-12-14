@@ -23406,7 +23406,7 @@ var _hoisted_9 = /*#__PURE__*/_withScopeId(function () {
 var _hoisted_10 = {
   "class": "mt-4"
 };
-var _hoisted_11 = ["data-target"];
+var _hoisted_11 = ["href"];
 var _hoisted_12 = {
   "class": "card-header py-3 align-items-center"
 };
@@ -23429,7 +23429,7 @@ var _hoisted_17 = {
 
 var _hoisted_18 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-    "class": "uil uil-check-circle"
+    "class": "uil uil-`check-circle"
   }, null, -1
   /* HOISTED */
   );
@@ -23581,21 +23581,12 @@ var _hoisted_55 = {
   "class": "mt-2"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  var _component_PostReviewForm = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("PostReviewForm");
-
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("section", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [_hoisted_7, _hoisted_8, _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     "class": "btn btn-outline-dark btn-lg shadow",
-    href: "/for-business",
-    "data-toggle": "modal",
-    "data-target": '#company' + $props.company[0].id
+    href: "/post-review/".concat($props.company[0].id)
   }, "Write a review", 8
   /* PROPS */
-  , _hoisted_11), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_PostReviewForm, {
-    id: $props.company[0].id,
-    name: $props.company[0].name
-  }, null, 8
-  /* PROPS */
-  , ["id", "name"])])])]), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.reviews, function (review) {
+  , _hoisted_11), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <PostReviewForm :id=\"company[0].id\" :name=\"company[0].name\"></PostReviewForm> ")])])]), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.reviews, function (review) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
       "class": "card bg-light mt-4 p-3 rounded-5",
       key: review

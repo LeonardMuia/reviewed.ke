@@ -27,7 +27,7 @@ Route::get('/company/{id}', [LandingPage::class, 'showCompany']);
 
 Route::get('/category/{id}', [LandingPage::class, 'bestInCategory']);
 
-
+Route::get('/post-review/{id}', [LandingPage::class, 'postReviewPage']);
 
 Route::post('/for-business', [LandingPage::class, 'addCompany']);
 Route::post('/post-review', [LandingPage::class,'add']);

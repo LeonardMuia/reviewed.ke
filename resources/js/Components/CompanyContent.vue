@@ -11,8 +11,8 @@
                             <div class="h4 text-dark">Writer your review</div>
                             <p class="text-sm">Help future customers by talking about customer service, price, delivery, returns & refunds.</p>
                             <div class="mt-4">
-                              <button class="btn btn-outline-dark btn-lg shadow" href="/for-business" data-toggle="modal" :data-target="'#company'+company[0].id">Write a review</button>
-                              <PostReviewForm :id="company[0].id" :name="company[0].name"></PostReviewForm>
+                              <button class="btn btn-outline-dark btn-lg shadow" :href="`/post-review/${company[0].id}`">Write a review</button>
+                              <!-- <PostReviewForm :id="company[0].id" :name="company[0].name"></PostReviewForm> -->
                             </div>
                         </div>
                     </div>
@@ -24,7 +24,7 @@
                             </span>
                             <div class="user-info px-4">
                                 <div class="fw-bold h5">{{ review.user }}</div>
-                                <div class="span text-sm text-success" v-if="review.is_verified"><i class="uil uil-check-circle"></i> Verified Review</div>
+                                <div class="span text-sm text-success" v-if="review.is_verified"><i class="uil uil-`check-circle"></i> Verified Review</div>
                                 <div class="span text-sm text-danger" v-if="!review.is_verified"><i class="uil uil-times-circle"></i> Pending Verification</div>
                             </div>
                             <div class="rating">
