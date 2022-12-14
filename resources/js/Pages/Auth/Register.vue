@@ -59,7 +59,6 @@ export default {
                 job: '',
                 email: '',
                 phone: '',
-                plan: 1,
                 password: "",
                 password_confirmation: ""
             })

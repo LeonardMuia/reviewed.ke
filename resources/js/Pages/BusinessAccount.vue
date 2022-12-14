@@ -1,13 +1,13 @@
 <template>
     <Head title="Admin Dashboard"></Head>
 
-    <DashHeader></DashHeader>
+    <DashHeader :user="user"></DashHeader>
 
     <main>
 
-        <DashHero></DashHero>
+        <DashHero :user="user"></DashHero>
         
-        <DashContent></DashContent>
+        <BusinessContent></BusinessContent>
 
     </main>
 
@@ -16,6 +16,7 @@
 <script>
 
 import { Head,Link } from '@inertiajs/inertia-vue3';
+import BusinessContent from '../Components/Dashboard/BusinessContent.vue';
 import DashContent from '../Components/Dashboard/DashContent.vue';
 import DashHeader from '../Components/Dashboard/DashHeader.vue';
 import DashHero from '../Components/Dashboard/DashHero.vue';
@@ -30,11 +31,15 @@ export default {
     Link,
     DashHeader,
     DashHero,
-    DashContent
+    DashContent,
+    BusinessContent
 },
 
-    mounted() {
-
+computed: {
+    user() {
+      return this.$page.props.auth.user
     }
+  }
+
 }
 </script>
