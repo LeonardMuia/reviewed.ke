@@ -16,7 +16,7 @@ class AdminSeeder extends Seeder
      */
     public function run()
     {
-        $superadmin = ["role_id"=>"1", "name"=>"Super Admin", "phone_number" => "703189693", "email" => "super.admin@reviewed.ke", "password"=> Hash::make("Terry@2001")];
+        $superadmin = ["role_id"=>"1", "name"=>"Admin", "phone" => "703189693", "email" => "admin@reviewed.ke", "password"=> Hash::make("12345678")];
         
         User::create($superadmin);
     }
