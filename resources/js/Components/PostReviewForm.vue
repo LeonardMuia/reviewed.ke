@@ -1,10 +1,10 @@
 <template>
-    <section class="section">
+    <section class="section bg-light">
         <div class="container row py-5">
             <div class="col-4"></div>
             <div class="col-6">
               <form class="px-2" @submit.prevent="submit">
-                    <div class="h5 text-dark">Rate your recent experience</div>
+                    <div class="h5 text-dark">Rate your recent experience with {{name}}</div>
                     <div class="form-group-rating mt-3">
                         <div class="form-check form-check-inline">
                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" v-bind:value="1" v-model="form.rating">
@@ -27,8 +27,15 @@
                           <label class="form-check-label" for="inlineRadio3">5</label>
                         </div>
                     </div>
-                    <div class="additional-review mt-5" v-if="form.rating">
+                    <div class="additional-review mt-4">
                         <div class="h5 text-dark">
+                            Give your review a title
+                        </div>
+                       <div class="form-group mt-2">
+                            <input type="text" class="form-control" placeholder="What is the highlight of your review" v-model="form.title" required>
+                        </div>
+
+                        <div class="h5 text-dark mt-3">
                             Tell us more about your experience
                         </div>
                       
@@ -52,7 +59,7 @@
                         <small class="mt-1 d-block text-muted">We need your email address to verify that your review is genuine.</small>
 
                         <div class="form-group mt-2">
-                            <input type="text" class="form-control" v-model="form.email">
+                            <input type="text" class="form-control" v-model="form.email" required>
                         </div>
                         <small class="mt-1 d-block text-muted">Please note that we may share your email with the company to verify your order.</small>
 
@@ -62,7 +69,7 @@
                         <small class="mt-1 d-block text-muted">We need your phone number to contact you to verify that your review is genuine.</small>
 
                         <div class="form-group mt-2">
-                            <input id="phone" type="text" class="form-control" v-model="form.phone">
+                            <input id="phone" type="text" class="form-control" v-model="form.phone" required>
                         </div>
 
                         <small class="mt-1 d-block text-muted">Please note that we may share your phone with the company to verify your order.</small>
@@ -92,8 +99,10 @@ export default {
     data() {
         return {
             form: this.$inertia.form({
-                rating: 0,
+                id: this.id,
+                rating: 1,
                 review: '',
+                title: '',
                 email: '',
                 phone: '',
                 name: ''
@@ -105,7 +114,7 @@ export default {
     },
 
     mounted() {
-        const input = document.getElementById('#phone');
+        const input = document.querySelector('#phone');
 
         intlTelInput(input, {
             initialCountry: "ke",

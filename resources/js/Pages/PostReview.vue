@@ -1,13 +1,12 @@
 <template>
 
-    <Head :title="`Write a review ${name}`"></Head>
+    <Head :title="`Rate ${name}`"></Head>
 
     <Nav></Nav>
 
     <Header></Header>
 
     <main>
-        <PostReviewHero :name="name" :id="id"></PostReviewHero>
         <PostReviewForm :name="name" :id="id"></PostReviewForm>
     </main>
 

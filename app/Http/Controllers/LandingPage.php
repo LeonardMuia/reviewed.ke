@@ -130,15 +130,19 @@ class LandingPage extends Controller
     // Add a review post request
     public function add(Request $request)
     {
+        
         Review::create([
-            'company_id' => 6,
+            'company_id' => $request['id'],
             'rating' => $request['rating'],
             'review' => $request['review'],
+            'title' => $request['title'],
             'email' => $request['email'],
-            'user' => "Anonymous",
+            'phone' => $request['phone'],
+            'user' => $request['name'],
         ]);
 
-        return redirect('/');
+        return redirect('/company/'.$request['id']);
+
     }
 
     // Add a company post request
