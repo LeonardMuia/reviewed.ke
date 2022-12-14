@@ -122,7 +122,15 @@ class LandingPage extends Controller
     // Add a review post request
     public function add(Request $request)
     {
-        return Inertia::render('Onboarding');
+        Review::create([
+            'company_id' => 6,
+            'rating' => $request['rating'],
+            'review' => $request['review'],
+            'email' => $request['email'],
+            'user' => "Anonymous",
+        ]);
+
+        return redirect('/');
     }
 
     // Add a company post request

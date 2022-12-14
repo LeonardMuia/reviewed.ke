@@ -19856,10 +19856,16 @@ __webpack_require__.r(__webpack_exports__);
       form: this.$inertia.form({
         rating: 0,
         review: '',
-        email: ''
+        email: '',
+        name: ''
       }),
       placeholder: "What did you like or dislike? What is ".concat(this.name, " doing well, or how can they improve? Remember to be honest, helpful, and constructive!")
     };
+  },
+  methods: {
+    submit: function submit() {
+      this.$inertia.post('/post-review', this.form);
+    }
   }
 });
 
@@ -24187,7 +24193,7 @@ var _hoisted_5 = {
 
 var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "col-md-12 fs-6 mt-2"
-}, "Manage your business account, subscription and profile.", -1
+}, "Manage account data and features.", -1
 /* HOISTED */
 );
 
@@ -24847,7 +24853,49 @@ var _hoisted_22 = {
 };
 var _hoisted_23 = ["placeholder"];
 
-var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"text-dark mt-3 h6\" data-v-7f5c3607> What is your name? </div><small class=\"mt-1 d-block text-muted\" data-v-7f5c3607>Leave this blank if you&#39;d like to publish your review anonymously.</small><div class=\"form-group mt-2\" data-v-7f5c3607><input type=\"text\" class=\"form-control\" data-v-7f5c3607></div><small class=\"mt-1 d-block text-muted\" data-v-7f5c3607>(optional)</small><div class=\"text-dark mt-3 h6\" data-v-7f5c3607> What is your email? </div><small class=\"mt-1 d-block text-muted\" data-v-7f5c3607>We need your email address to verify that your review is genuine.</small>", 6);
+var _hoisted_24 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "text-dark mt-3 h6"
+  }, " What is your name? ", -1
+  /* HOISTED */
+  );
+});
+
+var _hoisted_25 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("small", {
+    "class": "mt-1 d-block text-muted"
+  }, "Leave this blank if you'd like to publish your review anonymously.", -1
+  /* HOISTED */
+  );
+});
+
+var _hoisted_26 = {
+  "class": "form-group mt-2"
+};
+
+var _hoisted_27 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("small", {
+    "class": "mt-1 d-block text-muted"
+  }, "(optional)", -1
+  /* HOISTED */
+  );
+});
+
+var _hoisted_28 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "text-dark mt-3 h6"
+  }, " What is your email? ", -1
+  /* HOISTED */
+  );
+});
+
+var _hoisted_29 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("small", {
+    "class": "mt-1 d-block text-muted"
+  }, "We need your email address to verify that your review is genuine.", -1
+  /* HOISTED */
+  );
+});
 
 var _hoisted_30 = {
   "class": "form-group mt-2"
@@ -24875,8 +24923,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* TEXT */
   ), _hoisted_6]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", {
     "class": "px-2",
-    onSubmit: _cache[7] || (_cache[7] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
-      return _ctx.submit && _ctx.submit.apply(_ctx, arguments);
+    onSubmit: _cache[8] || (_cache[8] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
+      return $options.submit && $options.submit.apply($options, arguments);
     }, ["prevent"]))
   }, [_hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     "class": "form-check-input",
@@ -24942,10 +24990,18 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     })
   }, null, 8
   /* PROPS */
-  , _hoisted_23), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.form.review]])]), _hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_30, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  , _hoisted_23), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.form.review]])]), _hoisted_24, _hoisted_25, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_26, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     type: "text",
     "class": "form-control",
     "onUpdate:modelValue": _cache[6] || (_cache[6] = function ($event) {
+      return $props.name = $event;
+    })
+  }, null, 512
+  /* NEED_PATCH */
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $props.name]])]), _hoisted_27, _hoisted_28, _hoisted_29, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_30, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    type: "text",
+    "class": "form-control",
+    "onUpdate:modelValue": _cache[7] || (_cache[7] = function ($event) {
       return $data.form.email = $event;
     })
   }, null, 512

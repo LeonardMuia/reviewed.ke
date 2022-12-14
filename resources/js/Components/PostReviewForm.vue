@@ -48,7 +48,7 @@
                     <small class="mt-1 d-block text-muted">Leave this blank if you'd like to publish your review anonymously.</small>
 
                     <div class="form-group mt-2">
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" v-model="name">
                     </div>
                     <small class="mt-1 d-block text-muted">(optional)</small>
 
@@ -87,11 +87,18 @@ export default {
             form: this.$inertia.form({
                 rating: 0,
                 review: '',
-                email: ''
+                email: '',
+                name: ''
             }),
 
             placeholder: `What did you like or dislike? What is ${this.name} doing well, or how can they improve? Remember to be honest, helpful, and constructive!`
         }
+    },
+
+    methods: {
+      submit() {
+        this.$inertia.post('/post-review', this.form)
+      },
     }
 
 }
