@@ -7,7 +7,7 @@
             <ul class="nav align-items-center">
             <li class="nav-item px-2 mt-0 mb-0 h6"></li>
             <div class="d-block link-dark text-decoration-none">
-                  <div class="text-sm">Account:</div>
+                  <div class="text-sm">Logged in user:</div>
                   <span class="text-sm">{{ user.email }}</span>
             </div>
             <Link method="post" href="/logout" class="h3 px-3 text-dark">

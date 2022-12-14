@@ -2,11 +2,6 @@
     <Head title="Create an Account"></Head>
     <section class="section">
         <div class="">
-            <div class="text-center mb-1">
-                <Link href="/" class="h3 text-dark text-decoration-none">
-                    <img src="/images/favicon.svg" class="img-fluid" width="24" alt="logo"> Reviewed.ke
-                </Link>
-            </div>
             <div class="card border rounded-5">
                 <div class="card-body">
                     <form class="form-signin" @submit.prevent="submit">

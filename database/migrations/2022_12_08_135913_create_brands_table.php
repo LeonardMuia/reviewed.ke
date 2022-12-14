@@ -19,7 +19,7 @@ class CreateBrandsTable extends Migration
             $table->foreign('category_id')->references('id')->on('categories');
             $table->string('name');
             $table->longText('about');
-            $table->float('rating', 1,1)->default(1.0);
+            $table->float('rating', 2,1)->default(0.0);
             $table->string('website_url')->nullable();
             $table->string('company_phone')->nullable();
             $table->string('company_email')->nullable();
