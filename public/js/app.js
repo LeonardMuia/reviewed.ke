@@ -20063,6 +20063,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia-vue3 */ "./node_modules/@inertiajs/inertia-vue3/dist/index.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -20074,7 +20080,19 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   methods: {
-    submit: function submit() {}
+    submit: function submit() {
+      var _this = this;
+
+      this.form.transform(function (data) {
+        return _objectSpread(_objectSpread({}, data), {}, {
+          remember: _this.form.remember ? 'on' : ''
+        });
+      }).post(this.route('login'), {
+        onFinish: function onFinish() {
+          return _this.form.reset('password');
+        }
+      });
+    }
   }
 });
 
@@ -20379,7 +20397,12 @@ __webpack_require__.r(__webpack_exports__);
     DashHero: _Components_Dashboard_DashHero_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
     DashContent: _Components_Dashboard_DashContent_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
-  mounted: function mounted() {}
+  mounted: function mounted() {},
+  computed: {
+    user: function user() {
+      return this.$page.props.auth.user;
+    }
+  }
 });
 
 /***/ }),
@@ -25734,11 +25757,8 @@ var _hoisted_6 = {
 var _hoisted_7 = {
   "class": "card-body"
 };
-var _hoisted_8 = {
-  "class": "form-signin"
-};
 
-var _hoisted_9 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_8 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
     "class": "h4 mb-2"
   }, "Login to your account", -1
@@ -25746,13 +25766,13 @@ var _hoisted_9 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_10 = {
+var _hoisted_9 = {
   key: 0,
   "class": "alert alert-danger",
   role: "alert"
 };
 
-var _hoisted_11 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_10 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
     "class": "text-sm"
   }, "Please enter a correct email address and password. Note that both fields may be case-sensitive.", -1
@@ -25760,9 +25780,9 @@ var _hoisted_11 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_12 = [_hoisted_11];
+var _hoisted_11 = [_hoisted_10];
 
-var _hoisted_13 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_12 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
     "for": "inputEmail",
     "class": "sr-only"
@@ -25771,11 +25791,12 @@ var _hoisted_13 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_14 = {
-  key: 1
+var _hoisted_13 = {
+  key: 1,
+  "class": "text-sm text-danger"
 };
 
-var _hoisted_15 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_14 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
     "for": "inputPassword",
     "class": "sr-only"
@@ -25784,11 +25805,12 @@ var _hoisted_15 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_16 = {
-  key: 2
+var _hoisted_15 = {
+  key: 2,
+  "class": "text-sm text-danger"
 };
 
-var _hoisted_17 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_16 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "row mt-3"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -25801,9 +25823,9 @@ var _hoisted_17 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_18 = ["disabled"];
+var _hoisted_17 = ["disabled"];
 
-var _hoisted_19 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_18 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "text-sm mt-3"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Don't have a Reviewed.ke account? "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
@@ -25814,7 +25836,7 @@ var _hoisted_19 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_20 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_19 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
     "class": "mt-5 mb-3 text-muted fixed-bottom text-center"
   }, "© 2022 Reviewed.ke | All Rights Reserved", -1
@@ -25839,33 +25861,36 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
     /* STABLE */
 
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", _hoisted_8, [_hoisted_9,  false ? (0) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", {
+    "class": "form-signin",
+    onSubmit: _cache[2] || (_cache[2] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
+      return $options.submit && $options.submit.apply($options, arguments);
+    }, ["prevent"]))
+  }, [_hoisted_8,  false ? (0) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     type: "email",
     "class": "form-control",
     placeholder: "Registered Email",
     "onUpdate:modelValue": _cache[0] || (_cache[0] = function ($event) {
       return $data.form.email = $event;
     }),
-    required: "",
     autofocus: ""
   }, null, 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.form.email]]), $data.form.errors.email ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.form.errors.email), 1
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.form.email]]), $data.form.errors.email ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_13, "*" + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.form.errors.email), 1
   /* TEXT */
-  )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     type: "password",
     id: "inputPassword",
     "class": "form-control",
     placeholder: "Password",
     "onUpdate:modelValue": _cache[1] || (_cache[1] = function ($event) {
       return $data.form.password = $event;
-    }),
-    required: ""
+    })
   }, null, 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.form.password]]), $data.form.errors.password ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.form.errors.password), 1
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.form.password]]), $data.form.errors.password ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_15, "*" + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.form.errors.password), 1
   /* TEXT */
-  )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["mt-4 btn btn-lg btn-dark col-12", {
       'opacity-25': $data.form.processing
     }]),
@@ -25873,7 +25898,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     disabled: $data.form.processing
   }, "Log In", 10
   /* CLASS, PROPS */
-  , _hoisted_18), _hoisted_19])])])]), _hoisted_20])], 64
+  , _hoisted_17), _hoisted_18], 32
+  /* HYDRATE_EVENTS */
+  )])])]), _hoisted_19])], 64
   /* STABLE_FRAGMENT */
   );
 }
@@ -26315,7 +26342,15 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, {
     title: "Admin Dashboard"
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_DashHeader), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("main", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_DashHero), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_DashContent)])], 64
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_DashHeader, {
+    user: $options.user
+  }, null, 8
+  /* PROPS */
+  , ["user"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("main", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_DashHero, {
+    user: $options.user
+  }, null, 8
+  /* PROPS */
+  , ["user"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_DashContent)])], 64
   /* STABLE_FRAGMENT */
   );
 }

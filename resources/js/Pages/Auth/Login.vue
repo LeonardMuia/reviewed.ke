@@ -9,17 +9,17 @@
             </div>
             <div class="card border rounded-5">
                 <div class="card-body">
-                    <form class="form-signin">
+                    <form class="form-signin" @submit.prevent="submit">
                         <h1 class="h4 mb-2">Login to your account</h1>
                         <div class="alert alert-danger" role="alert" v-if="false" >
                             <span class="text-sm">Please enter a correct email address and password. Note that both fields may be case-sensitive.</span>
                         </div>
                         <label for="inputEmail" class="sr-only">Account Email</label>
-                        <input type="email" class="form-control" placeholder="Registered Email" v-model="form.email" required autofocus>
-                        <div v-if="form.errors.email">{{ form.errors.email }}</div>
+                        <input type="email" class="form-control" placeholder="Registered Email" v-model="form.email" autofocus>
+                        <div class="text-sm text-danger" v-if="form.errors.email">*{{ form.errors.email }}</div>
                         <label for="inputPassword" class="sr-only">Password</label>
-                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" v-model="form.password" required>
-                        <div v-if="form.errors.password">{{ form.errors.password }}</div>
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" v-model="form.password">
+                        <div class="text-sm text-danger" v-if="form.errors.password">*{{ form.errors.password }}</div>
                         <div class="row mt-3">
                             <div class="col-6">
                                 <a href="/forgot-password" class="text-sm text-decoration-none">Forgot Password?</a>
@@ -51,7 +51,14 @@ export default{
 
     methods: {
         submit(){
-            
+            this.form
+            .transform(data => ({
+                ...data,
+                remember: this.form.remember ? 'on' : ''
+            }))
+            .post(this.route('login'), {
+                onFinish: () => this.form.reset('password'),
+            } )
         }
     }
 }

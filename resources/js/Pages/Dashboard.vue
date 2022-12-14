@@ -1,11 +1,11 @@
 <template>
     <Head title="Admin Dashboard"></Head>
 
-    <DashHeader></DashHeader>
+    <DashHeader :user="user"></DashHeader>
 
     <main>
 
-        <DashHero></DashHero>
+        <DashHero :user="user"></DashHero>
         
         <DashContent></DashContent>
 
@@ -35,6 +35,12 @@ export default {
 
     mounted() {
 
+    },
+
+    computed: {
+    user() {
+      return this.$page.props.auth.user
     }
+  }
 }
 </script>
