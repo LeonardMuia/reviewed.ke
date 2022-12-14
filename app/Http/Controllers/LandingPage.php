@@ -119,6 +119,12 @@ class LandingPage extends Controller
         return Inertia::render('Support');
     }
 
+    public function postReviewPage($id){
+        return Inertia::render('PostReview', [
+            'id' => $id
+        ]);
+    }
+
     // Add a review post request
     public function add(Request $request)
     {
