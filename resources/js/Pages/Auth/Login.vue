@@ -11,7 +11,7 @@
                 <div class="card-body">
                     <form class="form-signin">
                         <h1 class="h4 mb-2">Login to your account</h1>
-                        <div class="alert alert-danger" role="alert" v-if="form.errors.email || form.errors.password" >
+                        <div class="alert alert-danger" role="alert" v-if="false" >
                             <span class="text-sm">Please enter a correct email address and password. Note that both fields may be case-sensitive.</span>
                         </div>
                         <label for="inputEmail" class="sr-only">Account Email</label>
@@ -19,12 +19,10 @@
                         <div v-if="form.errors.email">{{ form.errors.email }}</div>
                         <label for="inputPassword" class="sr-only">Password</label>
                         <input type="password" id="inputPassword" class="form-control" placeholder="Password" v-model="form.password" required>
+                        <div v-if="form.errors.password">{{ form.errors.password }}</div>
                         <div class="row mt-3">
                             <div class="col-6">
                                 <a href="/forgot-password" class="text-sm text-decoration-none">Forgot Password?</a>
-                            </div>
-                            <div class="col-6 text-end">
-                                <div class="text-sm text-black show-password">Show Password</div>
                             </div>
                         </div>
                         <button class="mt-4 btn btn-lg btn-dark col-12" type="submit" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">Log In</button>
@@ -41,37 +39,19 @@
 
 import { Head, Link } from '@inertiajs/inertia-vue3';
 
-export default {
-    props: {
-        canResetPassword: Boolean,
-        status: String,
-        errors: Object
-    },
-
-    components: {
-        Head,
-        Link
-    },
-
-    data() {
+export default{
+    data(){
         return {
             form: this.$inertia.form({
-                email: '',
-                password: '',
-                remember: false
-            })
+              email: "",
+              password: "",
+            }), 
         }
     },
+
     methods: {
-        submit() {
-            this.form
-                .transform(data => ({
-                    ... data,
-                    remember: this.form.remember ? 'on' : ''
-                }))
-                .post(this.route('login'), {
-                    onFinish: () => this.form.reset('password'),
-                })
+        submit(){
+            
         }
     }
 }
@@ -125,7 +105,7 @@ input {
   z-index: 2;
 }
 .form-signin input[type="email"] {
-  margin-bottom: -1px;
+  margin-bottom: 10px;
 }
 .form-signin input[type="password"] {
   margin-bottom: 10px;

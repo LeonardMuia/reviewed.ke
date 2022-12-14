@@ -3,6 +3,8 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingPage;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\BusinessController;
 use Inertia\Inertia;
 
 /*
@@ -32,10 +34,18 @@ Route::post('/post-review', [LandingPage::class,'add']);
 
 /*
 |--------------------------------------------------------------------------
-| Client Account Routes
+| Authorization requirement controllers
 |--------------------------------------------------------------------------
 */
 
-// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-//     return Inertia::render('Dashboard');
-// })->name('dashboard');
+Route::group(['middleware' => ['auth:sanctum','verified']], function(){
+    Route::group(['middleware' => 'is_admin'], function(){
+        Route::get('/dashboard', [AdminController::class, 'index']);
+    });
+});
+
+Route::group(['middleware' => ['auth:sanctum','verified']], function(){
+    Route::group(['middleware' => 'is_business'], function(){
+        Route::get('/my-account', [BusinessController::class, 'index']);
+    });
+});

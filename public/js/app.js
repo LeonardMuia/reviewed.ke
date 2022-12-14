@@ -20041,46 +20041,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia-vue3 */ "./node_modules/@inertiajs/inertia-vue3/dist/index.js");
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  props: {
-    canResetPassword: Boolean,
-    status: String,
-    errors: Object
-  },
-  components: {
-    Head: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__.Head,
-    Link: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__.Link
-  },
   data: function data() {
     return {
       form: this.$inertia.form({
-        email: '',
-        password: '',
-        remember: false
+        email: "",
+        password: ""
       })
     };
   },
   methods: {
-    submit: function submit() {
-      var _this = this;
-
-      this.form.transform(function (data) {
-        return _objectSpread(_objectSpread({}, data), {}, {
-          remember: _this.form.remember ? 'on' : ''
-        });
-      }).post(this.route('login'), {
-        onFinish: function onFinish() {
-          return _this.form.reset('password');
-        }
-      });
-    }
+    submit: function submit() {}
   }
 });
 
@@ -25525,11 +25497,26 @@ var _hoisted_15 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"row mt-3\" data-v-a2ac2cea><div class=\"col-6\" data-v-a2ac2cea><a href=\"/forgot-password\" class=\"text-sm text-decoration-none\" data-v-a2ac2cea>Forgot Password?</a></div><div class=\"col-6 text-end\" data-v-a2ac2cea><div class=\"text-sm text-black show-password\" data-v-a2ac2cea>Show Password</div></div></div>", 1);
+var _hoisted_16 = {
+  key: 2
+};
 
-var _hoisted_17 = ["disabled"];
+var _hoisted_17 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "row mt-3"
+  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "col-6"
+  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    href: "/forgot-password",
+    "class": "text-sm text-decoration-none"
+  }, "Forgot Password?")])], -1
+  /* HOISTED */
+  );
+});
 
-var _hoisted_18 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_18 = ["disabled"];
+
+var _hoisted_19 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "text-sm mt-3"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Don't have a Reviewed.ke account? "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
@@ -25540,7 +25527,7 @@ var _hoisted_18 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_19 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_20 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
     "class": "mt-5 mb-3 text-muted fixed-bottom text-center"
   }, "© 2022 Reviewed.ke | All Rights Reserved", -1
@@ -25565,7 +25552,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
     /* STABLE */
 
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", _hoisted_8, [_hoisted_9, $data.form.errors.email || $data.form.errors.password ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_10, _hoisted_12)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", _hoisted_8, [_hoisted_9,  false ? (0) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     type: "email",
     "class": "form-control",
     placeholder: "Registered Email",
@@ -25589,7 +25576,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     required: ""
   }, null, 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.form.password]]), _hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.form.password]]), $data.form.errors.password ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.form.errors.password), 1
+  /* TEXT */
+  )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["mt-4 btn btn-lg btn-dark col-12", {
       'opacity-25': $data.form.processing
     }]),
@@ -25597,7 +25586,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     disabled: $data.form.processing
   }, "Log In", 10
   /* CLASS, PROPS */
-  , _hoisted_17), _hoisted_18])])])]), _hoisted_19])], 64
+  , _hoisted_18), _hoisted_19])])])]), _hoisted_20])], 64
   /* STABLE_FRAGMENT */
   );
 }
@@ -30500,7 +30489,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.section[data-v-a2ac2cea] {\r\n    height:100vh !important;\r\n    display: flex;\r\n    -ms-flex-align: center;\r\n    -ms-flex-pack: center;\r\n    align-items: center;\r\n    justify-content: center;\r\n    background-color: #f5f5f5;\n}\n.card[data-v-a2ac2cea] {\r\n    width: 500px !important;\n}\nlabel[data-v-a2ac2cea] {\r\n    margin-top: 8px;\n}\ninput[data-v-a2ac2cea] {\r\n    margin-top: 8px;\n}\n.form-signin[data-v-a2ac2cea] {\r\n  width: 100%;\r\n  padding: 15px;\r\n  margin: 0 auto;\n}\n.form-signin .checkbox[data-v-a2ac2cea] {\r\n  font-weight: 400;\n}\n.form-signin .form-control[data-v-a2ac2cea] {\r\n  position: relative;\r\n  box-sizing: border-box;\r\n  height: auto;\r\n  padding: 10px;\r\n  font-size: 16px;\n}\n.form-signin .form-control[data-v-a2ac2cea]:focus {\r\n  z-index: 2;\n}\n.form-signin input[type=\"email\"][data-v-a2ac2cea] {\r\n  margin-bottom: -1px;\n}\n.form-signin input[type=\"password\"][data-v-a2ac2cea] {\r\n  margin-bottom: 10px;\n}\n.show-password[data-v-a2ac2cea] {\r\n    cursor: pointer;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.section[data-v-a2ac2cea] {\r\n    height:100vh !important;\r\n    display: flex;\r\n    -ms-flex-align: center;\r\n    -ms-flex-pack: center;\r\n    align-items: center;\r\n    justify-content: center;\r\n    background-color: #f5f5f5;\n}\n.card[data-v-a2ac2cea] {\r\n    width: 500px !important;\n}\nlabel[data-v-a2ac2cea] {\r\n    margin-top: 8px;\n}\ninput[data-v-a2ac2cea] {\r\n    margin-top: 8px;\n}\n.form-signin[data-v-a2ac2cea] {\r\n  width: 100%;\r\n  padding: 15px;\r\n  margin: 0 auto;\n}\n.form-signin .checkbox[data-v-a2ac2cea] {\r\n  font-weight: 400;\n}\n.form-signin .form-control[data-v-a2ac2cea] {\r\n  position: relative;\r\n  box-sizing: border-box;\r\n  height: auto;\r\n  padding: 10px;\r\n  font-size: 16px;\n}\n.form-signin .form-control[data-v-a2ac2cea]:focus {\r\n  z-index: 2;\n}\n.form-signin input[type=\"email\"][data-v-a2ac2cea] {\r\n  margin-bottom: 10px;\n}\n.form-signin input[type=\"password\"][data-v-a2ac2cea] {\r\n  margin-bottom: 10px;\n}\n.show-password[data-v-a2ac2cea] {\r\n    cursor: pointer;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
