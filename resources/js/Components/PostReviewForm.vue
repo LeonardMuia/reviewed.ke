@@ -1,14 +1,4 @@
 <template>
-    <div class="modal fade" :id="'company'+id" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header">
-            <div class="modal-title h5 text-dark" id="postReview">Write your review on {{ name }}</div>
-            <a href="#" class="close text-decoration-none h4 text-dark" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </a>
-          </div>
-          <div class="modal-body text-secondary">
             <form class="px-2" @submit.prevent="submit">
                 <div class="h6 text-dark">Rate your recent experience</div>
                 <div class="form-group-rating mt-3">
@@ -65,10 +55,6 @@
                     <button type="submit" class="btn btn-dark btn-lg mt-3 mb-3 col-12" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">Submit Review</button>
                 </div>
             </form>
-          </div>
-        </div>
-      </div>
-    </div>
 </template>
 
 <script>

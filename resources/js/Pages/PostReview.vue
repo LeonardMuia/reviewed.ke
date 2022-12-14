@@ -1,19 +1,31 @@
 <template>
 
+    <Head :title="`Write a review ${name}`"></Head>
 
-    <div>
-        
-    </div>
+    <Nav></Nav>
+
+    <Header></Header>
+
+    <main>
+        <PostReviewHero :name="name" :id="id"></PostReviewHero>
+    </main>
+
+    <Footer></Footer>
+
 </template>
 
 <script>
 
 import { Head, Link } from '@inertiajs/inertia-vue3';
+import Nav from '../Components/Nav.vue';
+import Header from '../Components/Header.vue';
+import Footer from '../Components/Footer.vue';
+import PostReviewHero from "../Components/PostReviewHero.vue";
 
 export default {
     props: {
         id: {
-            type: Number
+            type: String
         },
         name: {
             type: String
@@ -21,12 +33,15 @@ export default {
     },
     components: {
         Head,
-        Link
+        Link,
+        Nav,
+        Header,
+        Footer,
+        PostReviewHero
     },
 
     mounted() {
-        console.log(this.id);
-        console.log(this.name);
+
     }
 }
 </script>

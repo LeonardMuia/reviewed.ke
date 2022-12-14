@@ -3,7 +3,7 @@
       <div class="container">
         <div class="row p-5 pb-0 pe-lg-0 pt-lg-5 justify-contents-center">
           <div class="col-lg-6 p-3 p-lg-5 pt-lg-3">
-            <h1 class="display-5 fw-bold lh-1 mb-4">Read & Write reviews.<br/>Find companies you can <span class="text-primary">trust.</span></h1>
+            <h1 class="display-6 fw-bold lh-1 mb-4">Read & Write reviews.<br/>Find companies you can <span class="text-primary">trust.</span></h1>
             <p class="mb-4">We're a digital platform that brings businesses and consumers together to foster trust and inspire collaboration. We're free to use, open to everybody, and built on transparency.</p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
               <form class="row g-3">

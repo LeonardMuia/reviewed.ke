@@ -120,7 +120,7 @@ class LandingPage extends Controller
     }
 
     public function postReviewPage($id){
-        $name = Brands::where('id', id)->value('name');
+        $name = Brand::where('id', $id)->value('name');
         return Inertia::render('PostReview', [
             'id' => $id,
             'name' => $name
