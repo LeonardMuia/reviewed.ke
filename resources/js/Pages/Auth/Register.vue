@@ -2,37 +2,37 @@
     <Head title="Create an Account"></Head>
     <section class="section">
         <div class="">
-            <div class="text-center mb-3">
+            <div class="text-center mb-1">
                 <Link href="/" class="h3 text-dark text-decoration-none">
                     <img src="/images/favicon.svg" class="img-fluid" width="24" alt="logo"> Reviewed.ke
                 </Link>
             </div>
             <div class="card border rounded-5">
                 <div class="card-body">
-                    <form class="form-signin">
+                    <form class="form-signin" @submit.prevent="submit">
                         <h1 class="h5 mb-4">Create a Business Account</h1>
-                        <input type="text" class="form-control" placeholder="Company Name" required autofocus>
-                        <input type="text" class="form-control" placeholder="Name of contact person" required>
-                        <input type="text" class="form-control" placeholder="Job Title" required>
-                        <input type="email" class="form-control" placeholder="Work Email" required>
+                        <input type="text" class="form-control" placeholder="Company Name" v-model="form.company" autofocus>
+                        <small class="text-danger" v-if="form.errors.company">* {{form.errors.company}}</small>
+                        <input type="text" class="form-control" placeholder="Name of contact person" v-model="form.name">
+                        <small class="text-danger" v-if="form.errors.name">* {{form.errors.name}}</small>
+                        <input type="text" class="form-control" placeholder="Job Title" v-model="form.job" >
+                        <small class="text-danger" v-if="form.errors.job">* {{form.errors.job}}</small>
+                        <input type="email" class="form-control" placeholder="Work Email" v-model="form.email" >
+                        <small class="text-danger" v-if="form.errors.email">* {{form.errors.email}}</small>
                         <div class="mt-3">
-                            <input id="phone" type="text" class="form-control" required>
+                            <input id="phone" type="text" class="form-control" v-model="form.phone" >
                         </div>
-                        <select class="form-control">
-                            <option value="" disabled selected>Select your plan</option>
-                            <option value="free">Free Plan (Ksh.0 for life)</option>
-                            <option value="standard">Standard Plan (Ksh.1,200/month)</option>
-                            <option value="growth">Growth Plan (Ksh.2,800/month)</option>
-                            <option value="scale">Scale Plan (Ksh.3,500/month)</option>
-                            <option value="enterprise">Enterprise Plan (To be determined)</option>
-                        </select>
-                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                        <button class="mt-3 btn btn-lg btn-dark col-12" type="submit" disabled>Create free account</button>
+                        <small class="text-danger" v-if="form.errors.phone">* {{form.errors.phone}}</small>
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" v-model="form.password">
+                        <small class="text-danger" v-if="form.errors.password">* {{form.errors.password}}</small>
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Confirm Password" v-model="form.password_confirmation">
+                        <small class="text-danger" v-if="form.errors.confirm_password">* {{form.errors.confirm_password}}</small>
+                        <button class="mt-3 btn btn-lg btn-dark col-12" type="submit" :disabled="form.processing">Create free account</button>
                     </form>
                 </div>
             </div>
         </div>
-        <p class="mt-5 mb-3 text-muted fixed-bottom text-center">&copy; 2022 Reviewed.ke | All Rights Reserved</p>
+        
     </section>
 </template>
 
@@ -42,11 +42,38 @@ import { Head, Link } from '@inertiajs/inertia-vue3';
 import intlTelInput from 'intl-tel-input';  
 
 export default {
+    props: {
+        errors: Object
+    },
     components: {
         Head,
         Link,
         intlTelInput
     },
+    data(){
+        return {
+            form: this.$inertia.form({
+                role: 2,
+                company: '',
+                name: '',
+                job: '',
+                email: '',
+                phone: '',
+                plan: 1,
+                password: "",
+                password_confirmation: ""
+            })
+        }
+    },
+
+    methods:{
+        submit() {
+            this.form.post(this.route('register'), {
+                onFinish: () => this.form.reset('password')
+            })
+        }
+    },
+
     mounted() {
         const input = document.querySelector('#phone');
         intlTelInput(input, {
@@ -64,7 +91,7 @@ export default {
 <style scoped>
 
 .section {
-    height:100vh !important;   
+    height:100vh !important;  
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
@@ -97,8 +124,8 @@ export default {
   position: relative;
   box-sizing: border-box;
   height: auto;
-  padding: 10px;
-  font-size: 16px;
+  padding: 8px;
+  font-size: 14px;
 }
 
 .form-signin input[type="email"] {
@@ -109,5 +136,9 @@ export default {
 }
 .show-password {
     cursor: pointer;
+}
+
+small{
+    font-size: 12px;
 }
 </style>

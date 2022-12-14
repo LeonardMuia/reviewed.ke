@@ -61,7 +61,16 @@ return [
     |
     */
 
-    'home' => RouteServiceProvider::HOME,
+    'home' => function(){
+        if(Auth::user()->role_id === 1){
+            return "/dashboard";
+        } else if(Auth::user()->role_id === 2)
+        {
+            return '/my-account';
+        } else {
+            return route('/');
+        }
+    },
 
     /*
     |--------------------------------------------------------------------------

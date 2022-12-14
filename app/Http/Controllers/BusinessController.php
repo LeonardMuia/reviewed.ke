@@ -9,6 +9,6 @@ class BusinessController extends Controller
 {
     public function index()
     {
-        return Inertia::render('MyAccount');
+        return Inertia::render('BusinessAccount');
     }
 }
