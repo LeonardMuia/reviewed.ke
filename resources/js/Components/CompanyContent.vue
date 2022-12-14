@@ -11,8 +11,7 @@
                             <div class="h4 text-dark">Writer your review</div>
                             <p class="text-sm">Help future customers by talking about customer service, price, delivery, returns & refunds.</p>
                             <div class="mt-4">
-                              <button class="btn btn-outline-dark btn-lg shadow" :href="`/post-review/${company[0].id}`">Write a review</button>
-                              <!-- <PostReviewForm :id="company[0].id" :name="company[0].name"></PostReviewForm> -->
+                              <Link class="btn btn-outline-dark btn-lg shadow" :href="`/post-review/${company[0].id}`">Write a review</Link>
                             </div>
                         </div>
                     </div>
@@ -85,8 +84,8 @@
 <script>
 
 import moment from 'moment';
-import PostReviewForm from '../Components/PostReviewForm.vue';
 import intlTelInput from 'intl-tel-input'; 
+import { Link } from '@inertiajs/inertia-vue3';
 
 export default {
     props: [
@@ -95,7 +94,8 @@ export default {
     ],
 
     components: {
-        PostReviewForm,
+        intlTelInput,
+        Link
     },  
 
     methods: {

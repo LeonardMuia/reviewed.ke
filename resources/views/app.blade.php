@@ -9,8 +9,10 @@
         <!-- Fonts -->
         <link rel="icon" type="image/png" href="images/favicon.svg">
         
+        <!-- icons -->
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
         <!-- Styles -->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         <link rel="stylesheet" href="{{ mix('css/bootstrap.css') }}">
         <link rel="stylesheet" href="{{ mix('css/main.css') }}">
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
