@@ -10,7 +10,7 @@
         <link rel="icon" type="image/png" href="images/favicon.svg">
         
         <!-- icons -->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release-pro/v4.0.0/css/solid.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release-pro/v4.0.0/css/line.css">
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/bootstrap.css') }}">
