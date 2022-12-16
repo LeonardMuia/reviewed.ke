@@ -7,7 +7,7 @@
 
         <DashHero :user="user"></DashHero>
         
-        <DashContent></DashContent>
+        <DashContent :reviews="reviews"></DashContent>
 
     </main>
 
@@ -22,25 +22,27 @@ import DashHero from '../Components/Dashboard/DashHero.vue';
 
 export default {
     props: {
-       
+       reviews: {
+        type: Object
+       }
     },  
 
     components: {
-    Head,
-    Link,
-    DashHeader,
-    DashHero,
-    DashContent
-},
+      Head,
+      Link,
+      DashHeader,
+      DashHero,
+      DashContent   
+    },
 
     mounted() {
-
+      console.log(this.reviews);
     },
 
     computed: {
-    user() {
-      return this.$page.props.auth.user
+      user() {
+        return this.$page.props.auth.user
+      }
     }
-  }
 }
 </script>

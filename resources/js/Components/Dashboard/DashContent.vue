@@ -13,7 +13,8 @@
 		    </nav>
             <div class="tab-content mt-3" id="nav-tabContent">
 			    <div class="tab-pane fade active show" id="nav-reviews" role="tabpanel" aria-labelledby="nav-reviews-tab">
-                    Reviews
+                    <ReviewsTable :reviews="reviews" v-if="review"></ReviewsTable>
+                    <h4 v-if="reviews == 0" class="h4 py-4 text-muted">No reviews found!</h4>
 			    </div>
                 <div class="tab-pane fade" id="nav-businesses" role="tabpanel" aria-labelledby="nav-businesses-tab">
                     Businesses
@@ -36,9 +37,20 @@
 </template>
 
 <script>
+import { Link } from '@inertiajs/inertia-vue3';
+import ReviewsTable from './ReviewsTable.vue';
+
 export default {
-    
+	props: [
+		'reviews'
+	],
+
+    components: {
+    Link,
+    ReviewsTable
 }
+}
+
 </script>
 
 <style scoped>

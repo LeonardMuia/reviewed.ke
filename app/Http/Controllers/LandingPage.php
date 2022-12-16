@@ -130,6 +130,23 @@ class LandingPage extends Controller
     // Add a review post request
     public function add(Request $request)
     {
+        $companyId = $request['id'];
+
+        $currentRating = Brand::where('id', $companyId)->value('rating');
+
+        $rating = $request['rating'];
+
+        $numberOfReviews = Review::where('id', $companyId)->count();
+
+        $totalReviews = $numberOfReviews + 1;
+
+        $newRating = $currentRating + $rating;
+
+        $averageRating = $newRating / $totalReviews;
+
+        Brand::where('id', $companyId)->update([
+            'rating' => $averageRating
+        ]);
         
         Review::create([
             'company_id' => $request['id'],
