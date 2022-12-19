@@ -12,9 +12,9 @@
   </thead>
   <tbody>
     <tr v-for="review in reviews" :key="review">
-        <th scope="row">getCompany(review.company_id)</th>
-        <td class="d-inline-block">
-            <p class="col-6 text-truncate">{{review.review}}</p>
+        <th scope="row">{{getCompany(review.company_id)}}</th>
+        <td class="text-sm">
+            {{review.review}}
         </td>
         <td>{{review.rating}}</td>
         <td>
@@ -34,7 +34,8 @@ import { Link } from '@inertiajs/inertia-vue3';
 
 export default {
     props: [
-        'reviews'
+        'reviews',
+        'companies'
     ],
     
     components: {
@@ -43,7 +44,8 @@ export default {
 
     methods: {
         getCompany(id){
-
+            const name = this.companies.find( e => e.id == id).name;
+            return name;
         }
     },
     

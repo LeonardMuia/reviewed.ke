@@ -7,7 +7,7 @@
 
         <DashHero :user="user"></DashHero>
         
-        <DashContent :reviews="reviews"></DashContent>
+        <DashContent :reviews="reviews" :companies="companies"></DashContent>
 
     </main>
 
@@ -23,6 +23,9 @@ import DashHero from '../Components/Dashboard/DashHero.vue';
 export default {
     props: {
        reviews: {
+        type: Object
+       },
+       companies: {
         type: Object
        }
     },  
