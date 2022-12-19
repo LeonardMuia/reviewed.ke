@@ -132,21 +132,13 @@ class LandingPage extends Controller
     {
         $companyId = $request['id'];
 
-        $currentRating = Brand::where('id', $companyId)->value('rating');
-
-        $rating = $request['rating'];
-
-        $numberOfReviews = Review::where('id', $companyId)->count();
-
-        $totalReviews = $numberOfReviews + 1;
-
-        $newRating = $currentRating + $rating;
-
-        $averageRating = $newRating / $totalReviews;
-
-        Brand::where('id', $companyId)->update([
-            'rating' => $averageRating
-        ]);
+        $name;
+        
+        if(empty($request['name'])) {
+            $name = "Anonymous";
+        } else {
+            $name = $request['name'];
+        }
         
         Review::create([
             'company_id' => $request['id'],
@@ -155,7 +147,27 @@ class LandingPage extends Controller
             'title' => $request['title'],
             'email' => $request['email'],
             'phone' => $request['phone'],
-            'user' => $request['name'],
+            'user' => $name,
+        ]);
+
+        $number_of_reviews = Review::where('company_id',$companyId)->count();
+        
+        $reviews_count = $number_of_reviews + 1;
+
+        $ratings = Review::where('company_id', $companyId)->pluck('rating'); 
+
+        $total_rating = 0;
+
+        foreach($ratings as $rating){
+            $total_rating = $total_rating + $rating;
+        }
+
+        $average_rating = $total_rating / $reviews_count;
+
+        $result = round($average_rating, 1);
+
+        Brand::where("id", $companyId)->update([
+            "rating" => $result
         ]);
 
         return redirect('/company/'.$request['id']);

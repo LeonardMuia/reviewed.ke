@@ -20,12 +20,12 @@
                             <div class="company-data px-4">
                                 <div class="h4">{{ company.name }}</div>
                                 <div class="stars">
-                                    <img class="img-fluid" src="/images/stars/zero.png" alt="Poor" v-if="company.rating < 1">
-                                    <img class="img-fluid" src="/images/stars/one.png" alt="Poor" v-if="company.rating < 2 && company.rating > 2">
-                                    <img class="img-fluid" src="/images/stars/two.png" alt="Bad" v-if="company.rating < 3 && company.rating > 2">
-                                    <img class="img-fluid" src="/images/stars/three.png" alt="Fair" v-if="company.rating < 4 && company.rating > 3">
-                                    <img class="img-fluid" src="/images/stars/four.png" alt="Good" v-if="company.rating < 4.5 && company.rating > 4">
-                                    <img class="img-fluid" src="/images/stars/five.png" alt="Excellent" v-if="company.rating > 4.5">
+                                    <img class="img-fluid rating-image" src="/images/stars/zero.png" alt="Poor" v-if="company.rating < 1.0">
+                <img class="img-fluid rating-image" src="/images/stars/one.png" alt="Poor" v-if="company.rating < 2.0 && company.rating >= 1.0">
+                <img class="img-fluid rating-image" src="/images/stars/two.png" alt="Bad" v-if="company.rating < 3.0 && company.rating >= 2.0">
+                <img class="img-fluid rating-image" src="/images/stars/three.png" alt="Fair" v-if="company.rating < 4.0 && company.rating >= 3.0">
+                <img class="img-fluid rating-image" src="/images/stars/four.png" alt="Good" v-if="company.rating < 4.5 && company.rating >= 4">
+                <img class="img-fluid rating-image" src="/images/stars/five.png" alt="Excellent" v-if="company.rating > 4.5">
                                 </div>
                                 <div class="mt-2 text-muted text-sm" v-if="company.rating">{{ 'Average Rating ' + getRating(company.rating) }}</div>
                                 <div class="mt-2 text-muted text-sm" v-if="company.rating == 0">No reviews submited</div>

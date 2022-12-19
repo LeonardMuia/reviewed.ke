@@ -40,7 +40,7 @@
                         </div>
                       
                         <div class="form-group mt-2">
-                            <textarea class="form-control text-sm" rows="4" :placeholder="placeholder" v-model="form.review"></textarea>
+                            <textarea class="form-control text-sm" rows="4" :placeholder="placeholder" v-model="form.review" required></textarea>
                         </div>
 
                         <div class="text-dark mt-3 h5">
@@ -128,7 +128,20 @@ export default {
 
     methods: {
       submit() {
-        this.$inertia.post('/post-review', this.form)
+        this.$swal({
+          title: 'Do you want to submit your review?',
+          showDenyButton: true,
+          showCancelButton: true,
+          confirmButtonText: 'Save',
+          denyButtonText: `Don't save`,
+        }).then((result) => {
+          /* Read more about isConfirmed, isDenied below */
+          if (result.isConfirmed) {
+            this.$inertia.post('/post-review', this.form)
+          } else if (result.isDenied) {
+            this.$swal('Your review was not saved', '', 'info')
+          }
+        })
       },
     }
 

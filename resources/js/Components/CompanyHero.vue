@@ -6,11 +6,11 @@
             <img :src="company[0].logo_path" :alt="company[0].name" class="img-fluid shadow-lg">
             <div class="company-rating px-5">
                 <div class="h2 fw-bold">{{ company[0].name }}</div>
-                <img class="img-fluid rating-image" src="/images/stars/zero.png" alt="Poor" v-if="company[0].rating < 1">
-                <img class="img-fluid rating-image" src="/images/stars/one.png" alt="Poor" v-if="company[0].rating < 2 && company[0].rating > 2">
-                <img class="img-fluid rating-image" src="/images/stars/two.png" alt="Bad" v-if="company[0].rating < 3 && company[0].rating > 2">
-                <img class="img-fluid rating-image" src="/images/stars/three.png" alt="Fair" v-if="company[0].rating < 4 && company[0].rating > 3">
-                <img class="img-fluid rating-image" src="/images/stars/four.png" alt="Good" v-if="company[0].rating < 4.5 && company[0].rating > 4">
+                <img class="img-fluid rating-image" src="/images/stars/zero.png" alt="Poor" v-if="company[0].rating < 1.0 ">
+                <img class="img-fluid rating-image" src="/images/stars/one.png" alt="Poor" v-if="company[0].rating < 2.0 && company[0].rating >= 1.0">
+                <img class="img-fluid rating-image" src="/images/stars/two.png" alt="Bad" v-if="company[0].rating < 3.0 && company[0].rating >= 2.0">
+                <img class="img-fluid rating-image" src="/images/stars/three.png" alt="Fair" v-if="company[0].rating < 4.0 && company[0].rating >= 3.0">
+                <img class="img-fluid rating-image" src="/images/stars/four.png" alt="Good" v-if="company[0].rating < 4.5 && company[0].rating >= 4">
                 <img class="img-fluid rating-image" src="/images/stars/five.png" alt="Excellent" v-if="company[0].rating > 4.5">
                 <div class="mt-1 h4 text-secondary">
                     Rating of {{ getRating( company[0].rating) }} based on {{ count }} reviews

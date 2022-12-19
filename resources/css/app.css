@@ -190,7 +190,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 /* PRICING */
 
 .text-sm {
-	font-size: 14px;
+	font-size: 13px !important;
 }
 
 .list-item {
@@ -202,5 +202,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .iti { 
 	width: 100%; 
 }
+
+.gradient-red {
+	background: -webkit-gradient(linear, right top, left top, from(#F0404C), to(#bb0f1a)) !important;
+	background: linear-gradient(to left, #F0404C, #bb0f1a) !important;
+  }
 
 /* NAV PILLS */

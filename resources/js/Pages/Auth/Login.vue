@@ -15,11 +15,9 @@
                             <span class="text-sm">Please enter a correct email address and password. Note that both fields may be case-sensitive.</span>
                         </div>
                         <label for="inputEmail" class="sr-only">Account Email</label>
-                        <input type="email" class="form-control" placeholder="Registered Email" v-model="form.email" autofocus>
-                        <div class="text-sm text-danger" v-if="form.errors.email">*{{ form.errors.email }}</div>
+                        <input type="email" class="form-control" placeholder="Registered Email" v-model="form.email" required autofocus>
                         <label for="inputPassword" class="sr-only">Password</label>
-                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" v-model="form.password">
-                        <div class="text-sm text-danger" v-if="form.errors.password">*{{ form.errors.password }}</div>
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" v-model="form.password" required>
                         <div class="row mt-3">
                             <div class="col-6">
                                 <a href="/forgot-password" class="text-sm text-decoration-none">Forgot Password?</a>
@@ -58,6 +56,24 @@ export default{
             }))
             .post(this.route('login'), {
                 onFinish: () => this.form.reset('password'),
+                onError: (errors) => {
+                    this.$swal({
+                            titleText: 'Login Error!',
+                            text: 'You have entered the wrong email or password.',
+                            icon: 'error',
+                            showConfirmButton: false,
+                            toast: true,
+                            iconColor: '#ffffff',
+                            position: 'top-end',
+                            timer: 3000,
+                            timerProgressBar: true,
+                            customClass: {
+                                title: 'text-light m-0 pt-2 pl-3',
+                                htmlContainer: 'text-sm text-light m-0 pt-2 pl-3',
+                                popup: 'gradient-red',
+                            }
+                    });
+                }
             } )
         }
     }
