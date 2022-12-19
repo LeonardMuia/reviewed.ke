@@ -11,8 +11,8 @@ class AdminController extends Controller
 {
     public function index()
     {
-        $reviews = Review::all();
-        $brands = Brand::all();
+        $reviews = Review::orderBy('id', 'DESC')->get();
+        $brands = Brand::orderBy('id', 'DESC')->get();
         
         return Inertia::render('Dashboard', [
             'reviews' => $reviews,

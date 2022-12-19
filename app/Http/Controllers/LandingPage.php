@@ -174,6 +174,15 @@ class LandingPage extends Controller
 
     }
 
+    public function verifyReview($id){
+
+        Review::where('id', $id)->update([
+            'is_verified' => 1
+        ]);
+
+        return back();
+    }
+
     // Add a company post request
     public function addCompany(Request $request)
     {
