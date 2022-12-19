@@ -3,12 +3,12 @@
         <div class="container">
             <nav class="border-bottom">
 		    	<div class="nav nav-pills nav-fill accent mb-3" id="nav-tab" role="tablist">
-		    		<button class="pills nav-link active" id="nav-reviews-tab" data-toggle="tab" data-target="#nav-reviews" type="button" role="tab" aria-controls="nav-reviews" aria-selected="true"><i class="uil uil-star"></i>Reviews</button>
-		    		<button class="pills nav-link" id="nav-businesses-tab" data-toggle="tab" data-target="#nav-businesses" type="button" role="tab" aria-controls="nav-businesses" aria-selected="false"><i class="uil uil-university"></i>Businesses</button>
-		    		<button class="pills nav-link" id="nav-categories-tab" data-toggle="tab" data-target="#nav-categories" type="button" role="tab" aria-controls="nav-categories" aria-selected="false"><i class="uil uil-panel-add"></i>Categories</button>
-		    		<button class="pills nav-link" id="nav-pricing-tab" data-toggle="tab" data-target="#nav-pricing" type="button" role="tab" aria-controls="nav-pricing" aria-selected="false"><i class="uil uil-coins"></i>Pricing</button>
-		    		<button class="pills nav-link" id="nav-profile-tab" data-toggle="tab" data-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="uil uil-user-square"></i>Profile</button>
-		    		<button class="pills nav-link" id="nav-setting-tab" data-toggle="tab" data-target="#nav-setting" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="uil uil-setting"></i>Settings</button>
+		    		<button class="pills nav-link active" id="nav-reviews-tab" data-toggle="tab" data-target="#nav-reviews" type="button" role="tab" aria-controls="nav-reviews" aria-selected="true"><i class="uil uil-star px-2"></i>Reviews</button>
+		    		<button class="pills nav-link" id="nav-businesses-tab" data-toggle="tab" data-target="#nav-businesses" type="button" role="tab" aria-controls="nav-businesses" aria-selected="false"><i class="uil uil-university px-2"></i>Businesses</button>
+		    		<button class="pills nav-link" id="nav-categories-tab" data-toggle="tab" data-target="#nav-categories" type="button" role="tab" aria-controls="nav-categories" aria-selected="false"><i class="uil uil-panel-add px-2"></i>Categories</button>
+		    		<button class="pills nav-link" id="nav-pricing-tab" data-toggle="tab" data-target="#nav-pricing" type="button" role="tab" aria-controls="nav-pricing" aria-selected="false"><i class="uil uil-user px-2"></i>Registered Users</button>
+		    		<button class="pills nav-link" id="nav-profile-tab" data-toggle="tab" data-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="uil uil-user-square px-2"></i>My Profile</button>
+		    		<button class="pills nav-link" id="nav-setting-tab" data-toggle="tab" data-target="#nav-setting" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="uil uil-setting px-2"></i>Settings</button>
 		    	</div>
 		    </nav>
             <div class="tab-content mt-3" id="nav-tabContent">
@@ -22,7 +22,7 @@
                     Categories
 			    </div>
                 <div class="tab-pane fade" id="nav-pricing" role="tabpanel" aria-labelledby="nav-pricing-tab">
-                    Pricing
+                    Registered users
 			    </div>
                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                     Profile
@@ -37,6 +37,7 @@
 
 <script>
 import { Link } from '@inertiajs/inertia-vue3';
+import BusinessTable from './BusinessTable.vue';
 import ReviewsTable from './ReviewsTable.vue';
 
 export default {
@@ -47,7 +48,8 @@ export default {
 
     components: {
     Link,
-    ReviewsTable
+    ReviewsTable,
+    BusinessTable
 }
 }
 

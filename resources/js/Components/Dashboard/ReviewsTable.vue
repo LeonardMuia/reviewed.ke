@@ -20,7 +20,7 @@
         <td class="text-sm rating-text">
             {{review.review}}
         </td>
-        <td class="text-sm">{{review.rating}}</td>
+        <td class="text-sm text-center">{{review.rating}}</td>
         <td class="text-sm">{{review.email}}</td>
         <td class="text-sm">{{"+254" + review.phone}}</td>
         <td class="text-sm">
